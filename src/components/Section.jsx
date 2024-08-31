@@ -1,7 +1,10 @@
 import React from "react";
 import  image1  from "../../src/assets/ai-generated-8131429_1280.png";
+import { useNavigate } from "react-router-dom";
 
 function Section() {
+const navigate = useNavigate();
+
   return (
     <div className="bg-blue">
       <div className="top flex pl-5 gap-10">
@@ -17,7 +20,7 @@ function Section() {
             business grow with eye-catching website designs, which are second to
             none!
           </p>
-          <button className="bg-red-500 mt-5 text-white py-2 px-4 rounded hover:bg-red-700 transition">
+          <button onClick={()=>navigate('/contact')} className="bg-red-500 mt-5 text-white py-2 px-4 rounded hover:bg-red-700 transition">
             view case
           </button>
         </div>
