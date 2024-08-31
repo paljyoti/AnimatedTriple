@@ -57,13 +57,13 @@ function Footer() {
             </h1>
           </div>
 
-          <div className="img w-full sm:w-1/3 mb-6 bg-gray-700 h-40">
-            <img src={image2} alt="" />
+          <div className="img mb-20">
+            <img src={image2} alt="" className="h-48 w-48" />
           </div>
 
           <div className="contact w-full sm:w-1/3 mb-6">
             <h6 className="text-lg font-semibold mb-4 text-right">
-              Get in touch
+              Get in touch 
             </h6>
             <h1 className="text-md text-right">
               Email:

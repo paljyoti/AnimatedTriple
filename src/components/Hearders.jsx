@@ -4,7 +4,7 @@ import image from "../../src/assets/people-5579977_1280.png";
 function Header() {
   return (
     <div>
-      <div className="top flex pl-52 gap-20">
+      <div className="top flex pl-52 gap-20 mt-10">
         <div className=" bg-white text-black text-left mt-16">
           <h1 className="text-6xl font-bold">Designs that</h1>
           <h1 className="text-6xl font-bold">empower your</h1>

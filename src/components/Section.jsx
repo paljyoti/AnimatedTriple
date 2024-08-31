@@ -22,12 +22,14 @@ function Section() {
           </button>
         </div>
         <div className="heading mt-64 text-justify">
-            <ul>
+            <ul className="">
                 <li><p className="text-sm">WebDesign</p></li>
+                <li><p classname="text-sm">Socialmedia</p></li>
                 <li><p className="text-sm">Seo</p> </li>
-                <li><p className="text-sm"> Email</p></li>
-                <li><p className="text-sm" >Content</p></li>
+                <li><p className="text-sm">Email</p></li>
+                <li><p className="text-sm">Content</p></li>
                 <li><p className="text-sm">DigitalMarketing</p></li>
+                <li><p classname="text-sm">ppc</p></li>
             </ul>
         </div>
       </div>
