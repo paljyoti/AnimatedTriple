@@ -1,6 +1,6 @@
 import React from "react";
 import image from "../../src/assets/people-5579977_1280.png";
-import ReactCurvedText from "react-curved-text";
+// import ReactCurvedText from "react-curved-text";
 
 function Header() {
 
@@ -34,20 +34,18 @@ function Header() {
           </p>
         </div>
         <div className="flex justify-center mb-6">
-  <button  className="bg-black text-white w-16 h-16 rounded-full hover:bg-red-700 transition flex items-center justify-center text-center">
-    Let's
-    <br />
-    Talk
-  </button>
+        <button  className="bg-black text-white w-16 h-16 rounded-full hover:bg-red-700 transition flex items-center justify-center text-center">
+           Let's
+            <br />
+           Talk  
+         </button>
+
+
+  
 
 
 
   
-</div>
-
-
-
-
 
 
 
@@ -64,8 +62,7 @@ function Header() {
                               id="textcircle"
                               d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
                             ></path>
-                          </defs>
-                                
+                          </defs>   
                           <text>
                             <textPath xlinkHref="#textcircle" textLength="900">
                               Explore More - Explore More -
@@ -73,10 +70,12 @@ function Header() {
                           </text>
                         </svg>
                       </div>
-                  {/* <div className="icon">
-                    <i className="fas fa-play"></i>
-                  </div> */}
                 </a>
+
+                
+
+
+
                 </div>
               </div>
             </div>
@@ -84,7 +83,7 @@ function Header() {
 
 
 
-
+</div>
 
 
 
