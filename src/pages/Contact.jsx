@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import ReactCurvedText from "react-curved-text";
 
 function Contact() {
   return (
@@ -19,6 +20,7 @@ function Contact() {
           </p>
         </div>
 
+      
         <div className="flex">
           {/* <img src={image} alt="" className="w-full h-full" /> */}
         </div>
