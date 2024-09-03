@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../../src/assets/people-5579977_1280.png";
+
 // import ReactCurvedText from "react-curved-text";
 
 function Header() {
@@ -18,7 +19,7 @@ function Header() {
         </div>
         
         <div className="flex">
-          <img src={image} alt="" className="w-full h-full" />
+          <img src={image} alt="" className="w-full h-full " />
         </div>
       </div>
       <div className="container flex mx-auto  space-x-24 p-4 mt-12">

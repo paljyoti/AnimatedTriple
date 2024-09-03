@@ -18,3 +18,21 @@
       border: 2px solid transparent;
     }
   }
+
+
+
+
+  @keyframes roundedTextAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .text-animation {
+    display: inline-block;
+    animation: roundedTextAnimation 5s linear infinite;
+    transform-origin: center; /* Ensure text rotates around its center */
+  }
