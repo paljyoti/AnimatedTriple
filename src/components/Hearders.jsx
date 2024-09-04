@@ -4,13 +4,14 @@ import image from "../../src/assets/people-5579977_1280.png";
 
 function Header() {
   return (
-    <div className="bg-blue" >
-      <div className="top flex pl-52 gap-20 w-full h-full   ">
+    <div className="" >
+      <div className="top flex pl-52 gap-20 w-full h-full  mt-3  ">
         <div className=" bg-white text-black text-left mt-16">
-          <h1 className="text-6xl font-bold">Designs that</h1>
-          <h1 className="text-6xl font-bold">empower your</h1>
-          <h1 className="text-6xl font-bold">brand</h1>
+          <h1 className="text-6xl font-bold">Triple  <span className="text-8xl text-[#39FF14]">R</span></h1>
+          <h1 className="text-6xl font-bold">Consulting</h1>
+          {/* <h1 className="text-6xl font-bold">brand</h1> */}
           <p className="mt-4 w-96 text-sm">
+          {/* Designs that empower your brand */}
             Adding wings to your brand through sparkling ideas, holistic
             branding concepts, extraordinary and handcrafted designs. We
             collaborate with companies to create remarkable digital experiences.
@@ -30,7 +31,7 @@ function Header() {
         </div>
 
         <div className="flex justify-center mb-6">
-          <button className="bg-black text-white w-16 h-16 rounded-full hover:bg-red-700 transition flex items-center justify-center text-center">
+          <button className="bg-black text-white w-16 h-16 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
             Let's
             <br />
             Talk
