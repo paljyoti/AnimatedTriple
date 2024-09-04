@@ -6,11 +6,11 @@ function Section() {
   const navigate = useNavigate();
 
   return (
-    <div>
-      <div className="w-full h-full">
+    <div className="" >
+      <div className=""style={{backgroundColor:"red"}} >
         <div className="top flex pl-5 gap-10">
           <div className="flex ">
-            <img src={image1} alt="" className="w-full h-full  " />
+            {/* <img src={image1} alt="" className="w-44 h-44  " /> */}
           </div>
           <div className=" bg-white text-black text-justify mt-28 pr-20">
             <h1 className="text-6xl font-bold">Strategic</h1>
@@ -38,7 +38,7 @@ function Section() {
                 <p classname="text-sm">Socialmedia</p>
               </li>
               <li>
-                <p className="text-sm">Seo</p>{" "}
+                <p className="text-sm">Seo</p>
               </li>
               <li>
                 <p className="text-sm">Email</p>

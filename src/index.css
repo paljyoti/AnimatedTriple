@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
 @layer utilities {
     ::-webkit-scrollbar {
       /* width: 8px; */
@@ -10,19 +14,19 @@
   
     /* ::-webkit-scrollbar-track {
       background: #1f1f1f;
-    } */
+    }
   
     ::-webkit-scrollbar-thumb {
-      /* background-color: #ff0000; */
+      background-color: #ff0000;
       border-radius: 4px;
       border: 2px solid transparent;
-    }
+    } */
   }
 
 
 
 
-  @keyframes roundedTextAnimation {
+  /* @keyframes roundedTextAnimation {
     0% {
       transform: rotate(0deg);
     }
@@ -34,5 +38,5 @@
   .text-animation {
     display: inline-block;
     animation: roundedTextAnimation 5s linear infinite;
-    transform-origin: center; /* Ensure text rotates around its center */
-  }
+    transform-origin: center;  
+  } */
