@@ -4,8 +4,8 @@ import  image from "../../src/assets/icon-7100795_1280.jpg"
 function Clients() {
   return (
     <div>
-      <div className="top flex pl-52 gap-20 mt-28">
-        <div className=" bg-white text-black text-left">
+      <div className="top flex pl-52 gap-20 bg-[#FF8C00]">
+        <div className=" bg-white text-black text-left" style={{backgroundColor:"orange"}}>
           <h1 className="text-6xl font-bold">Our Happy</h1>
           <h1 className="text-6xl font-bold">Clients</h1>
 
@@ -22,35 +22,6 @@ function Clients() {
       <div className="car">
         
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </div>

@@ -4,7 +4,7 @@ import image2 from "../../src/assets/pexels-kevin-malik-9017408-removebg-preview
 function Footer() {
   return (
     <div className="">
-      <div className="head text-black text-center p-10  ">
+      <div className="head text-black text-center p-10 bg-[#FFD700]  " >
         <p className="text-lg mt-28">Reveal your thoughts</p>
         <h1 className="text-3xl font-bold">Ready to start your</h1>
         <h1 className="text-3xl font-bold">project?</h1>
@@ -13,7 +13,7 @@ function Footer() {
         </button>
       </div>
 
-      <div className="footer text-black py-8 px-4">
+      <div className="footer text-black py-8 px-4 bg-[#FFD700]">
         <div className="container mx-auto flex flex-wrap justify-between">
           <div className="sec w-full sm:w-1/3 mb-10">
             <h6 className="text-lg font-semibold mb-4 text-left">

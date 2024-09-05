@@ -1,0 +1,12 @@
+@keyframes rotate-svg {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-rotate-svg {
+    animation: rotate-svg 10s linear infinite; /* Adjust the duration for rotation speed */
+  }
