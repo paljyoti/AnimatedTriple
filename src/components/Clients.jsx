@@ -5,7 +5,7 @@ function Clients() {
   return (
     <div>
       <div className="top flex pl-52 gap-20 bg-[#FF8C00]">
-        <div className=" bg-white text-black text-left" style={{backgroundColor:"orange"}}>
+        <div className="text-black text-left bg-[#FF8C00]" >
           <h1 className="text-6xl font-bold">Our Happy</h1>
           <h1 className="text-6xl font-bold">Clients</h1>
 

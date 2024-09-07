@@ -1,19 +1,21 @@
 import React from "react";
 import image1 from "../../src/assets/ai-generated-8131429_1280.png";
-import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function Section() {
-  const navigate = useNavigate();
+  
 
   return (
-    <div className="" >
-      <div className=""style={{backgroundColor:"blue"}} >
+    <div id="section two">
+      <div className="" style={{ backgroundColor: "blue" }}>
         <div className="top flex pl-5 gap-10">
-          <div className="flex ">
-            {/* <img src={image1} alt="" className="w-full h-full  " /> */}
-          
-          </div>
-          <div className=" bg-white text-white text-justify mt-28 pr-20  " style={{backgroundColor:"blue"}}>
+          {/* <div className="flex ">
+            <img src={image1} alt="" className="w-full h-full  " />
+          </div> */}
+          <div
+            className=" bg-white text-white text-justify mt-28 pr-20  "
+            style={{ backgroundColor: "blue" }}
+          >
             <h1 className="text-6xl font-bold">Strategic</h1>
             <h1 className="text-6xl font-bold">branding that</h1>
             <h1 className="text-6xl font-bold">helpstand out!</h1>
@@ -44,7 +46,7 @@ function Section() {
               <li>
                 <p className="text-sm">Email</p>
               </li>
-              
+
               <li>
                 <p className="text-sm">Content</p>
               </li>

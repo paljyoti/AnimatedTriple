@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        archivo: "Archivo",
+        latolight:"Latolight ",
+        latoBold: "LatoBold",
+        latoReg:"LatoReg",
+      },
+    },
   },
   plugins: [],
 }
