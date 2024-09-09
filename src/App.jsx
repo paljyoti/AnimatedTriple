@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Headers from './components/Hearders'
 import Navbar from './components/Navbar'
 import Section from './components/Section'
+import Landing from './pages/Landing'
 
 function App() {
  
@@ -12,11 +13,13 @@ function App() {
   return (
     <>
       <div>
-        {/* <Navbar/> */}
         <Headers/>
         <Section/>
         <Clients/>
         <Footer/>
+          
+        {/* <Landing/> */}
+
 
       </div>
     </>

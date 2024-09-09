@@ -4,26 +4,38 @@ import "../../src/css/header.css";
 
 function Header() {
   // const ScrollRedirect = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
+  // useEffect(() => {
 
-      if (scrollPosition > 300) {
-        document
-          .getElementById("")  //section two
-          .scrollIntoView({ behavior: "smooth", inline: "nearest" });
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   const handleScroll = () => {
+  //     const scrollPosition = window.scrollY;
+
+  //     if (scrollPosition > 300) {
+  //       document
+  //         .getElementById("")  section two
+  //         .scrollIntoView({ behavior: "smooth", inline: "nearest" });
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   // };
 
   return (
-    <div className="">
-      <div className="top flex pl-52 gap-20 w-full h-full  mt-3  ">
+    <div
+      className=""
+      style={{
+        scrollSnapType: "y mandatory",
+        overflow: "scroll",
+        WebkitOverflowScrolling: "touch",
+        overflowY:"auto"
+      }}
+    >
+      <div
+        className="top flex pl-52 gap-20 w-full h-full  mt-3"
+        style={{ scrollSnapAlign: "start" }}
+      >
         <div className=" bg-white text-black text-left mt-16">
           <h1 className="text-6xl font-bold">
             Triple <span className="text-8xl mt-12 text-[#39FF14]">R</span>
@@ -35,6 +47,7 @@ function Header() {
             collaborate with companies to create remarkable digital experiences.
           </p>
         </div>
+
         <div className="flex">
           <img src={image} alt="" className="w-full h-full " />
         </div>
@@ -69,7 +82,7 @@ function Header() {
           <button className="absolute text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
             Let's
             <br />
-            Talk 
+            Talk
           </button>
         </div>
         <div className="text-right">

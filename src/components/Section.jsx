@@ -1,17 +1,14 @@
 import React from "react";
 import image1 from "../../src/assets/ai-generated-8131429_1280.png";
 
-
 function Section() {
-  
-
   return (
-    <div id="section two">
-      <div className="" style={{ backgroundColor: "blue" }}>
+    <div className="snap-y snap-mandatory  overflow-scroll touch-auto overflow-y-auto" id="section two">
+      <div className="snap-start" style={{ backgroundColor: "blue" }}>
         <div className="top flex pl-5 gap-10">
-          {/* <div className="flex ">
+          <div className="flex ">
             <img src={image1} alt="" className="w-full h-full  " />
-          </div> */}
+          </div>
           <div
             className=" bg-white text-white text-justify mt-28 pr-20"
             style={{ backgroundColor: "blue" }}
