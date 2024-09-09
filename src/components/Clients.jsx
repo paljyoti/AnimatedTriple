@@ -8,7 +8,6 @@ function Clients() {
         <div className="text-black text-left bg-[#FF8C00]" >
           <h1 className="text-6xl font-bold">Our Happy</h1>
           <h1 className="text-6xl font-bold">Clients</h1>
-
           <p className=" w-96 text-sm mt-10 pl-44">
             We help our valuable clients build a remarkable brand that becomes
             the talk of the town.

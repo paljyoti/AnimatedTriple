@@ -35,9 +35,9 @@ function Header() {
             collaborate with companies to create remarkable digital experiences.
           </p>
         </div>
-        {/* <div className="flex">
+        <div className="flex">
           <img src={image} alt="" className="w-full h-full " />
-        </div> */}
+        </div>
       </div>
       <div className="container flex mx-auto  space-x-24 p-4 mt-12">
         <div className="text-left mb-6 pl-16">

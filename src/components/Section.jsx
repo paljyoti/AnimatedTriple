@@ -1,6 +1,6 @@
 import React from "react";
 import image1 from "../../src/assets/ai-generated-8131429_1280.png";
-import { useEffect } from "react";
+
 
 function Section() {
   
@@ -13,7 +13,7 @@ function Section() {
             <img src={image1} alt="" className="w-full h-full  " />
           </div> */}
           <div
-            className=" bg-white text-white text-justify mt-28 pr-20  "
+            className=" bg-white text-white text-justify mt-28 pr-20"
             style={{ backgroundColor: "blue" }}
           >
             <h1 className="text-6xl font-bold">Strategic</h1>
@@ -46,7 +46,6 @@ function Section() {
               <li>
                 <p className="text-sm">Email</p>
               </li>
-
               <li>
                 <p className="text-sm">Content</p>
               </li>
