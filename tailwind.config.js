@@ -6,12 +6,10 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        archivo: "Archivo",
-        latolight:"Latolight ",
-        latoBold: "LatoBold",
-        latoReg:"LatoReg",
-      },
+
+      // flexShrink: {
+      //   2: '2'
+      // }
     },
   },
   plugins: [],
