@@ -23,19 +23,9 @@ function Header() {
   // };
 
   return (
-    <div
-      className=""
-      style={{
-        scrollSnapType: "y mandatory",
-        overflow: "scroll",
-        WebkitOverflowScrolling: "touch",
-        overflowY:"auto"
-      }}
-    >
+    <div className="">
       <div
-        className="top flex pl-52 gap-20 w-full h-full  mt-3"
-        style={{ scrollSnapAlign: "start" }}
-      >
+        className="top flex pl-52 gap-20 w-full h-full  mt-3" >
         <div className=" bg-white text-black text-left mt-16">
           <h1 className="text-6xl font-bold">
             Triple <span className="text-8xl mt-12 text-[#39FF14]">R</span>

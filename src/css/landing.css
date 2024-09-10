@@ -1,0 +1,27 @@
+
+.svg-container {
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .svg-container.move-up {
+    transform: translateY(-10px); /* Move the SVG up by 10px */
+  }
+  
+  .svg-container:hover {
+    transform: translateY(-130px); /* Move up on hover */
+  }
+
+
+  @keyframes rotate-svg {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-rotate-svg {
+    animation: rotate-svg 10s linear infinite; /* Adjust the duration for rotation speed */
+  }
+  
