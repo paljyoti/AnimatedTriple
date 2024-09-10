@@ -46,7 +46,7 @@ function Footer(props) {
         </div>
       </div>
 
-      <div className="footer text-black">
+      <div className="footer text-black  bg-[#FFD700]">
         <div className="container mx-auto flex flex-wrap justify-between">
           <div className="sec w-full sm:w-1/3 ">
             <h6 className="text-lg pt-24 font-semibold mb-4 text-left">
