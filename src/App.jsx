@@ -17,7 +17,7 @@ function App() {
         <Section/>
         <Clients/>
         <Footer/> */}
-          
+          {/* <Navbar/> */}
         <Landing/>
 
 

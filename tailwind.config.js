@@ -5,12 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-
-      // flexShrink: {
-      //   2: '2'
-      // }
-    },
+    extend: {},
   },
   plugins: [],
 }
