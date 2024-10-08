@@ -1,8 +1,16 @@
 import React from 'react'
+import Loader from './Loader'
+import videoSrc from "../../src/assets/background.mp4"
 
 function Blog() {
+
+const content =  <p>This is a blog Page</p>
+
   return (
-    <div>Blog</div>
+    <div>
+
+ <Loader videoSrc={videoSrc} content={content} />
+    </div>
   )
 }
 

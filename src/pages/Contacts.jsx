@@ -1,6 +1,9 @@
 import React from 'react'
+import Loader from './Loader';
+import videoSrc from "../../src/assets/background.mp4"
 
 function Contacts() {
+  const content= <p></p>
 
     const sections = [
         { id: 1, title: "Section 1", bg: "bg-red-500" },
@@ -12,6 +15,7 @@ function Contacts() {
 
   return (
     <div>
+      <Loader videoSrc={videoSrc} content={content} />
         <div className="snap-y snap-mandatory h-screen overflow-y-scroll">
       {sections.map(section => (
         <div

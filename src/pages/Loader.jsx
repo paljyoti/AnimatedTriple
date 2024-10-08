@@ -26,7 +26,7 @@ function Loader({ videoSrc, content }) {
             return () => clearTimeout(timer);
         }
     }, []);
-    
+       
     const handleLoadedData = () => {
         setIsLoading(false); // Hide loading when video is ready
     };
@@ -37,9 +37,9 @@ function Loader({ videoSrc, content }) {
             <video
                 ref={videoRef}
                 src={videoSrc}
-                controls
+                // controls  
                 onLoadedData={handleLoadedData} // Event to handle when video is ready
-                style={{ display: isPlaying ? 'block' : 'none', width: '100%', height: 'auto' }}
+                style={{ display: isPlaying ? 'block' : 'none', width: '100vw', height: '100vh', objectFit:"cover" }}
             />
             {showContent && <div>{content}</div>}
         </div>
