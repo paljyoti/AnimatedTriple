@@ -1,6 +1,6 @@
 import React from 'react'
 import Loader from './Loader'
-import videoSrc from "../../src/assets/background.mp4";
+import videoSrc from "../../src/assets/blackNwhite.mp4";
 
 
 function Service() {

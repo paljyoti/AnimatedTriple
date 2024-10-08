@@ -20,7 +20,7 @@ function Loader({ videoSrc, content }) {
                 videoRef.current.pause(); // Pause the video
                 setIsPlaying(false); // Hide video
                 setShowContent(true); // Show content
-            }, 2000); // 2 seconds
+            }, 4000); // 2 seconds
 
             // Cleanup timer on unmount
             return () => clearTimeout(timer);
@@ -32,16 +32,17 @@ function Loader({ videoSrc, content }) {
     };
 
     return (
-        <div>
+        <div>   
             {isLoading && <div className="pre-loader">Loading...</div>} {/* Pre-loader */}
             <video
                 ref={videoRef}
                 src={videoSrc}
                 // controls  
                 onLoadedData={handleLoadedData} // Event to handle when video is ready
-                style={{ display: isPlaying ? 'block' : 'none', width: '100vw', height: '100vh', objectFit:"cover" }}
+                style={{ display: isPlaying ? 'block' : 'none', width: '100vw', height: '100vh', objectFit:"cover",overflow:"hidden" }}
             />
             {showContent && <div>{content}</div>}
+            
         </div>
     );
 }
