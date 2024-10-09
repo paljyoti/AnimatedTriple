@@ -33,7 +33,7 @@ function Loader({ videoSrc, content }) {
 
     return (
         <div>   
-            {isLoading && <div className="pre-loader">Loading...</div>} {/* Pre-loader */}
+            {isLoading && <div className="pre-loader"></div>} {/* Pre-loader */}
             <video
                 ref={videoRef}
                 src={videoSrc}
