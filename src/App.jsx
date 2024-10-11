@@ -7,11 +7,14 @@ import Navbar from './components/Navbar'
 import Section from './components/Section'
 import Landing from './pages/Landing'
 
+
 function App() {
- 
+
 
   return (
     <>
+
+
       <div>
         {/* <Headers/>
         <Section/>
