@@ -9,6 +9,8 @@ function AboutUs() {
         <div>
             {/* <h1>About Us</h1>  */}
             <Loader videoSrc={videoSrc} content={content} />
+
+
         </div>
     );
 }
