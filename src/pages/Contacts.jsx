@@ -217,20 +217,20 @@ function Contacts(props) {
 
 
       <div className="about bg-black h-full w-full">
-        {/* <div className="heading"> */}
+  
           <h1 className="text-white pl-40 pt-12 font-bold text-4xl">I'M INTERESTED IN . . .</h1>
 
           <div className="bg-black flex items-center justify-center">
        <div className="grid grid-cols-5 gap-4 p-5 max-w-screen-lg">
         {boxItems.map((item, index) => (
-          <div key={index} className="bg-black p-6 rounded border border-gray-600 text-center text-white">
+          <div key={index} className="bg-black p-6 rounded border border-gray-600 text-center hover:bg-white hover:text-black text-white">
             {item}
           </div>
         ))}
       </div>
     </div>
           
-        {/* </div> */}
+    
       
         <div className="tellAbout">
             <div className="flex items-center justify-center bg-black text-white">
