@@ -99,7 +99,7 @@ function AboutUs(props) {
                 viewport={{ once: false, amount: 0.7 }}
                 className="text-6xl font-bold "
               >
-                Your go-to graphic
+                Your go-to Graphic
               </motion.h1>
               <motion.h1
                 variants={fadeIn("left", 0.2)}
@@ -108,7 +108,7 @@ function AboutUs(props) {
                 viewport={{ once: false, amount: 0.7 }}
                 className="text-6xl font-bold"
               >
-                design partner
+                Design Partner
               </motion.h1>
               <motion.p
                 variants={fadeIn("up", 0.2)}
