@@ -6,6 +6,26 @@ import { fadeIn } from "../../src/Varients";
 import { useState } from "react";
 
 function Contacts(props) {
+
+  const [isMoved, setIsMoved] = useState(false);
+
+  // Function to toggle the movement class
+  const handleTouch = () => {
+    setIsMoved(!isMoved);
+  };
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const openMenu = () => {
+    setIsMenuOpen(true);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,7 +43,6 @@ function Contacts(props) {
     setFormData({ ...formData, [name]: value });
   };
 
-
   const boxItems = [
     "Branding",
     "Web Design",
@@ -38,20 +57,78 @@ function Contacts(props) {
     "Other",
   ];
 
-
-
-
-
-
-
-
   return (
     <div>
       <Loader videoSrc={videoSrc} />
 
       <div className="contact">
-        <div className="top flex pl-52 gap-20 mt-10">
-          <div className=" bg-white text-black text-left mt-16">
+      
+
+      <div className="flex ">
+          <div
+            id="side-menu"
+            className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${
+              isMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          >
+            <a
+              href="javascript:void(0)"
+              className="text-right text-4xl"
+              onClick={closeMenu}
+            >
+              &times;
+            </a>
+            <a
+              className=" text-3xl font-semibold  hover:text-[#39FF14]"
+              href="#"
+            >
+              HOME
+            </a>
+            <a
+              className=" text-3xl font-semibold hover:text-[#39FF14]"
+              href="/#/aboutus"
+            >
+              ABOUT US
+            </a>
+            <a
+              className="text-3xl font-semibold hover:text-[#39FF14]"
+              href="/#/service"
+            >
+              SERVICES
+            </a>
+            <a
+              className="text-3xl font-semibold hover:text-[#39FF14]"
+              href="/#/blog"
+            >
+              BLOG
+            </a>
+            <a
+              className="text-3xl font-semibold hover:text-[#39FF14]"
+              href="/#/contact"
+            >
+              CONTACT US
+            </a>
+
+            <div className="details">
+              <h1 className="pt-32 text-white font-semibold ">GET IN TOUCH </h1>
+              <h1 className="text-white text-sm">
+                Email : rishabhbharee@gmail.com
+              </h1>
+              <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
+            </div>
+          </div>
+
+          <main className="p-5 ml-[1200px]">
+            <span className="cursor-pointer text-2xl" onClick={openMenu}>
+              &#9776;
+            </span>
+          </main>
+        </div>
+
+
+
+        <div className="top flex pl-52 gap-20 ">
+          <div className=" bg-white text-black text-left pt-16">
             <p className="text-sm font-bold">CONTACT US</p>
             <h1 className="text-6xl font-bold">Why not hit us</h1>
             <h1 className="text-6xl font-bold">up for</h1>
@@ -157,7 +234,7 @@ function Contacts(props) {
           </div>
         </div>
 
-        <div className="container flex mx-auto mt-5  space-x-24 p-4 ">
+        <div className="container flex mx-auto  space-x-24  ">
           <div className="text-left mb-6 pl-16">
             <motion.p
               variants={fadeIn("up", 0.2)}
@@ -212,100 +289,97 @@ function Contacts(props) {
         </div>
       </div>
 
-
-
-
-
       <div className="about bg-black h-full w-full">
-  
-          <h1 className="text-white pl-40 pt-12 font-bold text-4xl">I'M INTERESTED IN . . .</h1>
+        <h1 className="text-white pl-40 pt-12 font-bold text-4xl">
+          I'M INTERESTED IN . . .
+        </h1>
 
-          <div className="bg-black flex items-center justify-center">
-       <div className="grid grid-cols-5 gap-4 p-5 max-w-screen-lg">
-        {boxItems.map((item, index) => (
-          <div key={index} className="bg-black p-6 rounded border border-gray-600 text-center hover:bg-white hover:text-black text-white">
-            {item}
+        <div className="bg-black flex items-center justify-center">
+          <div className="grid grid-cols-5 gap-4 p-5 max-w-screen-lg">
+            {boxItems.map((item, index) => (
+              <div
+                key={index}
+                className="bg-black p-6 rounded border border-gray-600 text-center hover:bg-white hover:text-black text-white"
+              >
+                {item}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
-          
-    
-      
+        </div>
+
         <div className="tellAbout">
-            <div className="flex items-center justify-center bg-black text-white">
-              <form onSubmit={handleSubmit} className="bg-black p-12  w-full">
-                <h1 className="text-white pb-10 pl-28 font-bold text-4xl">
-                  TELL US ABOUT YOURSELF . . .
-                </h1>
-                <div className="flex  space-x-36 pl-28 ">
-                  <div className="mb-4 ">
-                    <label className="block mb-2" htmlFor="name">
-                      What's Your Name?
-                    </label>
-                    <input 
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full p-3 rounded border border-gray-600 bg-black text-white"
-                      required
-                    />
-                  </div>
-
-                  <div className="mb-4">
-                    <label className="block mb-2" htmlFor="email">
-                      What's Your Email?
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full p-3 rounded border border-gray-600 bg-black text-white"
-                      required
-                    />
-                  </div>
-
-                  <div className="mb-4">
-                    <label className="block mb-2" htmlFor="phone">
-                      What's Your Phone?
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="w-full p-3 rounded border border-gray-600 bg-black text-white"
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="mb-4 pl-28 ">
-                  <label className="block mb-2" htmlFor="projectDescription">
-                    Tell us about your project :)
+          <div className="flex items-center justify-center bg-black text-white">
+            <form onSubmit={handleSubmit} className="bg-black p-12  w-full">
+              <h1 className="text-white pb-10 pl-28 font-bold text-4xl">
+                TELL US ABOUT YOURSELF . . .
+              </h1>
+              <div className="flex  space-x-36 pl-28 ">
+                <div className="mb-4 ">
+                  <label className="block mb-2" htmlFor="name">
+                    What's Your Name?
                   </label>
-                  <textarea
-                    id="projectDescription"
-                    name="projectDescription"
-                    value={formData.projectDescription}
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
                     onChange={handleChange}
                     className="w-full p-3 rounded border border-gray-600 bg-black text-white"
                     required
                   />
                 </div>
-                <button
-                  type="submit"
-                  className="bg-blue-600 ml-28 hover:bg-blue-700 text-white py-2 px-4 rounded w-48"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
-          
+
+                <div className="mb-4">
+                  <label className="block mb-2" htmlFor="email">
+                    What's Your Email?
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full p-3 rounded border border-gray-600 bg-black text-white"
+                    required
+                  />
+                </div>
+
+                <div className="mb-4">
+                  <label className="block mb-2" htmlFor="phone">
+                    What's Your Phone?
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full p-3 rounded border border-gray-600 bg-black text-white"
+                    required
+                  />
+                </div>
+              </div>
+              <div className="mb-4 pl-28 ">
+                <label className="block mb-2" htmlFor="projectDescription">
+                  Tell us about your project :)
+                </label>
+                <textarea
+                  id="projectDescription"
+                  name="projectDescription"
+                  value={formData.projectDescription}
+                  onChange={handleChange}
+                  className="w-full p-3 rounded border border-gray-600 bg-black text-white"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                className="bg-blue-600 ml-28 hover:bg-blue-700 text-white py-2 px-4 rounded w-48"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
