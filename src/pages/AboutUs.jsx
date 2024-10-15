@@ -617,9 +617,37 @@ function AboutUs(props) {
         </div>
 
 
-        <section className="snap-start h-screen bg-black flex items-center justify-center text-white">
-          <h1>Section 2</h1>
-        </section>
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-black item-center justify-center">
+        <div className=" text-white text-left pt-52 pl-40">
+              <motion.h1
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="text-6xl font-bold "
+              >
+               Visionary
+              </motion.h1>
+              <motion.h1
+                variants={fadeIn("left", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="text-6xl font-bold"
+              >
+               Group of
+              </motion.h1>
+              <motion.h1
+                variants={fadeIn("left", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="text-6xl font-bold"
+              >
+               Artists
+              </motion.h1>
+            </div>
+        </div>
 
         
        <div className="flex-shrink-0 snap-start w-full h-screen bg-white items-center  justify-center">
