@@ -26,7 +26,7 @@ function AboutUs(props) {
   return (
     <div>
       <Loader videoSrc={videoSrc} />
-      <div className="snap-y snap-mandatory h-screen overflow-y-scroll">   
+      <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-hidden ">   
         <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400  items-center justify-center ">
           <div className="flex ">
             <div
@@ -119,7 +119,7 @@ function AboutUs(props) {
               >
                 We are a graphic design studio, who is here to make an
                 extraordinary difference by transforming brands, around the
-                globe.
+               globe.
               </motion.p>
             </div>
 
@@ -562,6 +562,9 @@ function AboutUs(props) {
               </g>
             </svg>
           </div>
+
+
+ 
 
           <div className="container flex mx-auto mt-5  space-x-24 p-4 ">
             <div className="text-left mb-6 pl-16">

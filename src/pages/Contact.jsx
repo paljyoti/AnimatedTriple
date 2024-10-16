@@ -6,6 +6,7 @@ function Contact() {
   return (
     <div>
       <Navbar />
+      
       <div className="top flex pl-52 gap-20 mt-10">
         <div className=" bg-white text-black text-left mt-16">
           <p className="text-sm">Contact Us</p>
@@ -19,7 +20,7 @@ function Contact() {
             future-proof.
           </p>
         </div>
-
+        
       
         <div className="flex">
           {/* <img src={image} alt="" className="w-full h-full" /> */}
