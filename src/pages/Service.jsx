@@ -116,21 +116,21 @@ function Service(props) {
               <h2 className="font-bold text-lg pl-96">01</h2>
               <h1 className="font-bold text-5xl">HEAD</h1>
               <p className="text-sm w-96">
-                {" "}
+               
                 Every talented individual on our team works closely together on
                 an equal footing.Every talented individual on our team works
                 closely together on an equal footingour team works closely
                 together on an equal footing.
               </p>
               <p className="text-sm w-96">
-                {" "}
+               
                 Every talented individual on our team works closely together on
                 an equal footing.Every talented individual on our team works
                 closely together on an equal footingour team works closely
                 together on an equal footing.
               </p>
             </div>
-
+ 
             <div className=" mt-10 ml-10 w-auto h-96 ">
               <img src={service} alt="" />
             </div>
