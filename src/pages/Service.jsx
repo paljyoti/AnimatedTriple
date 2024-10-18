@@ -4,6 +4,7 @@ import videoSrc from "../../src/assets/blackNwhite.mp4";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
 import { useState } from "react";
+import service from "../../src/assets/representations-user-experience-interface-design-removebg-preview.png";
 
 function Service(props) {
   const [isMoved, setIsMoved] = useState(false);
@@ -109,9 +110,31 @@ function Service(props) {
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-black items-center justify-center">
+          <div className="flex">
+            <div className=" heading text-white pt-40 pl-40 gap-10">
+              <p className="text-sm font-bold">what we do </p>
+              <h2 className="font-bold text-lg pl-96">01</h2>
+              <h1 className="font-bold text-5xl">HEAD</h1>
+              <p className="text-sm w-96">
+                {" "}
+                Every talented individual on our team works closely together on
+                an equal footing.Every talented individual on our team works
+                closely together on an equal footingour team works closely
+                together on an equal footing.
+              </p>
+              <p className="text-sm w-96">
+                {" "}
+                Every talented individual on our team works closely together on
+                an equal footing.Every talented individual on our team works
+                closely together on an equal footingour team works closely
+                together on an equal footing.
+              </p>
+            </div>
 
-
-          
+            <div className=" mt-10 ml-10 w-auto h-96 ">
+              <img src={service} alt="" />
+            </div>
+          </div>
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-blue-800 items-center justify-center"></div>
