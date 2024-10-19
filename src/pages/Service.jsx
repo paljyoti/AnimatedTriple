@@ -76,7 +76,73 @@ function Service(props) {
       <Loader videoSrc={videoSrc} />
 
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-hidden">
+
+     
         <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400 items-center justify-center">
+
+
+        <div className="flex ">
+            <div
+              id="side-menu"
+              className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${
+                isMenuOpen ? "translate-x-0" : "translate-x-full"
+              }`}
+            >
+              <a
+                href="javascript:void(0)"
+                className="text-right text-4xl"
+                onClick={closeMenu}
+              >
+                &times;
+              </a>
+              <a
+                className=" text-3xl font-semibold  hover:text-[#39FF14]"
+                href="#"
+              >
+                HOME
+              </a>
+              <a
+                className=" text-3xl font-semibold hover:text-[#39FF14]"
+                href="/#/aboutus"
+              >
+                ABOUT US
+              </a>
+              <a
+                className="text-3xl font-semibold hover:text-[#39FF14]"
+                href="/#/service"
+              >
+                SERVICES
+              </a>
+              <a
+                className="text-3xl font-semibold hover:text-[#39FF14]"
+                href="/#/blog"
+              >
+                BLOG
+              </a>
+              <a
+                className="text-3xl font-semibold hover:text-[#39FF14]"
+                href="/#/contact"
+              >
+                CONTACT US
+              </a>
+
+              <div className="details">
+                <h1 className="pt-32 text-white font-semibold ">
+                  GET IN TOUCH{" "}
+                </h1>
+                <h1 className="text-white text-sm">
+                  Email : rishabhbharee@gmail.com
+                </h1>
+                <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
+              </div>
+            </div>
+
+            <main className="p-5 ml-[1200px]">
+              <span className="cursor-pointer text-2xl" onClick={openMenu}>
+                &#9776;
+              </span>
+            </main>
+          </div>
           <motion.div
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -113,7 +179,7 @@ function Service(props) {
             </p>
           </motion.div>
 
-          <div className="footer  pt-32">
+          <div className="footer pt-16">
             <div className="container mx-auto flex flex-wrap justify-between">
               <div className=" w-full sm:w-1/3 ">
                 <p className="text-sm pt-28  pl-6 font-semibold text-left">
