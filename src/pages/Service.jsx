@@ -4,7 +4,11 @@ import videoSrc from "../../src/assets/blackNwhite.mp4";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
 import { useState } from "react";
-import service from "../../src/assets/representations-user-experience-interface-design-removebg-preview.png";
+import { div } from "framer-motion/client";
+// import Carousel from "../pages/Carousel";
+
+
+// import service from "../../src/assets/representations-user-experience-interface-design-removebg-preview.png";
 
 function Service(props) {
   const [isMoved, setIsMoved] = useState(false);
@@ -23,6 +27,49 @@ function Service(props) {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+  
+    const handleDotClick = (index) => {
+      setCurrentIndex(index);
+    };
+
+    const items = [
+      {
+        title: 'First Slide',
+        content: 'This is the first slide content.',
+        image: 'https://via.placeholder.com/600x300/FF0000/FFFFFF?text=Slide+1',
+      },
+      {
+        title: 'Second Slide',
+        content: 'This is the second slide content.',
+        image: 'https://via.placeholder.com/600x300/00FF00/FFFFFF?text=Slide+2',
+      },
+      {
+        title: 'Third Slide',
+        content: 'This is the third slide content.',
+        image: 'https://via.placeholder.com/600x300/0000FF/FFFFFF?text=Slide+3',
+      },
+      {
+        title: 'Fourth Slide',
+        content: 'This is the fourth slide content.',
+        image: 'https://via.placeholder.com/600x300/FFFF00/000000?text=Slide+4',
+      },
+      {
+        title: 'Fifth Slide',
+        content: 'This is the fifth slide content.',
+        image: 'https://via.placeholder.com/600x300/FF00FF/FFFFFF?text=Slide+5',
+      },
+      {
+        title: 'Sixth Slide',
+        content: 'This is the sixth slide content.',
+        image: 'https://via.placeholder.com/600x300/00FFFF/000000?text=Slide+6',
+      },
+    ];
+
+
+
 
   return (
     <div>
@@ -110,7 +157,7 @@ function Service(props) {
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-black items-center justify-center">
-          <div className="flex">
+          {/* <div className="flex">
             <div className=" heading text-white pt-40 pl-40 gap-10">
               <p className="text-sm font-bold">what we do </p>
               <h2 className="font-bold text-lg pl-96">01</h2>
@@ -134,7 +181,43 @@ function Service(props) {
             <div className=" mt-10 ml-10 w-auto h-96 ">
               <img src={service} alt="" />
             </div>
+          </div> */}
+
+
+
+
+<div className="relative w-full max-w-lg mx-auto flex">
+      <div className="overflow-hidden rounded-lg flex-grow">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`transition-opacity duration-700 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}
+          >
+            <img src={item.image} alt={item.title} className="w-full h-auto" />
+            <div className="absolute bottom-0 bg-black bg-opacity-50 text-white p-4">
+              <h2 className="text-xl">{item.title}</h2>
+              <p>{item.content}</p>
+            </div>
           </div>
+        ))}
+        <h1 className="text-center text-2xl font-bold mb-4">Carousel Example</h1>
+        <div items={items} />
+      </div>
+
+      {/* Dots for navigation */}
+      <div className="flex flex-col justify-center items-center ml-4">
+        {items.map((_, index) => (
+          <div
+            key={index}
+            onClick={() => handleDotClick(index)}
+            className={`w-3 h-3 bg-gray-500 rounded-full mb-2 cursor-pointer ${currentIndex === index ? 'bg-blue-500' : ''}`}
+          />
+        ))}
+      </div>
+    </div>
+
+
+
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-blue-800 items-center justify-center"></div>
