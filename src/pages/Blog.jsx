@@ -1,43 +1,53 @@
-import React from 'react'
-import Loader from './Loader'
-import videoSrc from "../../src/assets/blackNwhite.mp4"
+import React from "react";
+import Loader from "./Loader";
+import videoSrc from "../../src/assets/blackNwhite.mp4";
+import image from "../../src/assets/business-5475661_1280.jpg";
+import image2 from "../../src/assets/content-marketing-4111003_1280.jpg";
+import image3 from "../../src/assets/digital-7971754_1280.jpg";
 
 function Blog() {
-
-
-
   return (
-    <div>
-   <Loader videoSrc={videoSrc}  />
-   
-   <div className="bg-white min-h-screen flex items-center justify-center p-4">
-      <div className="bg-gray-900 rounded-lg shadow-lg max-w-4xl w-full p-8">
-        <header className="mb-8">
-          <h1 className="text-4xl font-bold text-center">My Blog</h1>
-        </header>
-        <main>
-          <article className="mb-6 bg-gray-800 p-4 rounded-lg">
-            <h2 className="text-2xl font-semibold">Blog Post Title</h2>
-            <p className="mt-2">
-              This is a brief excerpt of the blog post. It can give readers a preview of the content.
-            </p>
-          </article>
-          <article className="mb-6 bg-gray-800 p-4 rounded-lg">
-            <h2 className="text-2xl font-semibold">Another Post Title</h2>
-            <p className="mt-2">
-              Here’s another excerpt from a different blog post. Engaging content is key!
-            </p>
-          </article>
-        </main>
-        <footer className="mt-8 text-center">
-          <p>© 2024 My Blog. All rights reserved.</p>
-        </footer>
+    <div className="bg-black">
+      <Loader videoSrc={videoSrc} />
+      <div className="flex gap-10 ml-10 mr-10 bg-black text-white">
+        <div className="img">
+          <p className="pt-72 text-2xl font-bold">News & Event</p>
+          <h1 className="text-6xl font-bold">INSIGHTS</h1>
+          <p>
+            Insights, thoughts, industry trends, marketing tips, eDesign news,
+            nerdy stuff, it's all here.
+          </p>
+          <h1 className="mt-10">
+            tips, eDesign news,nerdy stuff, it's all here.
+          </h1>
+          <img src={image} alt="" className="mt-5" />
+
+
+          <p className="pt-32 text-3xl font-bold">TECHNOLOGY TRENDS</p>
+          <img src={image} alt="" className="mt-5 mb-10" />
+        </div>
+        <div className="img">
+          <p className="pt-60 text-3xl font-bold">TECHNOLOGY TRENDS</p>
+          <img src={image2} alt="" className="mt-5" />
+
+
+          <p className="pt-32 text-3xl font-bold">TECHNOLOGY TRENDS</p>
+          <img src={image2} alt="" className="mt-5" />
+        </div>
+        <div className="img">
+          <p className="pt-28 text-3xl font-bold">TECHNOLOGY TRENDS</p>
+          <img src={image3} alt="" className="mt-5" />
+
+
+          <p className="pt-28 text-3xl font-bold">TECHNOLOGY TRENDS</p>
+          <img src={image3} alt="" className="mt-5" />
+        </div>
+      </div>
+      <div className="bg-yellow-400 h-96">
+
       </div>
     </div>
-
-    
-    </div>
-  )
+  );
 }
 
-export default Blog
+export default Blog;

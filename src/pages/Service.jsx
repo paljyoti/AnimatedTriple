@@ -155,7 +155,6 @@ function Service(props) {
             </div>
           </div>
         </div>
-
         <div className="flex-shrink-0 snap-start w-full h-screen bg-black items-center justify-center">
           {/* <div className="flex">
             <div className=" heading text-white pt-40 pl-40 gap-10">
@@ -203,7 +202,7 @@ function Service(props) {
         <h1 className="text-center text-2xl font-bold mb-4">Carousel Example</h1>
         <div items={items} />
       </div>
-
+       
       {/* Dots for navigation */}
       <div className="flex flex-col justify-center items-center ml-4">
         {items.map((_, index) => (
@@ -215,7 +214,6 @@ function Service(props) {
         ))}
       </div>
     </div>
-
 
 
         </div>
