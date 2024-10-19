@@ -1,11 +1,11 @@
 import React from "react";
 import Loader from "./Loader";
-import videoSrc from "../../src/assets/blackNwhite.mp4";
+// import videoSrc from "../../src/assets/blackNwhite.mp4";
+import videoSrc from "../../src/assets/loaderblack.webm";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
 import { useState } from "react";
-import { div } from "framer-motion/client";
-// import Carousel from "../pages/Carousel";
+
 
 
 // import service from "../../src/assets/representations-user-experience-interface-design-removebg-preview.png";

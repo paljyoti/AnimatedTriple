@@ -20,7 +20,7 @@ function Loader({ videoSrc, content }) {
                 videoRef.current.pause(); // Pause the video
                 setIsPlaying(false); // Hide video
                 setShowContent(true); // Show content
-            }, 4000); // 2 seconds
+            }, 2000); // 2 seconds
 
             // Cleanup timer on unmount
             return () => clearTimeout(timer);

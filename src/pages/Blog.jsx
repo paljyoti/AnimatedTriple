@@ -1,6 +1,7 @@
 import React from "react";
 import Loader from "./Loader";
-import videoSrc from "../../src/assets/blackNwhite.mp4";
+// import videoSrc from "../../src/assets/blackNwhite.mp4";
+import videoSrc from "../../src/assets/loaderblack.webm"
 import image from "../../src/assets/business-5475661_1280.jpg";
 import image1 from "../../src/assets/social-media-4140959_1280.jpg"
 import image2 from "../../src/assets/content-marketing-4111003_1280.jpg";
@@ -10,8 +11,9 @@ import image5 from "../../src/assets/business-5475659_1280.jpg"
 
 function Blog() {
   return (
-    <div className="bg-black">
-      <Loader videoSrc={videoSrc} />
+    <div className="">
+        <Loader videoSrc={videoSrc} />
+        <div className="bg-black">
       <div className="flex gap-10 ml-10 mr-10 bg-black text-white">
         <div className="img">
           <p className="pt-72 text-2xl font-bold">News & Event</p>
@@ -46,6 +48,7 @@ function Blog() {
       </div>
       <div className="bg-yellow-400 h-96">
 
+      </div>
       </div>
     </div>
   );

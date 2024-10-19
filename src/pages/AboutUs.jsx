@@ -1,6 +1,7 @@
 import React from "react";
 import Loader from "./Loader"; // Ensure this path is correct for your project
-import videoSrc from "../../src/assets/blackNwhite.mp4"; // Correct path for your video file
+// import videoSrc from "../../src/assets/blackNwhite.mp4"; // Correct path for your video file
+import videoSrc  from "../../src/assets/loaderblack.webm"
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
