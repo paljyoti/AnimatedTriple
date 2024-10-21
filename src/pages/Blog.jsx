@@ -33,7 +33,7 @@ function Blog(props) {
         <Loader videoSrc={videoSrc} />
         
         <div className="bg-black">
-        <div className="flex ">
+        <div className="flex text-white" >
             <div
               id="side-menu"
               className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${

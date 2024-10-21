@@ -320,7 +320,6 @@ function Service(props) {
           </motion.div>
 
           <motion.div
-          //  variants={fadeIn("right", 0.2)}
             initial={{ x: 400, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 3 }}
