@@ -8,12 +8,11 @@ import { useState } from "react";
 import image1 from "../../src/assets/icons8-logo-50 (1).png";
 import image2 from "../../src/assets/icons8-logo-50 (2).png";
 import image3 from "../../src/assets/icons8-logo-50.png";
-import image4  from "../../src/assets/icons8-twitter-50.png";
+import image4 from "../../src/assets/icons8-twitter-50.png";
 import image8 from "../../src/assets/icons8-logo-50 (3).png";
 import image6 from "../../src/assets/icon6.png";
 import image7 from "../../src/assets/icon7.png";
 import image5 from "../../src/assets/icon8.png";
-
 
 function Service(props) {
   const [isMoved, setIsMoved] = useState(false);
@@ -290,33 +289,49 @@ function Service(props) {
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-blue-700 items-center justify-center">
-          
-          <div className="flex gap-20 text-white"> 
+          <div className="flex gap-20 text-white">
             <div className="head">
               <p className="pt-36 pl-52 text-sm font-bold  ">OUR_CLIENTS</p>
-              </div>
+            </div>
             <div className="headings">
-              <h1 className="pt-36 font-bold text-6xl">We don’t work for you, but with you.</h1>
-              <p className="text-sm pt-5 pr-20">You are not merely our client but our true partner. Every talented individual on our team works closely together on an equal
-              footing. Fortunately, we’ve formed more than excellent partnerships; we have formed long-lasting, true friendships.</p>
-              </div>
+              <h1 className="pt-36 font-bold text-6xl">
+                We don’t work for you, but with you.
+              </h1>
+              <p className="text-sm pt-5 pr-20">
+                You are not merely our client but our true partner. Every
+                talented individual on our team works closely together on an
+                equal footing. Fortunately, we’ve formed more than excellent
+                partnerships; we have formed long-lasting, true friendships.
+              </p>
+            </div>
           </div>
 
-         <div className="icons flex gap-48 pt-14 pl-96">
+          <motion.div
+            initial={{ x: -400, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 3 }}
+            viewport={{ once: true }}
+            className="icons flex gap-48 pt-14 pl-96"
+          >
+            <img src={image1} alt="" />
+            <img src={image2} alt="" />
+            <img src={image3} alt="" />
+            <img src={image4} alt="" />
+          </motion.div>
 
-          <img src={image1} alt="" />
-          <img src={image2} alt="" />
-          <img src={image3} alt="" />
-          <img src={image4} alt="" />
-         </div>
-
-         <div className="icons flex gap-48 pt-14 pl-96">
-
-          <img src={image5} alt="" />
-          <img src={image6} alt="" />
-          <img src={image7} alt="" />
-          <img src={image8} alt="" />
-          </div>
+          <motion.div
+          //  variants={fadeIn("right", 0.2)}
+            initial={{ x: 400, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 3 }}
+            viewport={{ once: true }}
+            className="icons flex gap-48 pt-14 pl-96"
+          >
+            <img src={image5} alt="" />
+            <img src={image6} alt="" />
+            <img src={image7} alt="" />
+            <img src={image8} alt="" />
+          </motion.div>
         </div>
       </div>
     </div>
