@@ -5,10 +5,15 @@ import videoSrc from "../../src/assets/loaderblack.webm";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
 import { useState } from "react";
+import image1 from "../../src/assets/icons8-logo-50 (1).png";
+import image2 from "../../src/assets/icons8-logo-50 (2).png";
+import image3 from "../../src/assets/icons8-logo-50.png";
+import image4  from "../../src/assets/icons8-twitter-50.png";
+import image8 from "../../src/assets/icons8-logo-50 (3).png";
+import image6 from "../../src/assets/icon6.png";
+import image7 from "../../src/assets/icon7.png";
+import image5 from "../../src/assets/icon8.png";
 
-
-
-// import service from "../../src/assets/representations-user-experience-interface-design-removebg-preview.png";
 
 function Service(props) {
   const [isMoved, setIsMoved] = useState(false);
@@ -28,60 +33,52 @@ function Service(props) {
     setIsMenuOpen(false);
   };
 
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    const [currentIndex, setCurrentIndex] = useState(0);
-  
-    const handleDotClick = (index) => {
-      setCurrentIndex(index);
-    };
+  const handleDotClick = (index) => {
+    setCurrentIndex(index);
+  };
 
-    const items = [
-      {
-        title: 'First Slide',
-        content: 'This is the first slide content.',
-        image: 'https://via.placeholder.com/600x300/FF0000/FFFFFF?text=Slide+1',
-      },
-      {
-        title: 'Second Slide',
-        content: 'This is the second slide content.',
-        image: 'https://via.placeholder.com/600x300/00FF00/FFFFFF?text=Slide+2',
-      },
-      {
-        title: 'Third Slide',
-        content: 'This is the third slide content.',
-        image: 'https://via.placeholder.com/600x300/0000FF/FFFFFF?text=Slide+3',
-      },
-      {
-        title: 'Fourth Slide',
-        content: 'This is the fourth slide content.',
-        image: 'https://via.placeholder.com/600x300/FFFF00/000000?text=Slide+4',
-      },
-      {
-        title: 'Fifth Slide',
-        content: 'This is the fifth slide content.',
-        image: 'https://via.placeholder.com/600x300/FF00FF/FFFFFF?text=Slide+5',
-      },
-      {
-        title: 'Sixth Slide',
-        content: 'This is the sixth slide content.',
-        image: 'https://via.placeholder.com/600x300/00FFFF/000000?text=Slide+6',
-      },
-    ];
-
-
-
+  const items = [
+    {
+      title: "First Slide",
+      content: "This is the first slide content.",
+      image: "https://via.placeholder.com/600x300/FF0000/FFFFFF?text=Slide+1",
+    },
+    {
+      title: "Second Slide",
+      content: "This is the second slide content.",
+      image: "https://via.placeholder.com/600x300/00FF00/FFFFFF?text=Slide+2",
+    },
+    {
+      title: "Third Slide",
+      content: "This is the third slide content.",
+      image: "https://via.placeholder.com/600x300/0000FF/FFFFFF?text=Slide+3",
+    },
+    {
+      title: "Fourth Slide",
+      content: "This is the fourth slide content.",
+      image: "https://via.placeholder.com/600x300/FFFF00/000000?text=Slide+4",
+    },
+    {
+      title: "Fifth Slide",
+      content: "This is the fifth slide content.",
+      image: "https://via.placeholder.com/600x300/FF00FF/FFFFFF?text=Slide+5",
+    },
+    {
+      title: "Sixth Slide",
+      content: "This is the sixth slide content.",
+      image: "https://via.placeholder.com/600x300/00FFFF/000000?text=Slide+6",
+    },
+  ];
 
   return (
     <div>
       <Loader videoSrc={videoSrc} />
 
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-hidden">
-
-     
         <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400 items-center justify-center">
-
-
-        <div className="flex ">
+          <div className="flex ">
             <div
               id="side-menu"
               className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${
@@ -128,7 +125,7 @@ function Service(props) {
 
               <div className="details">
                 <h1 className="pt-32 text-white font-semibold ">
-                  GET IN TOUCH{" "}
+                  GET IN TOUCH
                 </h1>
                 <h1 className="text-white text-sm">
                   Email : rishabhbharee@gmail.com
@@ -137,7 +134,7 @@ function Service(props) {
               </div>
             </div>
 
-            <main className="p-5 ml-[1200px]">
+            <main className="p-5 ml-[1200px] ">
               <span className="cursor-pointer text-2xl" onClick={openMenu}>
                 &#9776;
               </span>
@@ -248,43 +245,79 @@ function Service(props) {
             </div>
           </div> */}
 
+          <div className="relative w-full max-w-lg mx-auto flex">
+            <div className="overflow-hidden rounded-lg flex-grow">
+              {items.map((item, index) => (
+                <div
+                  key={index}
+                  className={`transition-opacity duration-700 ease-in-out ${
+                    index === currentIndex
+                      ? "opacity-100"
+                      : "opacity-0 absolute inset-0"
+                  }`}
+                >
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-auto"
+                  />
+                  <div className="absolute bottom-0 bg-black bg-opacity-50 text-white p-4">
+                    <h2 className="text-xl">{item.title}</h2>
+                    <p>{item.content}</p>
+                  </div>
+                </div>
+              ))}
+              <h1 className="text-center text-2xl font-bold mb-4">
+                Carousel Example
+              </h1>
 
+              <div items={items} />
+            </div>
 
-
-<div className="relative w-full max-w-lg mx-auto flex">
-      <div className="overflow-hidden rounded-lg flex-grow">
-        {items.map((item, index) => (
-          <div
-            key={index}
-            className={`transition-opacity duration-700 ease-in-out ${index === currentIndex ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}
-          >
-            <img src={item.image} alt={item.title} className="w-full h-auto" />
-            <div className="absolute bottom-0 bg-black bg-opacity-50 text-white p-4">
-              <h2 className="text-xl">{item.title}</h2>
-              <p>{item.content}</p>
+            {/* Dots for navigation */}
+            <div className="flex flex-col justify-center items-center ml-4">
+              {items.map((_, index) => (
+                <div
+                  key={index}
+                  onClick={() => handleDotClick(index)}
+                  className={`w-3 h-3 bg-gray-500 rounded-full mb-2 cursor-pointer ${
+                    currentIndex === index ? "bg-blue-500" : ""
+                  }`}
+                />
+              ))}
             </div>
           </div>
-        ))}
-        <h1 className="text-center text-2xl font-bold mb-4">Carousel Example</h1>
-        <div items={items} />
-      </div>
-       
-      {/* Dots for navigation */}
-      <div className="flex flex-col justify-center items-center ml-4">
-        {items.map((_, index) => (
-          <div
-            key={index}
-            onClick={() => handleDotClick(index)}
-            className={`w-3 h-3 bg-gray-500 rounded-full mb-2 cursor-pointer ${currentIndex === index ? 'bg-blue-500' : ''}`}
-          />
-        ))}
-      </div>
-    </div>
-
-
         </div>
 
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-blue-800 items-center justify-center"></div>
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-blue-700 items-center justify-center">
+          
+          <div className="flex gap-20 text-white"> 
+            <div className="head">
+              <p className="pt-36 pl-52 text-sm font-bold  ">OUR_CLIENTS</p>
+              </div>
+            <div className="headings">
+              <h1 className="pt-36 font-bold text-6xl">We don’t work for you, but with you.</h1>
+              <p className="text-sm pt-5 pr-20">You are not merely our client but our true partner. Every talented individual on our team works closely together on an equal
+              footing. Fortunately, we’ve formed more than excellent partnerships; we have formed long-lasting, true friendships.</p>
+              </div>
+          </div>
+
+         <div className="icons flex gap-48 pt-14 pl-96">
+
+          <img src={image1} alt="" />
+          <img src={image2} alt="" />
+          <img src={image3} alt="" />
+          <img src={image4} alt="" />
+         </div>
+
+         <div className="icons flex gap-48 pt-14 pl-96">
+
+          <img src={image5} alt="" />
+          <img src={image6} alt="" />
+          <img src={image7} alt="" />
+          <img src={image8} alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );
