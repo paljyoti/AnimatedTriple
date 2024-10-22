@@ -13,6 +13,14 @@ import image8 from "../../src/assets/icons8-logo-50 (3).png";
 import image6 from "../../src/assets/icon6.png";
 import image7 from "../../src/assets/icon7.png";
 import image5 from "../../src/assets/icon8.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
+import slideImage from "../../src/assets/network-4025614_1280-removebg-preview.png";
+import slideImage1 from "../../src/assets/layoutdesigner_online_1-removebg-preview.png";
+import slideImage2 from "../../src/assets/internet-6896_256-ezgif.com-gif-maker.gif";
+import slideImage3 from "../../src/assets/letter-1174_256.gif";
+import slideImage5 from  "../../src/assets/seo-12288_256-ezgif.com-gif-maker.gif";
+
 
 function Service(props) {
   const [isMoved, setIsMoved] = useState(false);
@@ -38,38 +46,38 @@ function Service(props) {
     setCurrentIndex(index);
   };
 
-  const items = [
-    {
-      title: "First Slide",
-      content: "This is the first slide content.",
-      image: "https://via.placeholder.com/600x300/FF0000/FFFFFF?text=Slide+1",
-    },
-    {
-      title: "Second Slide",
-      content: "This is the second slide content.",
-      image: "https://via.placeholder.com/600x300/00FF00/FFFFFF?text=Slide+2",
-    },
-    {
-      title: "Third Slide",
-      content: "This is the third slide content.",
-      image: "https://via.placeholder.com/600x300/0000FF/FFFFFF?text=Slide+3",
-    },
-    {
-      title: "Fourth Slide",
-      content: "This is the fourth slide content.",
-      image: "https://via.placeholder.com/600x300/FFFF00/000000?text=Slide+4",
-    },
-    {
-      title: "Fifth Slide",
-      content: "This is the fifth slide content.",
-      image: "https://via.placeholder.com/600x300/FF00FF/FFFFFF?text=Slide+5",
-    },
-    {
-      title: "Sixth Slide",
-      content: "This is the sixth slide content.",
-      image: "https://via.placeholder.com/600x300/00FFFF/000000?text=Slide+6",
-    },
-  ];
+  // const items = [
+  //   {
+  //     title: "First Slide",
+  //     content: "This is the first slide content.",
+  //     image: "https://via.placeholder.com/600x300/FF0000/FFFFFF?text=Slide+1",
+  //   },
+  //   {
+  //     title: "Second Slide",
+  //     content: "This is the second slide content.",
+  //     image: "https://via.placeholder.com/600x300/00FF00/FFFFFF?text=Slide+2",
+  //   },
+  //   {
+  //     title: "Third Slide",
+  //     content: "This is the third slide content.",
+  //     image: "https://via.placeholder.com/600x300/0000FF/FFFFFF?text=Slide+3",
+  //   },
+  //   {
+  //     title: "Fourth Slide",
+  //     content: "This is the fourth slide content.",
+  //     image: "https://via.placeholder.com/600x300/FFFF00/000000?text=Slide+4",
+  //   },
+  //   {
+  //     title: "Fifth Slide",
+  //     content: "This is the fifth slide content.",
+  //     image: "https://via.placeholder.com/600x300/FF00FF/FFFFFF?text=Slide+5",
+  //   },
+  //   {
+  //     title: "Sixth Slide",
+  //     content: "This is the sixth slide content.",
+  //     image: "https://via.placeholder.com/600x300/00FFFF/000000?text=Slide+6",
+  //   },
+  // ];
 
   return (
     <div>
@@ -218,74 +226,130 @@ function Service(props) {
           </div>
         </div>
         <div className="flex-shrink-0 snap-start w-full h-screen bg-black items-center justify-center">
-          {/* <div className="flex">
-            <div className=" heading text-white pt-40 pl-40 gap-10">
-              <p className="text-sm font-bold">what we do </p>
-              <h2 className="font-bold text-lg pl-96">01</h2>
-              <h1 className="font-bold text-5xl">HEAD</h1>
-              <p className="text-sm w-96">
-               
-                Every talented individual on our team works closely together on
-                an equal footing.Every talented individual on our team works
-                closely together on an equal footingour team works closely
-                together on an equal footing.
-              </p>
-              <p className="text-sm w-96">
-               
-                Every talented individual on our team works closely together on
-                an equal footing.Every talented individual on our team works
-                closely together on an equal footingour team works closely
-                together on an equal footing.
-              </p>
-            </div>
- 
-            <div className=" mt-10 ml-10 w-auto h-96 ">
-              <img src={service} alt="" />
-            </div>
-          </div> */}
+      
 
-          <div className="relative w-full max-w-lg mx-auto flex">
-            <div className="overflow-hidden rounded-lg flex-grow">
-              {items.map((item, index) => (
-                <div
-                  key={index}
-                  className={`transition-opacity duration-700 ease-in-out ${
-                    index === currentIndex
-                      ? "opacity-100"
-                      : "opacity-0 absolute inset-0"
-                  }`}
-                >
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-auto"
-                  />
-                  <div className="absolute bottom-0 bg-black bg-opacity-50 text-white p-4">
-                    <h2 className="text-xl">{item.title}</h2>
-                    <p>{item.content}</p>
-                  </div>
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={1}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>
+              <div className="slider flex pt-32  gap-10">
+                <div className="pl-20 pt-16 text-white">
+                  <p className="text-sm font-bold">WHAT WE DO </p>
+                  <h4 className="font-bold text-4xl pl-96">01</h4>
+                  <h1 className="font-bold text-4xl pt-5">DIGITAL-MARKETING</h1>
+                  <p className=" w-[45vw] text-justify pt-3 text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
+                    dolor sit amet, consectetur adipisicing elit. Tempore
+                    laudantium officia voluptas. dolor sit amet consectetur
+                    adipisicing elit. Doloribus tempore totam fugit.
+                  </p>
                 </div>
-              ))}
-              <h1 className="text-center text-2xl font-bold mb-4">
-                Carousel Example
-              </h1>
-
-              <div items={items} />
-            </div>
-
-            {/* Dots for navigation */}
-            <div className="flex flex-col justify-center items-center ml-4">
-              {items.map((_, index) => (
-                <div
-                  key={index}
-                  onClick={() => handleDotClick(index)}
-                  className={`w-3 h-3 bg-gray-500 rounded-full mb-2 cursor-pointer ${
-                    currentIndex === index ? "bg-blue-500" : ""
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
+                <div>
+                  <img src={slideImage} alt="" className="h-96 pr-10" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider flex pt-32  gap-10">
+                <div className="pl-20 pt-16 text-white">
+                  <p className="text-sm font-bold">WHAT WE DO </p>
+                  <h4 className="font-bold text-4xl pl-96">02</h4>
+                  <h1 className="font-bold pt-5 text-4xl">WEB DESIGNING</h1>
+                  <p className=" w-[45vw] pt-3 text-justify text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Ab at molestiae
+                    facilis. dolor sit amet consectetur adipisicing elit.
+                    Doloribus tempore totam fugit.
+                  </p>
+                </div>
+                <div>
+                  <img src={slideImage1} alt="" className="h-96 pr-10" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div className="slider flex pt-32  gap-10">
+                <div className="pl-20 pt-16 text-white">
+                  <p className="text-sm font-bold">WHAT WE DO </p>
+                  <h4 className="font-bold text-4xl pl-96">03</h4>
+                  <h1 className="font-bold pt-5 text-4xl">SOCIAL MARKETING</h1>
+                  <p className=" w-[45vw] pt-3 text-justify text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Ab at molestiae
+                    facilis. dolor sit amet consectetur adipisicing elit.
+                    Doloribus tempore totam fugit.
+                  </p>
+                </div>
+                <div>
+                  <img src={slideImage2} alt="" className="h-96 pr-10" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div className="slider flex pt-32  gap-10">
+                <div className="pl-20 pt-16 text-white">
+                  <p className="text-sm font-bold">WHAT WE DO </p>
+                  <h4 className="font-bold text-4xl pl-96">04</h4>
+                  <h1 className="font-bold pt-5 text-4xl">EMAIL MARKETING</h1>
+                  <p className=" w-[45vw] pt-3 text-justify text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Ab at molestiae
+                    facilis. dolor sit amet consectetur adipisicing elit.
+                    Doloribus tempore totam fugit.
+                  </p>
+                </div>
+                <div>
+                  <img src={slideImage3} alt="" className="h-96 pr-10 pl-20" />
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div className="slider flex pt-32  gap-10">
+                <div className="pl-20 pt-16 text-white">
+                  <p className="text-sm font-bold">WHAT WE DO </p>
+                  <h4 className="font-bold text-4xl pl-96">05</h4>
+                  <h1 className="font-bold pt-5 text-4xl">CONTENT MARKETING</h1>
+                  <p className=" w-[45vw] pt-3 text-justify text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Ab at molestiae
+                    facilis. dolor sit amet consectetur adipisicing elit.
+                    Doloribus tempore totam fugit.
+                  </p>
+                </div>
+                <div>
+                  {/* <img src={slideImage1} alt="" className="h-96 pr-10" /> */}
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div className="slider flex pt-32  gap-10">
+                <div className="pl-20 pt-16 text-white">
+                  <p className="text-sm font-bold">WHAT WE DO </p>
+                  <h4 className="font-bold text-4xl pl-96">06</h4>
+                  <h1 className="font-bold pt-5 text-4xl">SEARCH ENGINE OPTIMIZATION
+                  </h1>
+                  <p className=" w-[45vw] pt-3 text-justify text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Ab at molestiae
+                    facilis. dolor sit amet consectetur adipisicing elit.
+                    Doloribus tempore totam fugit.
+                  </p>
+                </div>
+                <div>
+                  <img src={slideImage5} alt="" className="h-[80vh]  pr-10" />
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-blue-700 items-center justify-center">
