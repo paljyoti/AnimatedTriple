@@ -1,6 +1,5 @@
 import React from "react";
 import Loader from "./Loader";
-// import videoSrc from "../../src/assets/blackNwhite.mp4";
 import videoSrc from "../../src/assets/loaderblack.webm";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
@@ -14,12 +13,17 @@ import image6 from "../../src/assets/icon6.png";
 import image7 from "../../src/assets/icon7.png";
 import image5 from "../../src/assets/icon8.png";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation,Pagination, Scrollbar} from 'swiper/modules';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
 import "swiper/swiper-bundle.css";
 import slideImage from "../../src/assets/network-4025614_1280-removebg-preview.png";
 import slideImage1 from "../../src/assets/layoutdesigner_online_1-removebg-preview.png";
 import slideImage2 from "../../src/assets/internet-6896_256-ezgif.com-gif-maker.gif";
 import slideImage3 from "../../src/assets/letter-1174_256.gif";
 import slideImage5 from  "../../src/assets/seo-12288_256-ezgif.com-gif-maker.gif";
+
 
 
 function Service(props) {
@@ -46,38 +50,9 @@ function Service(props) {
     setCurrentIndex(index);
   };
 
-  // const items = [
-  //   {
-  //     title: "First Slide",
-  //     content: "This is the first slide content.",
-  //     image: "https://via.placeholder.com/600x300/FF0000/FFFFFF?text=Slide+1",
-  //   },
-  //   {
-  //     title: "Second Slide",
-  //     content: "This is the second slide content.",
-  //     image: "https://via.placeholder.com/600x300/00FF00/FFFFFF?text=Slide+2",
-  //   },
-  //   {
-  //     title: "Third Slide",
-  //     content: "This is the third slide content.",
-  //     image: "https://via.placeholder.com/600x300/0000FF/FFFFFF?text=Slide+3",
-  //   },
-  //   {
-  //     title: "Fourth Slide",
-  //     content: "This is the fourth slide content.",
-  //     image: "https://via.placeholder.com/600x300/FFFF00/000000?text=Slide+4",
-  //   },
-  //   {
-  //     title: "Fifth Slide",
-  //     content: "This is the fifth slide content.",
-  //     image: "https://via.placeholder.com/600x300/FF00FF/FFFFFF?text=Slide+5",
-  //   },
-  //   {
-  //     title: "Sixth Slide",
-  //     content: "This is the sixth slide content.",
-  //     image: "https://via.placeholder.com/600x300/00FFFF/000000?text=Slide+6",
-  //   },
-  // ];
+   
+
+
 
   return (
     <div>
@@ -227,16 +202,23 @@ function Service(props) {
         </div>
         <div className="flex-shrink-0 snap-start w-full h-screen bg-black items-center justify-center">
       
+       
 
           <Swiper
+          className="text-white"
+          modules={[Pagination ,Navigation,Scrollbar]}
+          // scrollbar={{ draggable: true }}
             spaceBetween={50}
             slidesPerView={1}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
+            pagination={{ clickable: true }}
+            // direction="vertical"
+            navigation
           >
             <SwiperSlide>
               <div className="slider flex pt-32  gap-10">
-                <div className="pl-20 pt-16 text-white">
+                <div className="pl-40 pt-16 text-white">
                   <p className="text-sm font-bold">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">01</h4>
                   <h1 className="font-bold text-4xl pt-5">DIGITAL-MARKETING</h1>
@@ -255,7 +237,7 @@ function Service(props) {
             </SwiperSlide>
             <SwiperSlide>
               <div className="slider flex pt-32  gap-10">
-                <div className="pl-20 pt-16 text-white">
+                <div className="pl-40 pt-16 text-white">
                   <p className="text-sm font-bold">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">02</h4>
                   <h1 className="font-bold pt-5 text-4xl">WEB DESIGNING</h1>
@@ -274,11 +256,11 @@ function Service(props) {
             </SwiperSlide>
             <SwiperSlide>
             <div className="slider flex pt-32  gap-10">
-                <div className="pl-20 pt-16 text-white">
+                <div className="pl-40 pt-16 text-white">
                   <p className="text-sm font-bold">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">03</h4>
                   <h1 className="font-bold pt-5 text-4xl">SOCIAL MARKETING</h1>
-                  <p className=" w-[45vw] pt-3 text-justify text-sm">
+                  <p className=" w-[42vw] pt-3 text-justify text-sm">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Ab at molestiae
@@ -293,11 +275,11 @@ function Service(props) {
             </SwiperSlide>
             <SwiperSlide>
             <div className="slider flex pt-32  gap-10">
-                <div className="pl-20 pt-16 text-white">
+                <div className="pl-40 pt-16 text-white">
                   <p className="text-sm font-bold">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">04</h4>
                   <h1 className="font-bold pt-5 text-4xl">EMAIL MARKETING</h1>
-                  <p className=" w-[45vw] pt-3 text-justify text-sm">
+                  <p className=" w-[42vw] pt-3 text-justify text-sm">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Ab at molestiae
@@ -306,13 +288,13 @@ function Service(props) {
                   </p>
                 </div>
                 <div>
-                  <img src={slideImage3} alt="" className="h-96 pr-10 pl-20" />
+                  <img src={slideImage3} alt="" className=" w-[32vw] pr-10 " />
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
             <div className="slider flex pt-32  gap-10">
-                <div className="pl-20 pt-16 text-white">
+                <div className="pl-40 pt-16 text-white">
                   <p className="text-sm font-bold">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">05</h4>
                   <h1 className="font-bold pt-5 text-4xl">CONTENT MARKETING</h1>
@@ -331,12 +313,12 @@ function Service(props) {
             </SwiperSlide>
             <SwiperSlide>
             <div className="slider flex pt-32  gap-10">
-                <div className="pl-20 pt-16 text-white">
+                <div className="pl-40 pt-16 text-white">
                   <p className="text-sm font-bold">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">06</h4>
                   <h1 className="font-bold pt-5 text-4xl">SEARCH ENGINE OPTIMIZATION
                   </h1>
-                  <p className=" w-[45vw] pt-3 text-justify text-sm">
+                  <p className=" w-[42vw] pt-3 text-justify text-sm">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Ab at molestiae
@@ -350,6 +332,9 @@ function Service(props) {
               </div>
             </SwiperSlide>
           </Swiper>
+
+        
+
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-blue-700 items-center justify-center">
