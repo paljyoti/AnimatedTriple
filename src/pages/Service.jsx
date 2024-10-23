@@ -59,7 +59,7 @@ function Service(props) {
       <Loader videoSrc={videoSrc} />
 
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-hidden">
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-white items-center justify-center">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400 items-center justify-center">
           <div className="flex ">
             <div
               id="side-menu"
@@ -200,7 +200,7 @@ function Service(props) {
             </div>
           </div>
         </div>
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400 items-center justify-center">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-white items-center justify-center">
       
       <div className="ml-36 mr-36">
           <Swiper
@@ -210,9 +210,10 @@ function Service(props) {
             slidesPerView={1}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
-            pagination={{ clickable: true }}
+            pagination={{ clickable: true}}
             // direction="vertical"
             navigation
+            
           
           >
             <SwiperSlide>
