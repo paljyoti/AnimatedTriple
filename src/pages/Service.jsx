@@ -59,7 +59,7 @@ function Service(props) {
       <Loader videoSrc={videoSrc} />
 
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-hidden">
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400 items-center justify-center">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-white items-center justify-center">
           <div className="flex ">
             <div
               id="side-menu"
@@ -200,12 +200,10 @@ function Service(props) {
             </div>
           </div>
         </div>
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-black items-center justify-center">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400 items-center justify-center">
       
-       
-
+      <div className="ml-36 mr-36">
           <Swiper
-          className="text-white"
           modules={[Pagination ,Navigation,Scrollbar]}
           // scrollbar={{ draggable: true }}
             spaceBetween={50}
@@ -215,14 +213,15 @@ function Service(props) {
             pagination={{ clickable: true }}
             // direction="vertical"
             navigation
+          
           >
             <SwiperSlide>
               <div className="slider flex pt-32  gap-10">
-                <div className="pl-40 pt-16 text-white">
+                <div className="pl-20 pt-16 text-black">
                   <p className="text-sm font-bold">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">01</h4>
                   <h1 className="font-bold text-4xl pt-5">DIGITAL-MARKETING</h1>
-                  <p className=" w-[45vw] text-justify pt-3 text-sm">
+                  <p className=" w-[35vw] text-justify pt-3 text-sm">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
                     dolor sit amet, consectetur adipisicing elit. Tempore
@@ -237,11 +236,11 @@ function Service(props) {
             </SwiperSlide>
             <SwiperSlide>
               <div className="slider flex pt-32  gap-10">
-                <div className="pl-40 pt-16 text-white">
+                <div className="pl-20 pt-16 text-black">
                   <p className="text-sm font-bold">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">02</h4>
                   <h1 className="font-bold pt-5 text-4xl">WEB DESIGNING</h1>
-                  <p className=" w-[45vw] pt-3 text-justify text-sm">
+                  <p className=" w-[35vw] pt-3 text-justify text-sm">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Ab at molestiae
@@ -256,11 +255,11 @@ function Service(props) {
             </SwiperSlide>
             <SwiperSlide>
             <div className="slider flex pt-32  gap-10">
-                <div className="pl-40 pt-16 text-white">
+                <div className="pl-20 pt-16 text-black">
                   <p className="text-sm font-bold">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">03</h4>
                   <h1 className="font-bold pt-5 text-4xl">SOCIAL MARKETING</h1>
-                  <p className=" w-[42vw] pt-3 text-justify text-sm">
+                  <p className=" w-[35vw] pt-3 text-justify text-sm">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Ab at molestiae
@@ -275,11 +274,11 @@ function Service(props) {
             </SwiperSlide>
             <SwiperSlide>
             <div className="slider flex pt-32  gap-10">
-                <div className="pl-40 pt-16 text-white">
+                <div className="pl-20 pt-16 text-black">
                   <p className="text-sm font-bold">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">04</h4>
                   <h1 className="font-bold pt-5 text-4xl">EMAIL MARKETING</h1>
-                  <p className=" w-[42vw] pt-3 text-justify text-sm">
+                  <p className=" w-[35vw] pt-3 text-justify text-sm">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Ab at molestiae
@@ -288,17 +287,17 @@ function Service(props) {
                   </p>
                 </div>
                 <div>
-                  <img src={slideImage3} alt="" className=" w-[32vw] pr-10 " />
+                  <img src={slideImage3} alt="" className="pr-10 w-96" />
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
             <div className="slider flex pt-32  gap-10">
-                <div className="pl-40 pt-16 text-white">
+                <div className="pl-20 pt-16 text-black">
                   <p className="text-sm font-bold">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">05</h4>
                   <h1 className="font-bold pt-5 text-4xl">CONTENT MARKETING</h1>
-                  <p className=" w-[45vw] pt-3 text-justify text-sm">
+                  <p className=" w-[35vw] pt-3 text-justify text-sm">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Ab at molestiae
@@ -313,12 +312,12 @@ function Service(props) {
             </SwiperSlide>
             <SwiperSlide>
             <div className="slider flex pt-32  gap-10">
-                <div className="pl-40 pt-16 text-white">
+                <div className="pl-20 pt-16 text-black">
                   <p className="text-sm font-bold">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">06</h4>
                   <h1 className="font-bold pt-5 text-4xl">SEARCH ENGINE OPTIMIZATION
                   </h1>
-                  <p className=" w-[42vw] pt-3 text-justify text-sm">
+                  <p className=" w-[35vw] pt-3 text-justify text-sm">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Earum consectetur debitis aspernatur?Lorem ipsum,Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Ab at molestiae
@@ -327,13 +326,13 @@ function Service(props) {
                   </p>
                 </div>
                 <div>
-                  <img src={slideImage5} alt="" className="h-[80vh]  pr-10" />
+                  <img src={slideImage5} alt="" className="pr-10 w-96" />
                 </div>
               </div>
             </SwiperSlide>
           </Swiper>
 
-        
+          </div>
 
         </div>
 
