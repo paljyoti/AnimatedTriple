@@ -1,10 +1,16 @@
 import React from "react";
 import Loader from "./Loader"; // Ensure this path is correct for your project
-// import videoSrc from "../../src/assets/blackNwhite.mp4"; // Correct path for your video file
-import videoSrc  from "../../src/assets/loaderblack.webm"
+import videoSrc from "../../src/assets/loaderblack.webm";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
+import aboutTriangle from "../../src/assets/triangle.gif";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar } from "swiper/modules";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+import "swiper/swiper-bundle.css";
 
 function AboutUs(props) {
   const [isMoved, setIsMoved] = useState(false);
@@ -27,7 +33,7 @@ function AboutUs(props) {
   return (
     <div>
       <Loader videoSrc={videoSrc} />
-      <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-hidden ">   
+      <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-hidden ">
         <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400  items-center justify-center ">
           <div className="flex ">
             <div
@@ -120,7 +126,7 @@ function AboutUs(props) {
               >
                 We are a graphic design studio, who is here to make an
                 extraordinary difference by transforming brands, around the
-               globe.
+                globe.
               </motion.p>
             </div>
 
@@ -564,9 +570,6 @@ function AboutUs(props) {
             </svg>
           </div>
 
-
- 
-
           <div className="container flex mx-auto mt-5  space-x-24 p-4 ">
             <div className="text-left mb-6 pl-16">
               <motion.p
@@ -620,52 +623,49 @@ function AboutUs(props) {
           </div>
         </div>
 
-
         <div className="flex-shrink-0 snap-start w-full h-screen bg-black item-center justify-center">
-        <div className=" text-white text-left pt-52 pl-40">
-              <motion.h1
-                variants={fadeIn("right", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="text-6xl font-bold "
-              >
-               Visionary
-              </motion.h1>
-              <motion.h1
-                variants={fadeIn("left", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="text-6xl font-bold"
-              >
-               Group of
-              </motion.h1>
-              <motion.h1
-                variants={fadeIn("left", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="text-6xl font-bold"
-              >
-               Artists
-              </motion.h1>
-            </div>
+          <div className=" text-white text-left pt-52 pl-40">
+            <motion.h1
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-6xl font-bold "
+            >
+              Visionary
+            </motion.h1>
+            <motion.h1
+              variants={fadeIn("left", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-6xl font-bold"
+            >
+              Group of
+            </motion.h1>
+            <motion.h1
+              variants={fadeIn("left", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-6xl font-bold"
+            >
+              Artists
+            </motion.h1>
+          </div>
         </div>
 
-        
-       <div className="flex-shrink-0 snap-start w-full h-screen bg-white items-center  justify-center">
-
-             <div className="flex">
-       <div className=" text-black text-left pt-52 pl-40">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-white items-center  justify-center">
+          <div className="flex">
+            <div className=" text-black text-left pt-36 pl-40">
               <motion.h1
                 variants={fadeIn("right", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-6xl font-bold "
+                className="text-6xl font-bold  w-[50vw]"
               >
-               Driven By Four
+                Driven By Four
               </motion.h1>
               <motion.h1
                 variants={fadeIn("left", 0.2)}
@@ -676,24 +676,87 @@ function AboutUs(props) {
               >
                 Core Values.
               </motion.h1>
-              
             </div>
-            <div className=" text-black text-left pt-52 pl-40">
-              <motion.h1
-                variants={fadeIn("right", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="text-2xl"
-              >
-               Driven By Four
-              </motion.h1>
-              <p className="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            
-            </div>
-            </div> 
-       </div>
 
+            <Swiper
+              modules={[Navigation, Pagination, Scrollbar]}
+              spaceBetween={50}
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              //  scrollbar={{ draggable: true }}
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => console.log("slide change")}
+              Navigation
+            >
+              <SwiperSlide>
+                <div className=" text-black text-left pt-28 pr-44">
+                  <img src={aboutTriangle} alt="" className="h-44 w-44" />
+                  <motion.h1
+                    variants={fadeIn("right", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    className="text-2xl font-bold"
+                  >
+                    01 Driven By Four
+                  </motion.h1>
+                  <p className="w-96 text-justify">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Officiis quod voluptatem quis. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Quibusdam nesciunt ut
+                    provident. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolores vitae harum quam?
+                  </p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" text-black text-left pt-32">
+                  <img src={aboutTriangle} alt="" className="h-44 w-44" />
+                  <motion.h1
+                    variants={fadeIn("right", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    className="text-2xl font-bold"
+                  >
+                    02 Driven 
+                  </motion.h1>
+                  <p className="w-96 text-justify">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Officiis quod voluptatem quis. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Quibusdam nesciunt ut
+                    provident. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolores vitae harum quam?
+                  </p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className=" text-black text-left pt-32 ">
+                  <img src={aboutTriangle} alt="" className="h-44 w-44" />
+                  <motion.h1
+                    variants={fadeIn("right", 0.2)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.7 }}
+                    className="text-2xl font-bold"
+                  >
+                    03 Driven By Four
+                  </motion.h1>
+                  <p className=" w-96 text-justify">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Officiis quod voluptatem quis. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Quibusdam nesciunt ut
+                    provident. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolores vitae harum quam?
+                  </p>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
       </div>
     </div>
   );
