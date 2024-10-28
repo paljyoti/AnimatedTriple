@@ -97,7 +97,7 @@ function Blog(props) {
               </span>
             </main>
           </div>
-      <div className="flex gap-10 ml-10 mr-10 bg-black text-white">
+      <div className="flex gap-10 bg-black text-white">
         <div className="img">
           <p className="pt-72 text-2xl font-bold">News & Event</p>
           <h1 className="text-6xl font-bold">INSIGHTS</h1>
@@ -129,6 +129,13 @@ function Blog(props) {
           <img src={image5} alt="" className="mt-5" />
         </div>
       </div>
+
+     
+
+
+      
+      </div>
+
 
       <div className="footer bg-yellow-400">
           <motion.div
@@ -270,9 +277,8 @@ function Blog(props) {
           </div>
         </div>
 
+     
 
-      
-      </div>
     </div>
   );
 }
