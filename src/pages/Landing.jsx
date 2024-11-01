@@ -235,7 +235,7 @@ function Landing(props) {
 
       <div className="flex-shrink-0 snap-start w-full h-screen bg-blue-400 flex items-center justify-center">
         <div className="">
-          <div className="top flex pl-20 gap-12">
+          <div className="top flex pl-20 gap-20">
             <div className="flex ">
               <img src={imageSection} alt="" className="w-96 h-96   " />
             </div>
@@ -286,31 +286,31 @@ function Landing(props) {
               </button>
             </div>
 
-            <div className="heading pt-64 text-justify text-white text-sm">
-              <ul className="">
+            <nav className="heading pt-16 text-white text-sm">
+              <ul className="pl-10">
                 <li>
-                  <a className="text-sm">WebDesign</a>
+                  <a className="text-sm text-right gap-5 ">WebDesign <span className="text-5xl">.</span> </a>
                 </li>
                 <li>
-                  <a className="text-sm">DigitalMarketing</a>
+                  <a className="text-sm text-right">DigitalMarketing <span className="text-5xl">.</span> </a>
                 </li>
                 <li>
-                  <a classname="text-sm">SocialMedia</a>
+                  <a classname="text-sm text-right">SocialMedia <span className="text-5xl">.</span> </a>
                 </li>
                 <li>
-                  <a className="text-sm">EmailMarketing</a>
+                  <a className="text-sm  text-right">EmailMarketing <span className="text-5xl">.</span> </a>
                 </li>
                 <li>
-                  <a className="text-sm">ContentMarketing</a>
+                  <a className="text-sm text-right">ContentMarketing <span className="text-5xl">.</span> </a>
                 </li>
                 <li>
-                  <p className="text-sm">SEO</p>
+                  <a className="text-sm text-right">SEO <span className="text-5xl">.</span></a>
                 </li>
                 <li>
-                  <p classname="text-sm">PPC</p>
+                  <a classname="text-sm text-right">PPC <span className="text-5xl">.</span> </a>
                 </li>
               </ul>
-            </div>
+            </nav>
           </div>
         </div>
       </div>
@@ -484,7 +484,7 @@ function Landing(props) {
                 </li>
               </ul>
               <h1 className="text-left pl-6">
-                © Triple R Consulting 2024, All rights reserved.
+                © Triple R Consulting 2024, All rights reserved.& devloped by jyoti pal.
               </h1>
             </div>
 
