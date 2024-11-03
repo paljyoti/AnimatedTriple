@@ -496,8 +496,8 @@ function Landing(props) {
                 </li>
               </ul>
               <h1 className="text-left pl-6">
-                © Triple R Consulting 2024, All rights reserved.& devloped by
-                jyoti pal.
+                © Triple R Consulting 2024, All rights reserved.& <span className="">devloped by
+                jyoti pal.</span>
               </h1>
             </div>
 

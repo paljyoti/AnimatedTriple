@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Loader from "./Loader";
+// import videoSrc from "../../src/assets/loaderblack.webm";
 import videoSrc from "../../src/assets/loaderblack.webm";
 import image from "../../src/assets/business-5475661_1280.jpg";
 import image1 from "../../src/assets/social-media-4140959_1280.jpg";
@@ -29,10 +30,10 @@ function Blog(props) {
   };
 
   return (
-    <div className="bg-black">
+    <div className="">
       <Loader videoSrc={videoSrc} />
 
-      <div className="">
+      <div className="bg-black">
         <div className="flex text-white">
           <div
             id="side-menu"
