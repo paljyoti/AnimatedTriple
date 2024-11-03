@@ -7,7 +7,14 @@ import Blog from './pages/Blog.jsx'
 import AboutUs from './pages/AboutUs.jsx'
 import Contacts from './pages/Contacts.jsx'
 import Service from './pages/Service.jsx'
-// import Contact from './pages/Contact.jsx'
+import Content from './pages/Content.jsx'
+import Seo from './pages/Seo.jsx'
+import Ppc from './pages/Ppc.jsx'
+import Email from './pages/Email.jsx'
+import Social from './pages/Social.jsx'
+import Digital from './pages/Digital.jsx'
+import WebDesign from './pages/WebDesign.jsx'
+
 
 
 
@@ -32,6 +39,35 @@ const router = createHashRouter([
     path:"/service",
     element:<Service/>,
   },
+ {
+  path:"/contentMarketing",
+  element:<Content/>
+ },
+ {
+  path:"/seo",
+  element:<Seo/>
+ },
+ {
+
+  path:"/ppc",
+  element:<Ppc/>
+ },
+ {
+  path:"/emailMarketing",
+  element:<Email/>
+ },
+ {
+  path:"/socialMedia",
+  element:<Social/>
+ },
+ {
+  path:"/digitalMarketing",
+  element:<Digital/>
+ },
+ {
+   path:"/webDesign",
+   element:<WebDesign/>
+ }
 ])
 
 

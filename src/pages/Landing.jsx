@@ -96,7 +96,7 @@ function Landing(props) {
               &times;
             </a>
             <a
-              className=" text-3xl font-semibold  hover:text-[#39FF14]"
+              className=" text-3xl font-semibold hover:text-[#39FF14]"
               href="#"
             >
               HOME
@@ -174,10 +174,8 @@ function Landing(props) {
               experiences.
             </motion.p>
           </div>
-
           <img src={gif} alt="" className="w-[24vw] h-auto ml-24" />
         </div>
-
         <div className="container flex mx-auto pt-2 space-x-24 ">
           <div className="text-left pl-16">
             <motion.p
@@ -185,7 +183,7 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-black text-sm w-96 pt-8 "
+              className="text-black text-sm w-96 pt-8"
             >
               Creative agency in Houston made with loads of love and dedication
               in Houston, TX.
@@ -287,27 +285,41 @@ function Landing(props) {
             </div>
 
             <nav className="heading pt-16 text-white text-sm">
-              <ul className="pl-10">
+              <ul className="pl-10 justify-items-end">
                 <li>
-                  <a className="text-sm text-right gap-5 ">WebDesign <span className="text-5xl">.</span> </a>
+                  <a href="/#/webDesign" className="text-sm text-right">
+                    WebDesign <span className="text-5xl">.</span>
+                  </a>
                 </li>
                 <li>
-                  <a className="text-sm text-right">DigitalMarketing <span className="text-5xl">.</span> </a>
+                  <a href="/#/digitalMarketing" className="text-sm text-right">
+                    DigitalMarketing <span className="text-5xl">.</span>
+                  </a>
                 </li>
                 <li>
-                  <a classname="text-sm text-right">SocialMedia <span className="text-5xl">.</span> </a>
+                  <a href="/#/socialMedia" classname="text-sm text-right">
+                    SocialMedia <span className="text-5xl">.</span>
+                  </a>
                 </li>
                 <li>
-                  <a className="text-sm  text-right">EmailMarketing <span className="text-5xl">.</span> </a>
+                  <a href="/#/emailMarketing" className="text-sm  text-right">
+                    EmailMarketing <span className="text-5xl">.</span>
+                  </a>
                 </li>
                 <li>
-                  <a className="text-sm text-right">ContentMarketing <span className="text-5xl">.</span> </a>
+                  <a href="/#/contentMarketing" className="text-sm text-right">
+                    ContentMarketing <span className="text-5xl">.</span>
+                  </a>
                 </li>
                 <li>
-                  <a className="text-sm text-right">SEO <span className="text-5xl">.</span></a>
+                  <a href="/#/seo" className="text-sm text-right">
+                    SEO <span className="text-5xl">.</span>
+                  </a>
                 </li>
                 <li>
-                  <a classname="text-sm text-right">PPC <span className="text-5xl">.</span> </a>
+                  <a href="/#/ppc" classname="text-sm text-right">
+                    PPC <span className="text-5xl">.</span>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -484,7 +496,8 @@ function Landing(props) {
                 </li>
               </ul>
               <h1 className="text-left pl-6">
-                © Triple R Consulting 2024, All rights reserved.& devloped by jyoti pal.
+                © Triple R Consulting 2024, All rights reserved.& devloped by
+                jyoti pal.
               </h1>
             </div>
 
