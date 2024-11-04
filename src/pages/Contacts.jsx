@@ -302,7 +302,7 @@ function Contacts(props) {
             {boxItems.map((item, index) => (
               <div
                 key={index}
-                className="bg-black p-6 rounded border border-gray-600 text-center hover:bg-white hover:text-black text-white"
+                className="bg-black p-6 rounded  border border-gray-600 text-center hover:bg-[#39FF14] hover:text-black text-white"
               >
                 {item}
               </div>
@@ -377,7 +377,7 @@ function Contacts(props) {
               </div>
               <button
                 type="submit"
-                className="bg-blue-600 ml-28 hover:bg-blue-700 text-white py-2 px-4 rounded w-48"
+                className="bg-white ml-28 hover:bg-[#39FF14] text-black py-2 px-4 rounded w-48"
               >
                 Send Message
               </button>
