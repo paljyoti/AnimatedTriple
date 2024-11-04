@@ -290,38 +290,38 @@ function Landing(props) {
             <nav className="heading pt-16 text-white text-sm">
               <ul className="pl-10 justify-items-end">
                 <li>
-                  <a href="/#/webDesign" className="text-sm text-right">
+                  <a href="/#/webDesign" className="text-sm text-right hover:text-[#39FF14]">
                     WebDesign <span className="text-5xl">.</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/#/digitalMarketing" className="text-sm text-right">
+                  <a href="/#/digitalMarketing" className="text-sm text-right hover:text-[#39FF14]">
                     DigitalMarketing <span className="text-5xl">.</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/#/socialMedia" classname="text-sm text-right">
+                  <a href="/#/socialMedia" classname="text-sm text-right hover:text-[#39FF14]">
                     SocialMedia <span className="text-5xl">.</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/#/emailMarketing" className="text-sm  text-right">
+                  <a href="/#/emailMarketing" className="text-sm  text-right hover:text-[#39FF14]">
                     EmailMarketing <span className="text-5xl">.</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/#/contentMarketing" className="text-sm text-right">
+                  <a href="/#/contentMarketing" className="text-sm text-right hover:text-[#39FF14]">
                     ContentMarketing <span className="text-5xl">.</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/#/seo" className="text-sm text-right">
+                  <a href="/#/seo" className="text-sm text-right hover:text-[#39FF14]">
                     SEO <span className="text-5xl">.</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/#/ppc" classname="text-sm text-right">
-                    PPC <span className="text-5xl">.</span>
+                  <a href="/#/ppc" classname="text-sm text-right hover:text-[#39FF14]">
+                    PPC <span className="text-5xl ">.</span>
                   </a>
                 </li>
               </ul>
