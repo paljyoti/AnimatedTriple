@@ -97,7 +97,7 @@ function Blog(props) {
         <div className="flex gap-10 text-white pr-10">
           <div className="img pl-10">
             <p className="pt-72 text-2xl font-bold">News & Event</p>
-            <h1 className="text-6xl font-bold">INSIGHTS</h1>
+            <h1 className="text-6xl font-bold text-[#39FF14]">INSIGHTS</h1>
             <p>
               Insights, thoughts, industry trends, marketing tips, eDesign news,
               nerdy stuff, it's all here.

@@ -1,0 +1,41 @@
+/* menu.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+#side-menu {
+  width: 240px; /* Fixed width for sidebar */
+  transition: transform 0.3s ease;
+}
+
+.fixed {
+  position: fixed; /* Fix the sidebar */
+  top: 0;
+  right: 0; /* Align to the right */
+  height: 100vh; /* Full height */
+  background-color: black; /* Background color */
+  color: white; /* Text color */
+  z-index: 50; /* Above other elements */
+}
+
+.main-content {
+  flex: 1; /* Take remaining space */
+  padding: 20px;
+  margin-right: 240px; /* Space for the sidebar */
+}
+
+@media (max-width: 768px) {
+  #side-menu {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .main-content {
+    margin-right: 0; /* No margin on mobile */
+  }
+}

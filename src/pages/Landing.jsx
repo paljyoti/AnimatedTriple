@@ -7,8 +7,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import gif from "../../src/assets/twofingergif.gif";
 import imageClient from "../../src/assets/greenery.gif";
+import { useNavigate } from "react-router-dom";
 
 function Landing(props) {
+
+  const navigate = useNavigate();
   const [isMoved, setIsMoved] = useState(false);
 
   // Function to toggle the movement class
@@ -209,7 +212,7 @@ function Landing(props) {
                 </textPath>
               </text>
             </svg>
-            <button className="absolute text-sm bg-black text-white w-12  h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
+            <button  onClick={()=>{navigate('/contact')}} className="absolute text-sm bg-black text-white w-12  h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
               Let's
               <br />
               Talk
@@ -449,7 +452,7 @@ function Landing(props) {
                 </textPath>
               </text>
             </svg>
-            <button className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
+            <button onClick={()=>{navigate('/contact')}} className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
               Let's
               <br />
               Talk

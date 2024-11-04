@@ -126,7 +126,7 @@ function Contacts(props) {
           <div
           
           className=" bg-white text-black text-left pt-16">
-            <p className="text-sm font-bold">CONTACT US</p>
+            <p className="text-sm font-bold text-[#39FF14]">CONTACT US</p>
             <h1 
               
             className="text-6xl font-bold">Why not hit us</h1>
@@ -293,7 +293,7 @@ function Contacts(props) {
       </div>
 
       <div className="about bg-black h-full w-full">
-        <h1 className="text-white pl-40 pt-12 font-bold text-4xl">
+        <h1 className="text-white pl-40 pt-12 font-bold text-4xl ">
           I'M INTERESTED IN . . .
         </h1>
 

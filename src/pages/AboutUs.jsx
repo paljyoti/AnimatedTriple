@@ -664,7 +664,7 @@ function AboutUs(props) {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
-                    className="text-2xl font-bold"
+                    className="text-2xl font-bold text-[#39FF14]"
                   >
                     01 Driven By Four
                   </motion.h1>
@@ -686,7 +686,7 @@ function AboutUs(props) {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
-                    className="text-2xl font-bold"
+                    className="text-2xl font-bold text-[#39FF14]"
                   >
                     02 Driven
                   </motion.h1>
@@ -708,7 +708,7 @@ function AboutUs(props) {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
-                    className="text-2xl font-bold"
+                    className="text-2xl font-bold text-[#39FF14]"
                   >
                     03 Driven By Four
                   </motion.h1>

@@ -219,7 +219,7 @@ function Service(props) {
             <SwiperSlide>
               <div className="slider flex pt-32  gap-10">
                 <div className="pl-20 pt-16 text-black">
-                  <p className="text-sm font-bold">WHAT WE DO </p>
+                  <p className="text-sm font-bold text-[#39FF14]">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">01</h4>
                   <h1 className="font-bold text-4xl pt-5">DIGITAL-MARKETING</h1>
                   <p className=" w-[35vw] text-justify pt-3 text-sm">
@@ -238,7 +238,7 @@ function Service(props) {
             <SwiperSlide>
               <div className="slider flex pt-32  gap-10">
                 <div className="pl-20 pt-16 text-black">
-                  <p className="text-sm font-bold">WHAT WE DO </p>
+                  <p className="text-sm font-bold text-[#39FF14]">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">02</h4>
                   <h1 className="font-bold pt-5 text-4xl">WEB DESIGNING</h1>
                   <p className=" w-[35vw] pt-3 text-justify text-sm">
@@ -257,7 +257,7 @@ function Service(props) {
             <SwiperSlide>
             <div className="slider flex pt-32  gap-10">
                 <div className="pl-20 pt-16 text-black">
-                  <p className="text-sm font-bold">WHAT WE DO </p>
+                  <p className="text-sm font-bold text-[#39FF14]">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">03</h4>
                   <h1 className="font-bold pt-5 text-4xl">SOCIAL MARKETING</h1>
                   <p className=" w-[35vw] pt-3 text-justify text-sm">
@@ -276,7 +276,7 @@ function Service(props) {
             <SwiperSlide>
             <div className="slider flex pt-32  gap-10">
                 <div className="pl-20 pt-16 text-black">
-                  <p className="text-sm font-bold">WHAT WE DO </p>
+                  <p className="text-sm font-bold text-[#39FF14]">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">04</h4>
                   <h1 className="font-bold pt-5 text-4xl">EMAIL MARKETING</h1>
                   <p className=" w-[35vw] pt-3 text-justify text-sm">
@@ -295,7 +295,7 @@ function Service(props) {
             <SwiperSlide>
             <div className="slider flex pt-32  gap-10">
                 <div className="pl-20 pt-16 text-black">
-                  <p className="text-sm font-bold">WHAT WE DO </p>
+                  <p className="text-sm font-bold text-[#39FF14]">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">05</h4>
                   <h1 className="font-bold pt-5 text-4xl">CONTENT MARKETING</h1>
                   <p className=" w-[35vw] pt-3 text-justify text-sm">
@@ -314,7 +314,7 @@ function Service(props) {
             <SwiperSlide>
             <div className="slider flex pt-32  gap-10">
                 <div className="pl-20 pt-16 text-black">
-                  <p className="text-sm font-bold">WHAT WE DO </p>
+                  <p className="text-sm font-bold text-[#39FF14]">WHAT WE DO </p>
                   <h4 className="font-bold text-4xl pl-96">06</h4>
                   <h1 className="font-bold pt-5 text-4xl">SEARCH ENGINE OPTIMIZATION
                   </h1>
