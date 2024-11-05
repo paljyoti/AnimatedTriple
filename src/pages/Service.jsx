@@ -444,22 +444,17 @@ function Service(props) {
               </h6>
               <ul className="list-none  text-sm pl-6 flex gap-2">
                 <li>
-                  <a href="#" className="hover:text-gray-400">
-                    Work
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <a href="#/service" className="hover:text-gray-400">
                     Service
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <a href="/#/aboutus" className="hover:text-gray-400">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <a href="/#/contact" className="hover:text-gray-400">
                     Contact
                   </a>
                 </li>

@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import gif from "../../src/assets/twofingergif.gif";
 import imageClient from "../../src/assets/greenery.gif";
 import { useNavigate } from "react-router-dom";
+import Slider from "react-slick";
 
 function Landing(props) {
 
@@ -29,13 +30,13 @@ function Landing(props) {
     setIsMenuOpen(false);
   };
 
-  // var settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  // };
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   const items = [
     { id: 1, title: `Exeligo - Innovation - triple` },
@@ -362,10 +363,11 @@ function Landing(props) {
               the talk of the town.
             </motion.p>
 
-            {/* <div className="slider flex pl-40 pt-2 ">
+            <div className="slider flex pl-40  pt-2 ">
               <Slider {...settings}></Slider>
               
-            </div> */}
+            </div>
+            
 
             <div className="relative ml-20 mt-10 w-[35vw]">
               <div
@@ -468,22 +470,17 @@ function Landing(props) {
               </h6>
               <ul className="list-none  text-sm pl-6 flex gap-2">
                 <li>
-                  <a href="#" className="hover:text-gray-400">
-                    Work
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <a href="/#/service" className="hover:text-gray-400">
                     Service
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <a href="/#/aboutus" className="hover:text-gray-400">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <a href="/#/contact" className="hover:text-gray-400">
                     Contact
                   </a>
                 </li>
