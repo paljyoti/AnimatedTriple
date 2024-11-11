@@ -60,7 +60,7 @@ function Service(props) {
           <div className="header">
             <div className="flex justify-between items-center pl-14 pr-16 px-5 py-5">
               <h2 className="text-3xl">
-                <ImHome onClick={()=>{navigate('#')}} />
+                <ImHome />
               </h2>
 
               <main>

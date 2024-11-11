@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
 import Loader from './Loader';
 import videoSrc from "../../src/assets/loaderblack.webm";
+import { ImHome } from "react-icons/im";
 
 function Social(props) {
   const [isMoved, setIsMoved] = useState(false);
@@ -28,66 +29,72 @@ function Social(props) {
   return (
     <div>
        <Loader videoSrc={videoSrc}/>
-       <div className="flex ">
-          <div
-            id="side-menu"
-            className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${
-              isMenuOpen ? "translate-x-0" : "translate-x-full"
-            }`}
-          >
-            <a
-              href="javascript:void(0)"
-              className="text-right text-4xl"
-              onClick={closeMenu}
-            >
-              &times;
-            </a>
-            <a
-              className=" text-3xl font-semibold  hover:text-[#39FF14]"
-              href="#"
-            >
-              HOME
-            </a>
-            <a
-              className=" text-3xl font-semibold hover:text-[#39FF14]"
-              href="/#/aboutus"
-            >
-              ABOUT US
-            </a>
-            <a
-              className="text-3xl font-semibold hover:text-[#39FF14]"
-              href="/#/service"
-            >
-              SERVICES
-            </a>
-            <a
-              className="text-3xl font-semibold hover:text-[#39FF14]"
-              href="/#/blog"
-            >
-              BLOG
-            </a>
-            <a
-              className="text-3xl font-semibold hover:text-[#39FF14]"
-              href="/#/contact"
-            >
-              CONTACT US
-            </a>
+       <div className="header">
+            <div className="flex justify-between items-center pl-14 pr-16 px-5 py-5">
+              <h2 className="text-3xl">
+                <ImHome />
+              </h2>
 
-            <div className="details">
-              <h1 className="pt-32 text-white font-semibold ">GET IN TOUCH </h1>
-              <h1 className="text-white text-sm">
-                Email : rishabhbharee@gmail.com
-              </h1>
-              <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
+              <main>
+                <span className="cursor-pointer text-2xl" onClick={openMenu}>
+                  &#9776;
+                </span>
+              </main>
+            </div>
+
+            <div
+              id="side-menu"
+              className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${
+                isMenuOpen ? "translate-x-0" : "translate-x-full"
+              }`}
+            >
+              <a
+                href="javascript:void(0)"
+                className="text-right text-4xl"
+                onClick={closeMenu}
+              >
+                &times;
+              </a>
+              <a
+                className="text-3xl font-semibold hover:text-[#39FF14]"
+                href="#"
+              >
+                HOME
+              </a>
+              <a
+                className="text-3xl font-semibold hover:text-[#39FF14]"
+                href="/#/aboutus"
+              >
+                ABOUT US
+              </a>
+              <a
+                className="text-3xl font-semibold hover:text-[#39FF14]"
+                href="/#/service"
+              >
+                SERVICES
+              </a>
+              <a
+                className="text-3xl font-semibold hover:text-[#39FF14]"
+                href="/#/blog"
+              >
+                BLOG
+              </a>
+              <a
+                className="text-3xl font-semibold hover:text-[#39FF14]"
+                href="/#/contact"
+              >
+                CONTACT US
+              </a>
+
+              <div className="details">
+                <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
+                <h1 className="text-white text-sm">
+                  Email : rishabhbharee@gmail.com
+                </h1>
+                <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
+              </div>
             </div>
           </div>
-
-          <main className="p-5 ml-[1200px]">
-            <span className="cursor-pointer text-2xl" onClick={openMenu}>
-              &#9776;
-            </span>
-          </main>
-        </div>
    <div className="px-5 md:px-28"> {/* Added responsive padding */}
       <div className="top pt-16">
         <h6 className="font-semibold">Technology Trends</h6>
