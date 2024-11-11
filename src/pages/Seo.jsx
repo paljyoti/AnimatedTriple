@@ -3,6 +3,8 @@ import imageWeb from "../../src/assets/seo-3007488_1280.jpg";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
+import Loader from './Loader';
+import videoSrc from "../../src/assets/loaderblack.webm";
 
 function Seo(props) {
   const [isMoved, setIsMoved] = useState(false);
@@ -24,6 +26,7 @@ function Seo(props) {
 
   return (
     <div>
+       <Loader videoSrc={videoSrc}/>
        <div className="flex ">
           <div
             id="side-menu"

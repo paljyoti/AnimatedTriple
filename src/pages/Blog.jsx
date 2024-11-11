@@ -10,6 +10,7 @@ import image4 from "../../src/assets/woman-1446557_1280.jpg";
 import image5 from "../../src/assets/business-5475659_1280.jpg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
+import { ImHome } from "react-icons/im";
 
 function Blog(props) {
   const [isMoved, setIsMoved] = useState(false);
@@ -34,7 +35,22 @@ function Blog(props) {
       <Loader videoSrc={videoSrc} />
 
       <div className="bg-black">
-        <div className="flex text-white">
+        <div className="header">
+          <div className="flex justify-between items-center pl-14 pr-16 px-5 py-5">
+            <h2 className="text-3xl">
+              <ImHome className="text-white" />
+            </h2>
+
+            <main>
+              <span
+                className="cursor-pointer text-2xl text-white"
+                onClick={openMenu}
+              >
+                &#9776;
+              </span>
+            </main>
+          </div>
+
           <div
             id="side-menu"
             className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${
@@ -48,14 +64,11 @@ function Blog(props) {
             >
               &times;
             </a>
-            <a
-              className=" text-3xl font-semibold  hover:text-[#39FF14]"
-              href="#"
-            >
+            <a className="text-3xl font-semibold hover:text-[#39FF14]" href="#">
               HOME
             </a>
             <a
-              className=" text-3xl font-semibold hover:text-[#39FF14]"
+              className="text-3xl font-semibold hover:text-[#39FF14]"
               href="/#/aboutus"
             >
               ABOUT US
@@ -80,20 +93,15 @@ function Blog(props) {
             </a>
 
             <div className="details">
-              <h1 className="pt-32 text-white font-semibold ">GET IN TOUCH</h1>
+              <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
               <h1 className="text-white text-sm">
                 Email : rishabhbharee@gmail.com
               </h1>
               <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
             </div>
           </div>
-
-          <main className="p-5 ml-[1200px]">
-            <span className="cursor-pointer text-2xl " onClick={openMenu}>
-              &#9776;
-            </span>
-          </main>
         </div>
+
         <div className="flex gap-10 text-white pr-10">
           <div className="img pl-10">
             <p className="pt-72 text-2xl font-bold">News & Event</p>
@@ -171,7 +179,7 @@ function Blog(props) {
                 </textPath>
               </text>
             </svg>
-            <button className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
+            <button className="absolute text-center  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
               Let's
               <br />
               Talk

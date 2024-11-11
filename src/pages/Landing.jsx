@@ -9,9 +9,11 @@ import gif from "../../src/assets/twofingergif.gif";
 import imageClient from "../../src/assets/greenery.gif";
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
+import { ImHome } from "react-icons/im";
+
+
 
 function Landing(props) {
-
   const navigate = useNavigate();
   const [isMoved, setIsMoved] = useState(false);
 
@@ -85,66 +87,69 @@ function Landing(props) {
   return (
     <div className="snap-y snap-mandatory overflow-y-auto h-screen scroll-smooth overflow-hidden">
       <div className="flex-shrink-0 snap-start w-full h-screen bg-white  items-center justify-center ">
-        <div className="flex ">
-          <div
-            id="side-menu"
-            className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${
-              isMenuOpen ? "translate-x-0" : "translate-x-full"
-            }`}
-          >
-            <a
-              href="javascript:void(0)"
-              className="text-right text-4xl"
-              onClick={closeMenu}
-            >
-              &times;
-            </a>
-            <a
-              className=" text-3xl font-semibold hover:text-[#39FF14]"
-              href="#"
-            >
-              HOME
-            </a>
-            <a
-              className=" text-3xl font-semibold hover:text-[#39FF14]"
-              href="/#/aboutus"
-            >
-              ABOUT US
-            </a>
-            <a
-              className="text-3xl font-semibold hover:text-[#39FF14]"
-              href="/#/service"
-            >
-              SERVICES
-            </a>
-            <a
-              className="text-3xl font-semibold hover:text-[#39FF14]"
-              href="/#/blog"
-            >
-              BLOG
-            </a>
-            <a
-              className="text-3xl font-semibold hover:text-[#39FF14]"
-              href="/#/contact"
-            >
-              CONTACT US
-            </a>
 
-            <div className="details">
-              <h1 className="pt-32 text-white font-semibold ">GET IN TOUCH </h1>
-              <h1 className="text-white text-sm">
-                Email : rishabhbharee@gmail.com
-              </h1>
-              <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
-            </div>
-          </div>
 
-          <main className="p-5 ml-[1200px]">
-            <span className="cursor-pointer text-2xl" onClick={openMenu}>
-              &#9776;
-            </span>
-          </main>
-        </div>
+      
+
+<div className="header">
+  <div className="flex justify-between items-center pl-14 pr-16 px-5 py-5">
+   
+    <h2 className="text-3xl">
+      <ImHome />
+    </h2>
+
+  
+    <main>
+      <span
+        className="cursor-pointer text-2xl"
+        onClick={openMenu}
+      >
+        &#9776;
+      </span>
+    </main>
+  </div>
+
+  <div
+    id="side-menu"
+    className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${
+      isMenuOpen ? "translate-x-0" : "translate-x-full"
+    }`}
+  >
+    <a
+      href="javascript:void(0)"
+      className="text-right text-4xl"
+      onClick={closeMenu}
+    >
+      &times;
+    </a>
+    <a className="text-3xl font-semibold hover:text-[#39FF14]" href="#">
+      HOME
+    </a>
+    <a className="text-3xl font-semibold hover:text-[#39FF14]" href="/#/aboutus">
+      ABOUT US
+    </a>
+    <a className="text-3xl font-semibold hover:text-[#39FF14]" href="/#/service">
+      SERVICES
+    </a>
+    <a className="text-3xl font-semibold hover:text-[#39FF14]" href="/#/blog">
+      BLOG
+    </a>
+    <a className="text-3xl font-semibold hover:text-[#39FF14]" href="/#/contact">
+      CONTACT US
+    </a>
+
+    <div className="details">
+      <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
+      <h1 className="text-white text-sm">Email : rishabhbharee@gmail.com</h1>
+      <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
+    </div>
+  </div>
+</div>
+
+
+
+
+
         <div className="top flex pl-48 gap-20">
           <div className=" bg-white text-black text-left">
             <motion.h1
@@ -170,12 +175,11 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="pt-6 w-96 text-sm"
+              className="pt-6 w-96 text-sm font-serif"
             >
-              Adding wings to your brand through sparkling ideas, holistic
-              branding concepts, extraordinary and handcrafted designs. We
-              collaborate with companies to create remarkable digital
-              experiences.
+              Soar to New Heights with Our Sparkling Ideas, Holistic Branding
+              Concepts, and Exquisite Handcrafted Designs. We Partner with
+              Brands to Craft Unforgettable Digital Experiences!
             </motion.p>
           </div>
           <img src={gif} alt="" className="w-[24vw] h-auto ml-24" />
@@ -187,10 +191,9 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-black text-sm w-96 pt-8"
+              className="text-black text-xs w-96 pt-16"
             >
-              Creative agency in Houston made with loads of love and dedication
-              in Houston, TX.
+             Crafted with passion and dedication, our creative agency in Gurugram, Haryana, delivers innovative solutions to bring your brand's vision to life.
             </motion.p>
           </div>
 
@@ -207,13 +210,18 @@ function Landing(props) {
               a 20,20 0 1,1 -40, 0"
                 fill="transparent"
               />
-              <text className="text-[7px] fill-current text-black">
+              <text className="text-[4.9px] fill-current text-black">
                 <textPath href="#circlePath" startOffset="0%">
-                  | Triple R Consulting | Triple R Consulting.
+                  | TripleRConsulting | TripleRConsulting | TripleRConsulting  
                 </textPath>
               </text>
             </svg>
-            <button  onClick={()=>{navigate('/contact')}} className="absolute text-sm bg-black text-white w-12  h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
+            <button
+              onClick={() => {
+                navigate("/contact");
+              }}
+              className="absolute text-sm bg-black text-white w-12  h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center"
+            >
               Let's
               <br />
               Talk
@@ -226,10 +234,9 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-black w-96 text-sm pt-8"
+              className="text-black w-96 text-xs pt-16"
             >
-              Weaving together creativity and practical ways to link people to
-              cutting-edge technology.
+             Blending creativity with practical solutions, we connect people to cutting-edge technology in inspiring new ways.
             </motion.p>
           </div>
         </div>
@@ -291,37 +298,58 @@ function Landing(props) {
             <nav className="heading pt-16 text-white text-sm">
               <ul className="pl-10 justify-items-end">
                 <li>
-                  <a href="/#/webDesign" className="text-sm text-right hover:text-[#39FF14]">
+                  <a
+                    href="/#/webDesign"
+                    className="text-sm text-right hover:text-[#39FF14]"
+                  >
                     WebDesign <span className="text-5xl">.</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/#/digitalMarketing" className="text-sm text-right hover:text-[#39FF14]">
+                  <a
+                    href="/#/digitalMarketing"
+                    className="text-sm text-right hover:text-[#39FF14]"
+                  >
                     DigitalMarketing <span className="text-5xl">.</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/#/socialMedia" classname="text-sm text-right hover:text-[#39FF14]">
+                  <a
+                    href="/#/socialMedia"
+                    classname="text-sm text-right hover:text-[#39FF14]"
+                  >
                     SocialMedia <span className="text-5xl">.</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/#/emailMarketing" className="text-sm  text-right hover:text-[#39FF14]">
+                  <a
+                    href="/#/emailMarketing"
+                    className="text-sm  text-right hover:text-[#39FF14]"
+                  >
                     EmailMarketing <span className="text-5xl">.</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/#/contentMarketing" className="text-sm text-right hover:text-[#39FF14]">
+                  <a
+                    href="/#/contentMarketing"
+                    className="text-sm text-right hover:text-[#39FF14]"
+                  >
                     ContentMarketing <span className="text-5xl">.</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/#/seo" className="text-sm text-right hover:text-[#39FF14]">
+                  <a
+                    href="/#/seo"
+                    className="text-sm text-right hover:text-[#39FF14]"
+                  >
                     SEO <span className="text-5xl">.</span>
                   </a>
                 </li>
                 <li>
-                  <a href="/#/ppc" classname="text-sm text-right hover:text-[#39FF14]">
+                  <a
+                    href="/#/ppc"
+                    classname="text-sm text-right hover:text-[#39FF14]"
+                  >
                     PPC <span className="text-5xl ">.</span>
                   </a>
                 </li>
@@ -365,9 +393,7 @@ function Landing(props) {
 
             <div className="slider flex pl-40  pt-2 ">
               <Slider {...settings}></Slider>
-              
             </div>
-            
 
             <div className="relative ml-20 mt-10 w-[35vw]">
               <div
@@ -454,7 +480,12 @@ function Landing(props) {
                 </textPath>
               </text>
             </svg>
-            <button onClick={()=>{navigate('/contact')}} className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
+            <button
+              onClick={() => {
+                navigate("/contact");
+              }}
+              className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center"
+            >
               Let's
               <br />
               Talk
@@ -496,8 +527,8 @@ function Landing(props) {
                 </li>
               </ul>
               <h1 className="text-left pl-6">
-                © Triple R Consulting 2024, All rights reserved.& <span className="">devloped by
-                jyoti pal.</span>
+                © Triple R Consulting 2024, All rights reserved.&{" "}
+                <span className="">devloped by jyoti pal.</span>
               </h1>
             </div>
 

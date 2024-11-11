@@ -3,6 +3,9 @@ import imageWeb4 from "../../src/assets/content_marketing_2.jpg";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
+import Loader from './Loader';
+import videoSrc from "../../src/assets/loaderblack.webm";
+
 
 function Content(props) {
   const [isMoved, setIsMoved] = useState(false);
@@ -24,6 +27,7 @@ function Content(props) {
 
   return (
     <div>
+       <Loader videoSrc={videoSrc}/>
        <div className="flex ">
           <div
             id="side-menu"

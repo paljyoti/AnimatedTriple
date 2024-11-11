@@ -4,12 +4,10 @@ import videoSrc from "../../src/assets/loaderblack.webm";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../src/Varients";
 import { useState } from "react";
-
-
+import { ImHome } from "react-icons/im";
 
 function Contacts(props) {
   const [isMoved, setIsMoved] = useState(false);
-
 
   const handleTouch = () => {
     setIsMoved(!isMoved);
@@ -61,8 +59,19 @@ function Contacts(props) {
       <Loader videoSrc={videoSrc} />
 
       <div className="contact">
-       
-      <div className="flex ">
+        <div className="header">
+          <div className="flex justify-between items-center pl-14 pr-16 px-5 py-5">
+            <h2 className="text-3xl">
+              <ImHome />
+            </h2>
+
+            <main>
+              <span className="cursor-pointer text-2xl" onClick={openMenu}>
+                &#9776;
+              </span>
+            </main>
+          </div>
+
           <div
             id="side-menu"
             className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${
@@ -76,14 +85,11 @@ function Contacts(props) {
             >
               &times;
             </a>
-            <a
-              className=" text-3xl font-semibold  hover:text-[#39FF14]"
-              href="#"
-            >
+            <a className="text-3xl font-semibold hover:text-[#39FF14]" href="#">
               HOME
             </a>
             <a
-              className=" text-3xl font-semibold hover:text-[#39FF14]"
+              className="text-3xl font-semibold hover:text-[#39FF14]"
               href="/#/aboutus"
             >
               ABOUT US
@@ -108,34 +114,21 @@ function Contacts(props) {
             </a>
 
             <div className="details">
-              <h1 className="pt-32 text-white font-semibold ">GET IN TOUCH </h1>
+              <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
               <h1 className="text-white text-sm">
                 Email : rishabhbharee@gmail.com
               </h1>
               <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
             </div>
           </div>
-
-          <main className="p-5 ml-[1200px]">
-            <span className="cursor-pointer text-2xl" onClick={openMenu}>
-              &#9776;
-            </span>
-          </main>
         </div>
+
         <div className="top flex pl-52 gap-20 ">
-          <div
-          
-          className=" bg-white text-black text-left pt-16">
+          <div className=" bg-white text-black text-left pt-16">
             <p className="text-sm font-bold text-[#39FF14]">CONTACT US</p>
-            <h1 
-              
-            className="text-6xl font-bold">Why not hit us</h1>
-            <h1 
-      
-            className="text-6xl font-bold">up for</h1>
-            <h1 
-            
-            className="text-6xl font-bold">assistance?</h1>
+            <h1 className="text-6xl font-bold">Why not hit us</h1>
+            <h1 className="text-6xl font-bold">up for</h1>
+            <h1 className="text-6xl font-bold">assistance?</h1>
             <p className="mt-4 w-96 text-sm">
               Design is more than how something appears. Design is how it works.
               Want your brand to be on the upswing? Let us create a website that
@@ -331,7 +324,7 @@ function Contacts(props) {
                     required
                   />
                 </div>
-                  
+
                 <div className="mb-4">
                   <label className="block mb-2" htmlFor="email">
                     What's Your Email?
@@ -387,25 +380,31 @@ function Contacts(props) {
 
         <div className="footer bg-yellow-400">
           <motion.div
-        variants={fadeIn("up", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-          
-          className="head text-black text-center">
-            <p className="text-lg pt-24">Reveal your thoughts</p>
-            <motion.h1 
-            variants={fadeIn("right", 0.2)}
+            variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="text-5xl font-bold">Ready to start your</motion.h1>
-            <motion.h1 
-             variants={fadeIn("left", 0.2)}
-             initial="hidden"
-             whileInView={"show"}
-             viewport={{ once: false, amount: 0.7 }}
-            className="text-5xl font-bold">project?</motion.h1>
+            className="head text-black text-center"
+          >
+            <p className="text-lg pt-24">Reveal your thoughts</p>
+            <motion.h1
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-5xl font-bold"
+            >
+              Ready to start your
+            </motion.h1>
+            <motion.h1
+              variants={fadeIn("left", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-5xl font-bold"
+            >
+              project?
+            </motion.h1>
             <div className="flex justify-center items-center relative">
               <svg
                 viewBox="0 0 100 100"
@@ -523,11 +522,7 @@ function Contacts(props) {
               </div>
             </div>
           </div>
-
-
         </div>
-
-
       </div>
     </div>
   );

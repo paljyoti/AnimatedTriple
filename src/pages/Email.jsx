@@ -3,6 +3,8 @@ import imageWeb from "../../src/assets/email-3249062_1280.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
+import Loader from './Loader';
+import videoSrc from "../../src/assets/loaderblack.webm";
 
 function Email(props) {
   const [isMoved, setIsMoved] = useState(false);
@@ -24,6 +26,7 @@ function Email(props) {
 
   return (
     <div>
+       <Loader videoSrc={videoSrc}/>
        <div className="flex ">
           <div
             id="side-menu"

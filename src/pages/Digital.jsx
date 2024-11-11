@@ -3,6 +3,8 @@ import imageWeb1 from "../../src/assets/439.jpg";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
+import Loader from './Loader';
+import videoSrc from "../../src/assets/loaderblack.webm";
 
 
 function Digital(props) {
@@ -25,6 +27,7 @@ function Digital(props) {
 
   return (
     <div>
+       <Loader videoSrc={videoSrc}/>
        <div className="flex ">
           <div
             id="side-menu"

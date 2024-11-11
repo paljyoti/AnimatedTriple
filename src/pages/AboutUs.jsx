@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/swiper-bundle.css";
+import { ImHome } from "react-icons/im";
 
 function AboutUs(props) {
   const [isMoved, setIsMoved] = useState(false);
@@ -35,7 +36,19 @@ function AboutUs(props) {
       <Loader videoSrc={videoSrc} />
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-hidden ">
         <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400  items-center justify-center ">
-          <div className="flex ">
+          <div className="header">
+            <div className="flex justify-between items-center pl-14 pr-16 px-5 py-5">
+              <h2 className="text-3xl">
+                <ImHome />
+              </h2>
+
+              <main>
+                <span className="cursor-pointer text-2xl" onClick={openMenu}>
+                  &#9776;
+                </span>
+              </main>
+            </div>
+
             <div
               id="side-menu"
               className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${
@@ -50,13 +63,13 @@ function AboutUs(props) {
                 &times;
               </a>
               <a
-                className=" text-3xl font-semibold  hover:text-[#39FF14]"
+                className="text-3xl font-semibold hover:text-[#39FF14]"
                 href="#"
               >
                 HOME
               </a>
               <a
-                className=" text-3xl font-semibold hover:text-[#39FF14]"
+                className="text-3xl font-semibold hover:text-[#39FF14]"
                 href="/#/aboutus"
               >
                 ABOUT US
@@ -81,22 +94,15 @@ function AboutUs(props) {
               </a>
 
               <div className="details">
-                <h1 className="pt-32 text-white font-semibold ">
-                  GET IN TOUCH
-                </h1>
+                <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
                 <h1 className="text-white text-sm">
                   Email : rishabhbharee@gmail.com
                 </h1>
                 <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
               </div>
             </div>
-
-            <main className="p-5 ml-[1200px]">
-              <span className="cursor-pointer text-2xl" onClick={openMenu}>
-                &#9776;
-              </span>
-            </main>
           </div>
+
           <div className="top flex pl-48 gap-20">
             <div className=" text-black text-left pt-16">
               <motion.h1
@@ -602,7 +608,7 @@ function AboutUs(props) {
                   </textPath>
                 </text>
               </svg>
-              <button className="absolute text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
+              <button className="absolute  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
                 Let's
                 <br />
                 Talk
