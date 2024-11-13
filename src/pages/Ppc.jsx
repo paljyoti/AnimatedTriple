@@ -6,8 +6,10 @@ import { fadeIn } from "../Varients";
 import Loader from './Loader';
 import videoSrc from "../../src/assets/loaderblack.webm";
 import { ImHome } from "react-icons/im";
+import { useNavigate } from 'react-router-dom';
 
 function Ppc(props) {
+  const navigate = useNavigate();
   const [isMoved, setIsMoved] = useState(false);
 
 
@@ -28,7 +30,9 @@ function Ppc(props) {
   return (
     <div>
       <Loader videoSrc={videoSrc}/>
-      <div className="header">
+      <div
+      onClick={()=>{navigate('/')}}
+      className="header">
             <div className="flex justify-between items-center pl-14 pr-16 px-5 py-5">
               <h2 className="text-3xl">
                 <ImHome />

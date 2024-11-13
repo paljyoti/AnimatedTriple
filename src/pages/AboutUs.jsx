@@ -12,8 +12,11 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/swiper-bundle.css";
 import { ImHome } from "react-icons/im";
+import {  useNavigate } from "react-router-dom";
 
 function AboutUs(props) {
+const navigate = useNavigate();
+
   const [isMoved, setIsMoved] = useState(false);
 
   // Function to toggle the movement class
@@ -37,13 +40,15 @@ function AboutUs(props) {
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-hidden ">
         <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400  items-center justify-center ">
           <div className="header">
-            <div className="flex justify-between items-center pl-14 pr-16 px-5 py-5">
-              <h2 className="text-3xl">
-                <ImHome />
+            <div className="flex justify-between items-center pl-14 pr-16 px-9 py-9">
+              <h2 
+              onClick={() => navigate('/')}
+              className="text-3xl">
+                <ImHome className="fixed" />
               </h2>
 
               <main>
-                <span className="cursor-pointer text-2xl" onClick={openMenu}>
+                <span className="cursor-pointer text-2xl fixed" onClick={openMenu}>
                   &#9776;
                 </span>
               </main>

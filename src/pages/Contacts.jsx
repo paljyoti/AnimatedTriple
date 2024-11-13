@@ -5,8 +5,10 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../src/Varients";
 import { useState } from "react";
 import { ImHome } from "react-icons/im";
+import { useNavigate } from "react-router-dom";
 
 function Contacts(props) {
+  const navigate = useNavigate();
   const [isMoved, setIsMoved] = useState(false);
 
   const handleTouch = () => {
@@ -60,13 +62,15 @@ function Contacts(props) {
 
       <div className="contact">
         <div className="header">
-          <div className="flex justify-between items-center pl-14 pr-16 px-5 py-5">
-            <h2 className="text-3xl">
-              <ImHome />
+          <div className="flex justify-between items-center pl-14 pr-16 px-9 py-9">
+            <h2
+             onClick={() => navigate('/')}
+            className="text-3xl">
+              <ImHome className="fixed" />
             </h2>
 
             <main>
-              <span className="cursor-pointer text-2xl" onClick={openMenu}>
+              <span className="cursor-pointer text-2xl fixed" onClick={openMenu}>
                 &#9776;
               </span>
             </main>

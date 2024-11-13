@@ -11,8 +11,6 @@ import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import { ImHome } from "react-icons/im";
 
-
-
 function Landing(props) {
   const navigate = useNavigate();
   const [isMoved, setIsMoved] = useState(false);
@@ -87,68 +85,72 @@ function Landing(props) {
   return (
     <div className="snap-y snap-mandatory overflow-y-auto h-screen scroll-smooth overflow-hidden">
       <div className="flex-shrink-0 snap-start w-full h-screen bg-white  items-center justify-center ">
+        <div className="header ">
+          <div className=" flex  justify-between items-center pl-14 pr-9 px-10 py-9">
+            <h2 className="text-3xl">
+              <ImHome className="fixed" />
+            </h2>
 
+            <main>
+              <span
+                className="cursor-pointer text-2xl fixed"
+                onClick={openMenu}
+              >
+                &#9776;
+              </span>
+            </main>
+          </div>
 
-      
+          <div
+            id="side-menu"
+            className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${
+              isMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          >
+            <a
+              href="javascript:void(0)"
+              className="text-right text-4xl"
+              onClick={closeMenu}
+            >
+              &times;
+            </a>
+            <a className="text-3xl font-semibold hover:text-[#39FF14]" href="#">
+              HOME
+            </a>
+            <a
+              className="text-3xl font-semibold hover:text-[#39FF14]"
+              href="/#/aboutus"
+            >
+              ABOUT US
+            </a>
+            <a
+              className="text-3xl font-semibold hover:text-[#39FF14]"
+              href="/#/service"
+            >
+              SERVICES
+            </a>
+            <a
+              className="text-3xl font-semibold hover:text-[#39FF14]"
+              href="/#/blog"
+            >
+              BLOG
+            </a>
+            <a
+              className="text-3xl font-semibold hover:text-[#39FF14]"
+              href="/#/contact"
+            >
+              CONTACT US
+            </a>
 
-<div className="header">
-  <div className="flex justify-between items-center pl-14 pr-16 px-5 py-5">
-   
-    <h2 className="text-3xl">
-      <ImHome />
-    </h2>
-
-  
-    <main>
-      <span
-        className="cursor-pointer text-2xl"
-        onClick={openMenu}
-      >
-        &#9776;
-      </span>
-    </main>
-  </div>
-
-  <div
-    id="side-menu"
-    className={`fixed top-0 right-0 w-[240px] z-50 bg-black p-5 flex flex-col space-y-5 text-white duration-300 transform ${
-      isMenuOpen ? "translate-x-0" : "translate-x-full"
-    }`}
-  >
-    <a
-      href="javascript:void(0)"
-      className="text-right text-4xl"
-      onClick={closeMenu}
-    >
-      &times;
-    </a>
-    <a className="text-3xl font-semibold hover:text-[#39FF14]" href="#">
-      HOME
-    </a>
-    <a className="text-3xl font-semibold hover:text-[#39FF14]" href="/#/aboutus">
-      ABOUT US
-    </a>
-    <a className="text-3xl font-semibold hover:text-[#39FF14]" href="/#/service">
-      SERVICES
-    </a>
-    <a className="text-3xl font-semibold hover:text-[#39FF14]" href="/#/blog">
-      BLOG
-    </a>
-    <a className="text-3xl font-semibold hover:text-[#39FF14]" href="/#/contact">
-      CONTACT US
-    </a>
-
-    <div className="details">
-      <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
-      <h1 className="text-white text-sm">Email : rishabhbharee@gmail.com</h1>
-      <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
-    </div>
-  </div>
-</div>
-
-
-
-
+            <div className="details">
+              <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
+              <h1 className="text-white text-sm">
+                Email : rishabhbharee@gmail.com
+              </h1>
+              <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
+            </div>
+          </div>
+        </div>
 
         <div className="top flex pl-48 gap-20">
           <div className=" bg-white text-black text-left">
@@ -193,7 +195,9 @@ function Landing(props) {
               viewport={{ once: false, amount: 0.7 }}
               className="text-black text-xs w-96 pt-16"
             >
-             Crafted with passion and dedication, our creative agency in Gurugram, Haryana, delivers innovative solutions to bring your brand's vision to life.
+              Crafted with passion and dedication, our creative agency in
+              Gurugram, Haryana, delivers innovative solutions to bring your
+              brand's vision to life.
             </motion.p>
           </div>
 
@@ -212,7 +216,7 @@ function Landing(props) {
               />
               <text className="text-[4.9px] fill-current text-black">
                 <textPath href="#circlePath" startOffset="0%">
-                  | TripleRConsulting | TripleRConsulting | TripleRConsulting  
+                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
                 </textPath>
               </text>
             </svg>
@@ -236,7 +240,8 @@ function Landing(props) {
               viewport={{ once: false, amount: 0.7 }}
               className="text-black w-96 text-xs pt-16"
             >
-             Blending creativity with practical solutions, we connect people to cutting-edge technology in inspiring new ways.
+              Blending creativity with practical solutions, we connect people to
+              cutting-edge technology in inspiring new ways.
             </motion.p>
           </div>
         </div>
@@ -296,61 +301,40 @@ function Landing(props) {
             </div>
 
             <nav className="heading pt-16 text-white text-sm">
-              <ul className="pl-10 justify-items-end">
-                <li>
-                  <a
-                    href="/#/webDesign"
-                    className="text-sm text-right hover:text-[#39FF14]"
-                  >
+              <ul className="pl-10 justify-items-end ">
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/webDesign" className="text-sm text-right">
                     WebDesign <span className="text-5xl">.</span>
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="/#/digitalMarketing"
-                    className="text-sm text-right hover:text-[#39FF14]"
-                  >
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/digitalMarketing" className="text-sm text-right">
                     DigitalMarketing <span className="text-5xl">.</span>
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="/#/socialMedia"
-                    classname="text-sm text-right hover:text-[#39FF14]"
-                  >
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/socialMedia" classname="text-sm text-right">
                     SocialMedia <span className="text-5xl">.</span>
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="/#/emailMarketing"
-                    className="text-sm  text-right hover:text-[#39FF14]"
-                  >
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/emailMarketing" className="text-sm  text-right">
                     EmailMarketing <span className="text-5xl">.</span>
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="/#/contentMarketing"
-                    className="text-sm text-right hover:text-[#39FF14]"
-                  >
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/contentMarketing" className="text-sm text-right">
                     ContentMarketing <span className="text-5xl">.</span>
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="/#/seo"
-                    className="text-sm text-right hover:text-[#39FF14]"
-                  >
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/seo" className="text-sm text-right">
                     SEO <span className="text-5xl">.</span>
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="/#/ppc"
-                    classname="text-sm text-right hover:text-[#39FF14]"
-                  >
-                    PPC <span className="text-5xl ">.</span>
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/ppc" classname="text-sm text-right">
+                    PPC <span className="text-5xl">.</span>
                   </a>
                 </li>
               </ul>
