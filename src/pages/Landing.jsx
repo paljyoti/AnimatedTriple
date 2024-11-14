@@ -5,7 +5,7 @@ import { fadeIn } from "../../src/Varients";
 import "../../src/css/landing.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import gif from "../../src/assets/twofingergif.gif";
+// import gif from "../../src/assets/twofingergif.gif";
 import imageClient from "../../src/assets/greenery.gif";
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
@@ -84,11 +84,11 @@ function Landing(props) {
 
   return (
     <div className="snap-y snap-mandatory overflow-y-auto h-screen scroll-smooth overflow-hidden">
-      <div className="flex-shrink-0 snap-start w-full h-screen bg-white  items-center justify-center ">
+      <div className="flex-shrink-0 snap-start w-full h-screen bg-[#EEF7FF]  items-center justify-center ">
         <div className="header ">
-          <div className=" flex  justify-between items-center pl-14 pr-9 px-10 py-9">
+          <div className=" flex  justify-between items-center pl-14 pr-9 px-9 py-9">
             <h2 className="text-3xl">
-              <ImHome className="fixed" />
+              <ImHome className="fixed hover:text-[#39FF14]" />
             </h2>
 
             <main>
@@ -141,6 +141,7 @@ function Landing(props) {
             >
               CONTACT US
             </a>
+            
 
             <div className="details">
               <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
@@ -153,7 +154,7 @@ function Landing(props) {
         </div>
 
         <div className="top flex pl-48 gap-20">
-          <div className=" bg-white text-black text-left">
+          <div className=" bg-[#EEF7FF] text-black text-left">
             <motion.h1
               variants={fadeIn("right", 0.2)}
               initial="hidden"
@@ -184,7 +185,7 @@ function Landing(props) {
               Brands to Craft Unforgettable Digital Experiences!
             </motion.p>
           </div>
-          <img src={gif} alt="" className="w-[24vw] h-auto ml-24" />
+          <img src={imageClient} alt="" className="w-[24vw] h-auto ml-24" />
         </div>
         <div className="container flex mx-auto pt-2 space-x-24 ">
           <div className="text-left pl-16">
@@ -247,7 +248,7 @@ function Landing(props) {
         </div>
       </div>
 
-      <div className="flex-shrink-0 snap-start w-full h-screen bg-blue-400 flex items-center justify-center">
+      <div className="flex-shrink-0 snap-start w-full h-screen  bg-[#CDE8E5] flex items-center justify-center">
         <div className="">
           <div className="top flex pl-20 gap-20">
             <div className="flex ">
@@ -259,7 +260,7 @@ function Landing(props) {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-6xl pt-28 font-bold text-white"
+                className="text-6xl pt-28 font-bold text-black"
               >
                 Strategic
               </motion.h1>
@@ -268,7 +269,7 @@ function Landing(props) {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-6xl font-bold text-white"
+                className="text-6xl font-bold text-black"
               >
                 branding that
               </motion.h1>
@@ -277,7 +278,7 @@ function Landing(props) {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-6xl font-bold text-white"
+                className="text-6xl font-bold text-black"
               >
                 helpstand out!
               </motion.h1>
@@ -286,21 +287,21 @@ function Landing(props) {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="pt-4 w-96 pl-20 text-sm text-white"
+                className="pt-4 w-96 pl-20 text-sm text-black"
               >
                 You take on the business burden. In the meantime, we will help
                 your business grow with eye-catching website designs, which are
                 second to none!
               </motion.p>
               <button
-                onClick={() => navigate("/contact")}
+                onClick={() => navigate("/service")}
                 className="bg-red-500  mt-10 ml-20 text-white py-2 px-4 rounded hover:bg-red-700 transition"
               >
                 view case
               </button>
             </div>
 
-            <nav className="heading pt-16 text-white text-sm">
+            <nav className="heading pt-16 text-black text-sm">
               <ul className="pl-10 justify-items-end ">
                 <li className="hover:text-[#39FF14]">
                   <a href="/#/webDesign" className="text-sm text-right">
@@ -343,7 +344,7 @@ function Landing(props) {
         </div>
       </div>
 
-      <div className="flex-shrink-0 snap-start w-full h-screen bg-green-400 flex items-center justify-center">
+      <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] flex items-center justify-center">
         <div className="top flex ml-5 gap-20">
           <div className="text-white pl-20 text-left">
             <motion.h1
@@ -418,7 +419,7 @@ function Landing(props) {
           <img src={imageClient} alt="" className="h-auto mr-32 w-96" />
         </div>
       </div>
-      <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400 items-center justify-center">
+      <div className="flex-shrink-0 snap-start w-full h-screen bg-[#4D869C] items-center justify-center">
         <motion.div
           variants={fadeIn("up", 0.2)}
           initial="hidden"
@@ -426,13 +427,13 @@ function Landing(props) {
           viewport={{ once: false, amount: 0.7 }}
           className="head text-black text-center "
         >
-          <p className="text-lg pt-24">Reveal your thoughts</p>
+          <p className="text-lg text-black pt-24">Reveal your thoughts</p>
           <motion.h1
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="text-5xl font-bold"
+            className="text-5xl font-bold text-white"
           >
             Ready to start your
           </motion.h1>
@@ -441,10 +442,14 @@ function Landing(props) {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="text-5xl font-bold"
+            className="text-5xl font-bold text-white"
           >
             project?
           </motion.h1>
+
+
+
+
           <div className="flex justify-center items-center relative">
             <svg
               viewBox="0 0 100 100"
@@ -458,9 +463,10 @@ function Landing(props) {
               a 20,20 0 1,1 -40, 0"
                 fill="transparent"
               />
-              <text className="text-[7px] fill-current text-black">
+
+<text className="text-[4.9px] fill-current text-black">
                 <textPath href="#circlePath" startOffset="0%">
-                  | Triple R Consulting | Triple R Consulting.
+                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
                 </textPath>
               </text>
             </svg>
