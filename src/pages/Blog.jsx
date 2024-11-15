@@ -36,18 +36,18 @@ function Blog(props) {
     <div className="">
       <Loader videoSrc={videoSrc} />
 
-      <div className="bg-black">
+      <div className="bg-[#EEF7FF]">
         <div className="header">
           <div className="flex justify-between items-center pl-14 pr-16 px-9 py-9">
             <h2 
              onClick={() => navigate('/')}
             className="text-3xl">
-              <ImHome className="text-white fixed" />
+              <ImHome className=" fixed hover:text-[#39FF14]" />
             </h2>
 
             <main>
               <span
-                className="cursor-pointer text-2xl text-white fixed"
+                className="cursor-pointer text-2xl  fixed font-bold"
                 onClick={openMenu}
               >
                 &#9776;
@@ -108,36 +108,36 @@ function Blog(props) {
 
         <div className="flex gap-10 text-white pr-10">
           <div className="img pl-10">
-            <p className="pt-72 text-2xl font-bold">News & Event</p>
+            <p className="pt-72 text-2xl text-black font-bold">News & Event</p>
             <h1 className="text-6xl font-bold text-[#39FF14]">INSIGHTS</h1>
-            <p>
+            <p className="text-black">
               Insights, thoughts, industry trends, marketing tips, eDesign news,
               nerdy stuff, it's all here.
             </p>
-            <p className="pt-10 text-3xl font-bold">TECHNOLOGY TRENDS</p>
+            <p className="pt-10 text-3xl font-bold text-black">TECHNOLOGY TRENDS</p>
             <img src={image} alt="" className="mt-5" />
 
-            <p className="pt-32 text-3xl font-bold">TECHNOLOGY TRENDS</p>
+            <p className="pt-32 text-3xl font-bold text-black">TECHNOLOGY TRENDS</p>
             <img src={image1} alt="" className="mt-5 mb-10" />
           </div>
           <div className="img">
-            <p className="pt-60 text-3xl font-bold">TECHNOLOGY TRENDS</p>
+            <p className="pt-60 text-3xl font-bold text-black">TECHNOLOGY TRENDS</p>
             <img src={image2} alt="" className="mt-5" />
 
-            <p className="pt-32 text-3xl font-bold">TECHNOLOGY TRENDS</p>
+            <p className="pt-32 text-3xl font-bold text-black">TECHNOLOGY TRENDS</p>
             <img src={image4} alt="" className="mt-5" />
           </div>
           <div className="img">
-            <p className="pt-28 text-3xl font-bold">TECHNOLOGY TRENDS</p>
+            <p className="pt-28 text-3xl font-bold text-black">TECHNOLOGY TRENDS</p>
             <img src={image3} alt="" className="mt-5" />
 
-            <p className="pt-28 text-3xl font-bold">TECHNOLOGY TRENDS</p>
+            <p className="pt-28 text-3xl font-bold text-black">TECHNOLOGY TRENDS</p>
             <img src={image5} alt="" className="mt-5" />
           </div>
         </div>
       </div>
 
-      <div className="footer bg-yellow-400">
+      <div className="footer bg-[#4D869C]">
         <motion.div
           variants={fadeIn("up", 0.2)}
           initial="hidden"
@@ -151,7 +151,7 @@ function Blog(props) {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="text-5xl font-bold"
+            className="text-5xl font-bold text-white"
           >
             Ready to start your
           </motion.h1>
@@ -160,7 +160,7 @@ function Blog(props) {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="text-5xl font-bold"
+            className="text-5xl font-bold text-white"
           >
             project?
           </motion.h1>

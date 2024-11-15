@@ -7,6 +7,8 @@ import { useState } from "react";
 import { ImHome } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
 
+
+
 function Contacts(props) {
   const navigate = useNavigate();
   const [isMoved, setIsMoved] = useState(false);
@@ -60,17 +62,17 @@ function Contacts(props) {
     <div>
       <Loader videoSrc={videoSrc} />
 
-      <div className="contact">
+      <div className="contact bg-[#EEF7FF]">
         <div className="header">
           <div className="flex justify-between items-center pl-14 pr-16 px-9 py-9">
             <h2
              onClick={() => navigate('/')}
             className="text-3xl">
-              <ImHome className="fixed" />
+              <ImHome className="fixed hover:text-[#39FF14]" />
             </h2>
 
             <main>
-              <span className="cursor-pointer text-2xl fixed" onClick={openMenu}>
+              <span className="cursor-pointer text-2xl fixed font-bold" onClick={openMenu}>
                 &#9776;
               </span>
             </main>
@@ -128,12 +130,12 @@ function Contacts(props) {
         </div>
 
         <div className="top flex pl-52 gap-20 ">
-          <div className=" bg-white text-black text-left pt-16">
+          <div className=" text-black text-left pt-16">
             <p className="text-sm font-bold text-[#39FF14]">CONTACT US</p>
             <h1 className="text-6xl font-bold">Why not hit us</h1>
             <h1 className="text-6xl font-bold">up for</h1>
             <h1 className="text-6xl font-bold">assistance?</h1>
-            <p className="mt-4 w-96 text-sm">
+            <p className="mt-4 w-96 text-sm font-serif">
               Design is more than how something appears. Design is how it works.
               Want your brand to be on the upswing? Let us create a website that
               would take it there. Maximize engagement and make your business
@@ -289,17 +291,17 @@ function Contacts(props) {
         </div>
       </div>
 
-      <div className="about bg-black h-full w-full">
-        <h1 className="text-white pl-40 pt-12 font-bold text-4xl ">
+      <div className="about bg-[#CDE8E5] h-full w-full">
+        <h1 className="text-black pl-40 pt-12 font-bold text-4xl ">
           I'M INTERESTED IN . . .
         </h1>
 
-        <div className="bg-black flex items-center justify-center">
+        <div className=" flex items-center justify-center">
           <div className="grid grid-cols-5 gap-4 p-5 max-w-screen-lg">
             {boxItems.map((item, index) => (
               <div
                 key={index}
-                className="bg-black p-6 rounded  border border-gray-600 text-center hover:bg-[#39FF14] hover:text-black text-white"
+                className="bg-white text-black p-6 rounded  border border-gray-600 text-center hover:bg-[#39FF14] hover:text-black"
               >
                 {item}
               </div>
@@ -308,14 +310,14 @@ function Contacts(props) {
         </div>
 
         <div className="tellAbout">
-          <div className="flex items-center justify-center bg-black text-white">
-            <form onSubmit={handleSubmit} className="bg-black p-12  w-full">
-              <h1 className="text-white pb-10 pl-28 font-bold text-4xl">
+          <div className="flex items-center justify-center text-white">
+            <form onSubmit={handleSubmit} className=" p-12  w-full">
+              <h1 className="text-black pb-10 pl-28 font-bold text-4xl">
                 TELL US ABOUT YOURSELF . . .
               </h1>
               <div className="flex  space-x-36 pl-28 ">
                 <div className="mb-4 ">
-                  <label className="block mb-2" htmlFor="name">
+                  <label className="block mb-2 text-black" htmlFor="name">
                     What's Your Name?
                   </label>
                   <input
@@ -324,13 +326,13 @@ function Contacts(props) {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full p-3 rounded border border-gray-600 bg-black text-white"
+                    className="w-full p-3 rounded border border-gray-600 bg-white text-black"
                     required
                   />
                 </div>
 
                 <div className="mb-4">
-                  <label className="block mb-2" htmlFor="email">
+                  <label className="block mb-2 text-black" htmlFor="email">
                     What's Your Email?
                   </label>
                   <input
@@ -339,13 +341,13 @@ function Contacts(props) {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full p-3 rounded border border-gray-600 bg-black text-white"
+                    className="w-full p-3 rounded border border-gray-600 bg-white text-black"
                     required
                   />
                 </div>
 
                 <div className="mb-4">
-                  <label className="block mb-2" htmlFor="phone">
+                  <label className="block mb-2 text-black" htmlFor="phone">
                     What's Your Phone?
                   </label>
                   <input
@@ -354,13 +356,13 @@ function Contacts(props) {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full p-3 rounded border border-gray-600 bg-black text-white"
+                    className="w-full p-3 rounded border border-gray-600 bg-white text-black"
                     required
                   />
                 </div>
               </div>
               <div className="mb-4 pl-28 ">
-                <label className="block mb-2" htmlFor="projectDescription">
+                <label className="block mb-2 text-black" htmlFor="projectDescription">
                   Tell us about your project :)
                 </label>
                 <textarea
@@ -368,7 +370,7 @@ function Contacts(props) {
                   name="projectDescription"
                   value={formData.projectDescription}
                   onChange={handleChange}
-                  className="w-full p-3 rounded border border-gray-600 bg-black text-white"
+                  className="w-full p-3 rounded border border-gray-600 bg-white text-black"
                   required
                 />
               </div>
@@ -382,7 +384,7 @@ function Contacts(props) {
           </div>
         </div>
 
-        <div className="footer bg-yellow-400">
+        <div className="footer bg-[#4D869C]">
           <motion.div
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -396,7 +398,7 @@ function Contacts(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-5xl font-bold"
+              className="text-5xl font-bold text-white"
             >
               Ready to start your
             </motion.h1>
@@ -405,7 +407,7 @@ function Contacts(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-5xl font-bold"
+              className="text-5xl font-bold text-white"
             >
               project?
             </motion.h1>

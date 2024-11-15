@@ -56,17 +56,17 @@ function Service(props) {
       <Loader videoSrc={videoSrc} />
 
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-hidden">
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400 items-center justify-center">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-[#EEF7FF] items-center justify-center">
           <div className="header">
             <div className="flex justify-between items-center pl-14 pr-16 px-9 py-9">
               <h2 
                onClick={() => navigate('/')}
               className="text-3xl">
-                <ImHome className="fixed" />
+                <ImHome className="fixed hover:text-[#39FF14]" />
               </h2>
 
               <main>
-                <span className="cursor-pointer text-2xl fixed" onClick={openMenu}>
+                <span className="cursor-pointer text-2xl fixed font-bold" onClick={openMenu}>
                   &#9776;
                 </span>
               </main>
@@ -153,11 +153,11 @@ function Service(props) {
               Agency
             </motion.h1>
 
-            <p className="text-sm pt-5">
+            <p className="text-sm pt-5 font-serif">
               We help brands to grow and better connect with their prospective
               clients by
             </p>
-            <p className="text-sm">
+            <p className="text-sm font-serif">
               telling their stories clearly with effective branding.
             </p>
           </motion.div>
@@ -204,7 +204,7 @@ function Service(props) {
             </div>
           </div>
         </div>
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-white items-center justify-center">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center justify-center">
           <div className="ml-36 mr-36">
             <Swiper
               modules={[Pagination, Navigation, Scrollbar]}
@@ -227,7 +227,7 @@ function Service(props) {
                     <h1 className="font-bold text-4xl pt-5">
                       DIGITAL-MARKETING
                     </h1>
-                    <p className=" w-[35vw] text-justify pt-3 text-sm">
+                    <p className=" w-[35vw] text-justify pt-3 text-sm font-serif">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Earum consectetur debitis aspernatur?Lorem ipsum,Lorem
                       ipsum dolor sit amet, consectetur adipisicing elit.
@@ -249,7 +249,7 @@ function Service(props) {
                     </p>
                     <h4 className="font-bold text-4xl pl-96">02</h4>
                     <h1 className="font-bold pt-5 text-4xl">WEB DESIGNING</h1>
-                    <p className=" w-[35vw] pt-3 text-justify text-sm">
+                    <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Earum consectetur debitis aspernatur?Lorem ipsum,Lorem
                       ipsum dolor sit amet consectetur adipisicing elit. Ab at
@@ -272,7 +272,7 @@ function Service(props) {
                     <h1 className="font-bold pt-5 text-4xl">
                       SOCIAL MARKETING
                     </h1>
-                    <p className=" w-[35vw] pt-3 text-justify text-sm">
+                    <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Earum consectetur debitis aspernatur?Lorem ipsum,Lorem
                       ipsum dolor sit amet consectetur adipisicing elit. Ab at
@@ -293,7 +293,7 @@ function Service(props) {
                     </p>
                     <h4 className="font-bold text-4xl pl-96">04</h4>
                     <h1 className="font-bold pt-5 text-4xl">EMAIL MARKETING</h1>
-                    <p className=" w-[35vw] pt-3 text-justify text-sm">
+                    <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Earum consectetur debitis aspernatur?Lorem ipsum,Lorem
                       ipsum dolor sit amet consectetur adipisicing elit. Ab at
@@ -316,7 +316,7 @@ function Service(props) {
                     <h1 className="font-bold pt-5 text-4xl">
                       CONTENT MARKETING
                     </h1>
-                    <p className=" w-[35vw] pt-3 text-justify text-sm">
+                    <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Earum consectetur debitis aspernatur?Lorem ipsum,Lorem
                       ipsum dolor sit amet consectetur adipisicing elit. Ab at
@@ -339,7 +339,7 @@ function Service(props) {
                     <h1 className="font-bold pt-5 text-4xl">
                       SEARCH ENGINE OPTIMIZATION
                     </h1>
-                    <p className=" w-[35vw] pt-3 text-justify text-sm">
+                    <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Earum consectetur debitis aspernatur?Lorem ipsum,Lorem
                       ipsum dolor sit amet consectetur adipisicing elit. Ab at
@@ -356,7 +356,7 @@ function Service(props) {
           </div>
         </div>
 
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-black items-center justify-center">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] items-center justify-center">
           <div className="flex gap-20 text-white">
             <div className="head">
               <p className="pt-36 pl-52 text-sm font-bold  ">OUR_CLIENTS</p>
@@ -365,7 +365,7 @@ function Service(props) {
               <h1 className="pt-36 font-bold text-6xl">
                 We don’t work for you, but with you.
               </h1>
-              <p className="text-sm pt-5 pr-20">
+              <p className="text-sm pt-5 pr-20 font-serif">
                 You are not merely our client but our true partner. Every
                 talented individual on our team works closely together on an
                 equal footing. Fortunately, we’ve formed more than excellent
@@ -401,7 +401,7 @@ function Service(props) {
           </motion.div>
         </div>
 
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400 items-center justify-center">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-[#4D869C] items-center justify-center">
           <motion.div
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -415,7 +415,7 @@ function Service(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-5xl font-bold"
+              className="text-5xl font-bold text-white"
             >
               Ready to start your
             </motion.h1>
@@ -424,7 +424,7 @@ function Service(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-5xl font-bold"
+              className="text-5xl font-bold text-white"
             >
               project?
             </motion.h1>

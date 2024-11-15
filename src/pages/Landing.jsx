@@ -86,14 +86,14 @@ function Landing(props) {
     <div className="snap-y snap-mandatory overflow-y-auto h-screen scroll-smooth overflow-hidden">
       <div className="flex-shrink-0 snap-start w-full h-screen bg-[#EEF7FF]  items-center justify-center ">
         <div className="header ">
-          <div className=" flex  justify-between items-center pl-14 pr-9 px-9 py-9">
+          <div className=" flex  justify-between items-center pl-14 pr-20 px-9 py-9">
             <h2 className="text-3xl">
               <ImHome className="fixed hover:text-[#39FF14]" />
             </h2>
 
             <main>
               <span
-                className="cursor-pointer text-2xl fixed"
+                className="cursor-pointer text-2xl fixed font-bold"
                 onClick={openMenu}
               >
                 &#9776;
@@ -153,7 +153,7 @@ function Landing(props) {
           </div>
         </div>
 
-        <div className="top flex pl-48 gap-20">
+       <div className="top flex pl-48 gap-20">
           <div className=" bg-[#EEF7FF] text-black text-left">
             <motion.h1
               variants={fadeIn("right", 0.2)}
@@ -186,7 +186,7 @@ function Landing(props) {
             </motion.p>
           </div>
           <img src={imageClient} alt="" className="w-[24vw] h-auto ml-24" />
-        </div>
+        </div> 
         <div className="container flex mx-auto pt-2 space-x-24 ">
           <div className="text-left pl-16">
             <motion.p
@@ -202,7 +202,7 @@ function Landing(props) {
             </motion.p>
           </div>
 
-          <div className="flex justify-center items-center  relative">
+          <div className="flex justify-center items-center pl-6  relative">
             <svg
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
@@ -233,19 +233,19 @@ function Landing(props) {
             </button>
           </div>
 
-          <div className="text-right">
+          <div className="pl-6">
             <motion.p
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-black w-96 text-xs pt-16"
+              className="text-black w-96 text-xs pt-16 "
             >
               Blending creativity with practical solutions, we connect people to
               cutting-edge technology in inspiring new ways.
             </motion.p>
           </div>
-        </div>
+        </div> 
       </div>
 
       <div className="flex-shrink-0 snap-start w-full h-screen  bg-[#CDE8E5] flex items-center justify-center">
@@ -287,7 +287,7 @@ function Landing(props) {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="pt-4 w-96 pl-20 text-sm text-black"
+                className="pt-4 w-96 pl-20 text-sm text-black font-serif"
               >
                 You take on the business burden. In the meantime, we will help
                 your business grow with eye-catching website designs, which are
@@ -295,7 +295,7 @@ function Landing(props) {
               </motion.p>
               <button
                 onClick={() => navigate("/service")}
-                className="bg-red-500  mt-10 ml-20 text-white py-2 px-4 rounded hover:bg-red-700 transition"
+                className="bg-black  mt-10 ml-20 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
               >
                 view case
               </button>
@@ -370,7 +370,7 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="  pl-44 ml-16 text-sm pt-4 "
+              className="  pl-44 ml-16 text-sm pt-4 font-serif"
             >
               We help our valuable clients build a remarkable brand that becomes
               the talk of the town.
@@ -404,16 +404,7 @@ function Landing(props) {
               </div>
               <div></div>
 
-              {/* <div className="absolute top-1/2 left-0 transform -translate-y-1/2">
-        <button onClick={prevSlide} className="bg-gray-600 text-white p-2 rounded-full">
-          Prev
-        </button>
-      </div>
-      <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
-        <button onClick={nextSlide} className="bg-gray-600 text-white p-2 rounded-full">
-          Next
-        </button>
-      </div> */}
+              
             </div>
           </div>
           <img src={imageClient} alt="" className="h-auto mr-32 w-96" />

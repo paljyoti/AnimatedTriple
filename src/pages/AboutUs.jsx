@@ -38,17 +38,17 @@ const navigate = useNavigate();
     <div>
       <Loader videoSrc={videoSrc} />
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-hidden ">
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400  items-center justify-center ">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-[#EEF7FF]  items-center justify-center ">
           <div className="header">
             <div className="flex justify-between items-center pl-14 pr-16 px-9 py-9">
               <h2 
               onClick={() => navigate('/')}
               className="text-3xl">
-                <ImHome className="fixed" />
+                <ImHome className="fixed hover:text-[#39FF14]" />
               </h2>
 
               <main>
-                <span className="cursor-pointer text-2xl fixed" onClick={openMenu}>
+                <span className="cursor-pointer text-2xl fixed font-bold" onClick={openMenu}>
                   &#9776;
                 </span>
               </main>
@@ -133,7 +133,7 @@ const navigate = useNavigate();
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="pt-6 w-96 text-sm"
+                className="pt-6 w-96 text-sm font-serif"
               >
                 We are a graphic design studio, who is here to make an
                 extraordinary difference by transforming brands, around the
@@ -634,7 +634,7 @@ const navigate = useNavigate();
           </div>
         </div>
 
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-white items-center  justify-center">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center  justify-center">
           <div className="flex">
             <div className=" text-black text-left pt-36 pl-40">
               <motion.h1
@@ -679,7 +679,7 @@ const navigate = useNavigate();
                   >
                     01 Driven By Four
                   </motion.h1>
-                  <p className="w-96 text-justify">
+                  <p className="w-96 text-justify font-serif">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Officiis quod voluptatem quis. Lorem ipsum, dolor sit amet
@@ -701,7 +701,7 @@ const navigate = useNavigate();
                   >
                     02 Driven
                   </motion.h1>
-                  <p className="w-96 text-justify">
+                  <p className="w-96 text-justify font-serif">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Officiis quod voluptatem quis. Lorem ipsum, dolor sit amet
@@ -723,7 +723,7 @@ const navigate = useNavigate();
                   >
                     03 Driven By Four
                   </motion.h1>
-                  <p className=" w-96 text-justify">
+                  <p className=" w-96 text-justify font-serif">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Officiis quod voluptatem quis. Lorem ipsum, dolor sit amet
@@ -737,7 +737,7 @@ const navigate = useNavigate();
           </div>
         </div>
 
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-black item-center justify-center">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] item-center justify-center">
           <div className=" text-white text-left pt-52 pl-40">
             <motion.h1
               variants={fadeIn("right", 0.2)}
@@ -769,7 +769,7 @@ const navigate = useNavigate();
           </div>
         </div>
 
-        <div className="flex-shrink-0 snap-start w-full h-screen bg-yellow-400 items-center justify-center">
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-[#4D869C] items-center justify-center">
           <motion.div
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -783,7 +783,7 @@ const navigate = useNavigate();
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-5xl font-bold"
+              className="text-5xl font-bold text-white"
             >
               Ready to start your
             </motion.h1>
@@ -792,7 +792,7 @@ const navigate = useNavigate();
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-5xl font-bold"
+              className="text-5xl font-bold text-white"
             >
               project?
             </motion.h1>

@@ -1,29 +1,17 @@
-/* Define the initial state
-.svg-container {
-    transition: transform 0.3s ease;
-  }
-  
-  Define the movement on click or touch
-  .svg-container.move-up {
-    transform: translateY(-90px); Adjust the value to control the movement
-  } */
-
-
-
 
 
 
 
   .svg-container {
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease; 
   }
   
   .svg-container.move-up {
-    transform: translateY(-10px); /* Move the SVG up by 10px */
+    transform: translateY(-10px); 
   }
   
   .svg-container:hover {
-    transform: translateY(-90px); /* Move up on hover */
+    transform: translateY(-90px); 
   }
   
   

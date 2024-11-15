@@ -36,11 +36,11 @@ function Content(props) {
               <h2
               onClick={()=>{navigate('/')}}
               className="text-3xl">
-                <ImHome />
+                <ImHome className='hover:text-[#39FF14] fixed ' />
               </h2>
 
               <main>
-                <span className="cursor-pointer text-2xl" onClick={openMenu}>
+                <span className="cursor-pointer text-2xl fixed font-bold" onClick={openMenu}>
                   &#9776;
                 </span>
               </main>
@@ -108,7 +108,7 @@ function Content(props) {
         <h4 className="pt-5 font-semibold text-2xl md:text-3xl text-[#39FF14]">Content Marketing</h4>
         <img src={imageWeb4} alt="Web Design" className="h-auto w-full pt-10" />
       </div>
-      <div className="para text-justify pt-10">
+      <div className="para text-justify pt-10 font-serif">
         <p>
           At Mayabytes, we aim to design innovative websites by leveraging our
           best knowledge in technology. We are a professional expert team who are
@@ -142,7 +142,7 @@ function Content(props) {
         </p>
       </div>
     </div>
-    <div className="footer bg-yellow-400">
+    <div className="footer bg-[#4D869C]">
           <motion.div
         variants={fadeIn("up", 0.2)}
         initial="hidden"
@@ -156,13 +156,13 @@ function Content(props) {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="text-5xl font-bold">Ready to start your</motion.h1>
+            className="text-5xl font-bold text-white">Ready to start your</motion.h1>
             <motion.h1 
              variants={fadeIn("left", 0.2)}
              initial="hidden"
              whileInView={"show"}
              viewport={{ once: false, amount: 0.7 }}
-            className="text-5xl font-bold">project?</motion.h1>
+            className="text-5xl font-bold text-white">project?</motion.h1>
             <div className="flex justify-center items-center relative">
               <svg
                 viewBox="0 0 100 100"
