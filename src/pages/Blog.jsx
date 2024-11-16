@@ -38,7 +38,7 @@ function Blog(props) {
 
       <div className="bg-[#EEF7FF]">
         <div className="header">
-          <div className="flex justify-between items-center pl-14 pr-16 px-9 py-9">
+          <div className="flex justify-between items-center pl-14 pr-20 px-9 py-9">
             <h2 
              onClick={() => navigate('/')}
             className="text-3xl">
@@ -177,9 +177,9 @@ function Blog(props) {
               a 20,20 0 1,1 -40, 0"
                 fill="transparent"
               />
-              <text className="text-[7px] fill-current text-black">
+              <text className="text-[4.9px] fill-current text-black">
                 <textPath href="#circlePath" startOffset="0%">
-                  | Triple R Consulting | Triple R Consulting.
+                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
                 </textPath>
               </text>
             </svg>
@@ -240,7 +240,7 @@ function Blog(props) {
               style={{
                 enableBackground: "new 0 0 388.151 388.15",
                 marginLeft: "60px",
-                marginTop: "16px",
+                marginTop: "5px",
               }}
               xmlSpace="preserve"
               className={`svg-container ${isMoved ? "move-up" : ""}`} // Toggle class based on state

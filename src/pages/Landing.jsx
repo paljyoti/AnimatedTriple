@@ -233,7 +233,7 @@ function Landing(props) {
             </button>
           </div>
 
-          <div className="pl-6">
+          <div className="pl-7">
             <motion.p
               variants={fadeIn("up", 0.2)}
               initial="hidden"
@@ -375,10 +375,13 @@ function Landing(props) {
               We help our valuable clients build a remarkable brand that becomes
               the talk of the town.
             </motion.p>
+                 
 
-            <div className="slider flex pl-40  pt-2 ">
+        
+
+             <div className="slider flex pl-28  ">
               <Slider {...settings}></Slider>
-            </div>
+            
 
             <div className="relative ml-20 mt-10 w-[35vw]">
               <div
@@ -402,10 +405,10 @@ function Landing(props) {
                   </div>
                 ))}
               </div>
-              <div></div>
+              </div>
 
               
-            </div>
+            </div> 
           </div>
           <img src={imageClient} alt="" className="h-auto mr-32 w-96" />
         </div>
@@ -455,7 +458,7 @@ function Landing(props) {
                 fill="transparent"
               />
 
-<text className="text-[4.9px] fill-current text-black">
+               <text className="text-[4.9px] fill-current text-black">
                 <textPath href="#circlePath" startOffset="0%">
                   | TripleRConsulting | TripleRConsulting | TripleRConsulting
                 </textPath>
@@ -508,8 +511,8 @@ function Landing(props) {
                 </li>
               </ul>
               <h1 className="text-left pl-6">
-                © Triple R Consulting 2024, All rights reserved.&{" "}
-                <span className="">devloped by jyoti pal.</span>
+                © Triple R Consulting 2024, All rights reserved.
+                {/* <span className="">devloped by jyoti pal.</span> */}
               </h1>
             </div>
 
@@ -525,7 +528,7 @@ function Landing(props) {
               style={{
                 enableBackground: "new 0 0 388.151 388.15",
                 marginLeft: "60px",
-                marginTop: "16px",
+                marginTop: "5px",
               }}
               xmlSpace="preserve"
               className={`svg-container ${isMoved ? "move-up" : ""}`} // Toggle class based on state

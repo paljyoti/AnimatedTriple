@@ -175,11 +175,11 @@ function Ppc(props) {
               a 20,20 0 1,1 -40, 0"
                   fill="transparent"
                 />
-                <text className="text-[7px] fill-current text-black">
-                  <textPath href="#circlePath" startOffset="0%">
-                    | Triple R Consulting | Triple R Consulting.
-                  </textPath>
-                </text>
+                  <text className="text-[4.9px] fill-current text-black">
+                <textPath href="#circlePath" startOffset="0%">
+                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
+                </textPath>
+              </text>
               </svg>
               <button className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
                 Let's
@@ -243,7 +243,7 @@ function Ppc(props) {
                 style={{
                   enableBackground: "new 0 0 388.151 388.15",
                   marginLeft: "60px",
-                  marginTop: "16px",
+                  marginTop: "5px",
                 }}
                 xmlSpace="preserve"
                 className={`svg-container ${isMoved ? "move-up" : ""}`} // Toggle class based on state

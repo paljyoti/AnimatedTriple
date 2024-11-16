@@ -64,7 +64,7 @@ function Contacts(props) {
 
       <div className="contact bg-[#EEF7FF]">
         <div className="header">
-          <div className="flex justify-between items-center pl-14 pr-16 px-9 py-9">
+          <div className="flex justify-between items-center pl-14 pr-20 px-9 py-9">
             <h2
              onClick={() => navigate('/')}
             className="text-3xl">
@@ -237,20 +237,20 @@ function Contacts(props) {
         </div>
 
         <div className="container flex mx-auto  space-x-24  ">
-          <div className="text-left mb-6 pl-16">
+          <div className="text-left mb-6 pl-20">
             <motion.p
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-black text-sm w-96 pt-12 "
+              className="text-black text-xs w-96 pt-20 "
             >
               Creative agency in Houston made with loads of love and dedication
               in Houston, TX.
             </motion.p>
           </div>
 
-          <div className="flex justify-center items-center relative">
+          <div className="flex justify-center items-center relative ">
             <svg
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
@@ -263,9 +263,9 @@ function Contacts(props) {
               a 20,20 0 1,1 -40, 0"
                 fill="transparent"
               />
-              <text className="text-[7px] fill-current text-black">
+              <text className="text-[4.9px] fill-current text-black">
                 <textPath href="#circlePath" startOffset="0%">
-                  | Triple R Consulting | Triple R Consulting.
+                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
                 </textPath>
               </text>
             </svg>
@@ -276,13 +276,13 @@ function Contacts(props) {
             </button>
           </div>
 
-          <div className="text-right">
+          <div className="">
             <motion.p
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-black w-96 text-sm pt-12"
+              className="text-black w-96 text-xs pt-20"
             >
               Weaving together creativity and practical ways to link people to
               cutting-edge technology.
@@ -297,7 +297,7 @@ function Contacts(props) {
         </h1>
 
         <div className=" flex items-center justify-center">
-          <div className="grid grid-cols-5 gap-4 p-5 max-w-screen-lg">
+          <div className="grid grid-cols-5 gap-4 p-5 max-w-screen-lg font-serif">
             {boxItems.map((item, index) => (
               <div
                 key={index}
@@ -316,7 +316,7 @@ function Contacts(props) {
                 TELL US ABOUT YOURSELF . . .
               </h1>
               <div className="flex  space-x-36 pl-28 ">
-                <div className="mb-4 ">
+                <div className="mb-4 font-serif">
                   <label className="block mb-2 text-black" htmlFor="name">
                     What's Your Name?
                   </label>
@@ -331,7 +331,7 @@ function Contacts(props) {
                   />
                 </div>
 
-                <div className="mb-4">
+                <div className="mb-4 font-serif">
                   <label className="block mb-2 text-black" htmlFor="email">
                     What's Your Email?
                   </label>
@@ -346,7 +346,7 @@ function Contacts(props) {
                   />
                 </div>
 
-                <div className="mb-4">
+                <div className="mb-4 font-serif">
                   <label className="block mb-2 text-black" htmlFor="phone">
                     What's Your Phone?
                   </label>
@@ -361,7 +361,7 @@ function Contacts(props) {
                   />
                 </div>
               </div>
-              <div className="mb-4 pl-28 ">
+              <div className="mb-4 pl-28 font-serif ">
                 <label className="block mb-2 text-black" htmlFor="projectDescription">
                   Tell us about your project :)
                 </label>
@@ -376,7 +376,7 @@ function Contacts(props) {
               </div>
               <button
                 type="submit"
-                className="bg-white ml-28 hover:bg-[#39FF14] text-black py-2 px-4 rounded w-48"
+                className="bg-white ml-28 hover:bg-[#39FF14] text-black py-2 px-4 rounded w-48 font-serif"
               >
                 Send Message
               </button>
@@ -424,11 +424,11 @@ function Contacts(props) {
               a 20,20 0 1,1 -40, 0"
                   fill="transparent"
                 />
-                <text className="text-[7px] fill-current text-black">
-                  <textPath href="#circlePath" startOffset="0%">
-                    | Triple R Consulting | Triple R Consulting.
-                  </textPath>
-                </text>
+                <text className="text-[4.9px] fill-current text-black">
+                <textPath href="#circlePath" startOffset="0%">
+                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
+                </textPath>
+              </text>
               </svg>
               <button className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
                 Let's
@@ -492,7 +492,7 @@ function Contacts(props) {
                 style={{
                   enableBackground: "new 0 0 388.151 388.15",
                   marginLeft: "60px",
-                  marginTop: "16px",
+                  marginTop: "5px",
                 }}
                 xmlSpace="preserve"
                 className={`svg-container ${isMoved ? "move-up" : ""}`} // Toggle class based on state

@@ -40,7 +40,7 @@ const navigate = useNavigate();
       <div className="snap-y snap-mandatory h-screen overflow-y-scroll overflow-hidden ">
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#EEF7FF]  items-center justify-center ">
           <div className="header">
-            <div className="flex justify-between items-center pl-14 pr-16 px-9 py-9">
+            <div className="flex justify-between items-center pl-14 pr-20 px-9 py-9">
               <h2 
               onClick={() => navigate('/')}
               className="text-3xl">
@@ -581,20 +581,20 @@ const navigate = useNavigate();
             </svg>
           </div>
 
-          <div className="container flex mx-auto mt-5  space-x-24 p-4 ">
-            <div className="text-left mb-6 pl-16">
+          <div className="container flex mx-auto   space-x-24  ">
+            <div className="text-left pl-20 ">
               <motion.p
                 variants={fadeIn("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-black text-sm w-96 pt-12 "
+                className="text-black text-xs w-96 pt-28 "
               >
                 © Triple R Consulting 2024, All rights reserved.
               </motion.p>
             </div>
 
-            <div className="flex justify-center items-center relative">
+            <div className="flex justify-center items-center relative pt-12">
               <svg
                 viewBox="0 0 100 100"
                 xmlns="http://www.w3.org/2000/svg"
@@ -607,11 +607,11 @@ const navigate = useNavigate();
               a 20,20 0 1,1 -40, 0"
                   fill="transparent"
                 />
-                <text className="text-[7px]  fill-current text-black">
-                  <textPath href="#circlePath" startOffset="0%">
-                    | Triple R Consulting | Triple R Consulting.
-                  </textPath>
-                </text>
+                 <text className="text-[4.9px] fill-current text-black">
+                <textPath href="#circlePath" startOffset="0%">
+                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
+                </textPath>
+              </text>
               </svg>
               <button className="absolute  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
                 Let's
@@ -626,12 +626,13 @@ const navigate = useNavigate();
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-black w-96 text-sm pt-12"
+                className="text-black w-96 text-xs pt-28"
               >
                 Privacy Policy · Terms and conditions
               </motion.p>
             </div>
           </div>
+
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center  justify-center">
@@ -809,11 +810,11 @@ const navigate = useNavigate();
               a 20,20 0 1,1 -40, 0"
                   fill="transparent"
                 />
-                <text className="text-[7px] fill-current text-black">
-                  <textPath href="#circlePath" startOffset="0%">
-                    | Triple R Consulting | Triple R Consulting.
-                  </textPath>
-                </text>
+                  <text className="text-[4.9px] fill-current text-black">
+                <textPath href="#circlePath" startOffset="0%">
+                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
+                </textPath>
+              </text>
               </svg>
               <button className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
                 Let's
@@ -873,7 +874,7 @@ const navigate = useNavigate();
                 style={{
                   enableBackground: "new 0 0 388.151 388.15",
                   marginLeft: "60px",
-                  marginTop: "16px",
+                  marginTop: "5px",
                 }}
                 xmlSpace="preserve"
                 className={`svg-container ${isMoved ? "move-up" : ""}`} // Toggle class based on state
