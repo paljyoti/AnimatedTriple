@@ -155,7 +155,7 @@ function Seo(props) {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="text-5xl font-bold text-white">Ready to start your</motion.h1>
+            className="text-5xl font-bold font-semibold  text-white">Ready to start your</motion.h1>
             <motion.h1 
              variants={fadeIn("left", 0.2)}
              initial="hidden"

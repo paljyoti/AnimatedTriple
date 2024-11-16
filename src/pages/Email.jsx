@@ -152,7 +152,7 @@ function Email(props) {
         viewport={{ once: false, amount: 0.7 }}
           
           className="head text-black text-center">
-            <p className="text-lg pt-24">Reveal your thoughts</p>
+            <p className="text-lg font-semibold  pt-24">Reveal your thoughts</p>
             <motion.h1 
             variants={fadeIn("right", 0.2)}
             initial="hidden"

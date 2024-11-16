@@ -59,14 +59,15 @@ function Service(props) {
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#EEF7FF] items-center justify-center">
           <div className="header">
             <div className="flex justify-between items-center pl-14 pr-20 px-9 py-9">
-              <h2 
-               onClick={() => navigate('/')}
-              className="text-3xl">
+              <h2 onClick={() => navigate("/")} className="text-3xl">
                 <ImHome className="fixed hover:text-[#39FF14]" />
               </h2>
 
               <main>
-                <span className="cursor-pointer text-2xl fixed font-bold" onClick={openMenu}>
+                <span
+                  className="cursor-pointer text-2xl fixed font-bold"
+                  onClick={openMenu}
+                >
                   &#9776;
                 </span>
               </main>
@@ -160,9 +161,9 @@ function Service(props) {
             <p className="text-sm font-serif">
               telling their stories clearly with effective branding.
             </p>
-          </motion.div>    
+          </motion.div>
 
-<div className="container flex mx-auto   space-x-24  ">
+          <div className="container flex mx-auto   space-x-24  ">
             <div className="text-left pl-20 ">
               <motion.p
                 variants={fadeIn("up", 0.2)}
@@ -188,11 +189,11 @@ function Service(props) {
               a 20,20 0 1,1 -40, 0"
                   fill="transparent"
                 />
-                 <text className="text-[4.9px] fill-current text-black">
-                <textPath href="#circlePath" startOffset="0%">
-                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
-                </textPath>
-              </text>
+                <text className="text-[4.9px] fill-current text-black">
+                  <textPath href="#circlePath" startOffset="0%">
+                    | TripleRConsulting | TripleRConsulting | TripleRConsulting
+                  </textPath>
+                </text>
               </svg>
               <button className="absolute  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
                 Let's
@@ -213,7 +214,6 @@ function Service(props) {
               </motion.p>
             </div>
           </div>
-
         </div>
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center justify-center">
           <div className="ml-36 mr-36">
@@ -239,12 +239,11 @@ function Service(props) {
                       DIGITAL-MARKETING
                     </h1>
                     <p className=" w-[35vw] text-justify pt-3 text-sm font-serif">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Earum consectetur debitis aspernatur?Lorem ipsum,Lorem
-                      ipsum dolor sit amet, consectetur adipisicing elit.
-                      Tempore laudantium officia voluptas. dolor sit amet
-                      consectetur adipisicing elit. Doloribus tempore totam
-                      fugit.
+                      In today’s fast-paced digital landscape, standing out
+                      requires more than just an online presence—it demands a
+                      strategic approach to marketing. At Triple R Consulting,
+                      we specialize in crafting data-driven, result-oriented
+                      digital marketing strategies that help businesses thrive.
                     </p>
                   </div>
                   <div>
@@ -261,11 +260,11 @@ function Service(props) {
                     <h4 className="font-bold text-4xl pl-96">02</h4>
                     <h1 className="font-bold pt-5 text-4xl">WEB DESIGNING</h1>
                     <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Earum consectetur debitis aspernatur?Lorem ipsum,Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Ab at
-                      molestiae facilis. dolor sit amet consectetur adipisicing
-                      elit. Doloribus tempore totam fugit.
+                      At Triple R Consulting, we believe that your website is
+                      more than just an online presence—it’s the cornerstone of
+                      your digital identity. A well-designed website can elevate
+                      your brand, engage your audience, and drive business
+                      growth.
                     </p>
                   </div>
                   <div>
@@ -284,11 +283,11 @@ function Service(props) {
                       SOCIAL MARKETING
                     </h1>
                     <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Earum consectetur debitis aspernatur?Lorem ipsum,Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Ab at
-                      molestiae facilis. dolor sit amet consectetur adipisicing
-                      elit. Doloribus tempore totam fugit.
+                      Social media is where conversations happen, trends are
+                      born, and brands make their mark. At Triple R Consulting,
+                      we harness the power of social platforms to help your
+                      business connect with its audience, build trust, and drive
+                      meaningful engagement.
                     </p>
                   </div>
                   <div>
@@ -305,11 +304,11 @@ function Service(props) {
                     <h4 className="font-bold text-4xl pl-96">04</h4>
                     <h1 className="font-bold pt-5 text-4xl">EMAIL MARKETING</h1>
                     <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Earum consectetur debitis aspernatur?Lorem ipsum,Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Ab at
-                      molestiae facilis. dolor sit amet consectetur adipisicing
-                      elit. Doloribus tempore totam fugit.
+                      Email marketing remains one of the most effective ways to
+                      connect with your audience and drive results. At Triple R
+                      Consulting, we create personalized, impactful email
+                      campaigns that help you nurture relationships, boost
+                      engagement, and grow your business.
                     </p>
                   </div>
                   <div>
@@ -328,11 +327,11 @@ function Service(props) {
                       CONTENT MARKETING
                     </h1>
                     <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Earum consectetur debitis aspernatur?Lorem ipsum,Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Ab at
-                      molestiae facilis. dolor sit amet consectetur adipisicing
-                      elit. Doloribus tempore totam fugit.
+                      In a world where content is king, delivering the right
+                      message at the right time can set your brand apart. At
+                      Triple R Consulting, we craft compelling, value-driven
+                      content that attracts, engages, and converts your audience
+                      into loyal customers.
                     </p>
                   </div>
                   <div>
@@ -351,11 +350,33 @@ function Service(props) {
                       SEARCH ENGINE OPTIMIZATION
                     </h1>
                     <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Earum consectetur debitis aspernatur?Lorem ipsum,Lorem
-                      ipsum dolor sit amet consectetur adipisicing elit. Ab at
-                      molestiae facilis. dolor sit amet consectetur adipisicing
-                      elit. Doloribus tempore totam fugit.
+                      If your business isn’t visible online, it’s missing out.
+                      At Triple R Consulting, we specialize in Search Engine
+                      Optimization (SEO) strategies that help your website rank
+                      higher, attract organic traffic, and drive real business
+                      results.
+                    </p>
+                  </div>
+                  <div>
+                    <img src={slideImage5} alt="" className="pr-10 w-96" />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider flex pt-32  gap-10">
+                  <div className="pl-20 pt-16 text-black">
+                    <p className="text-sm font-bold text-[#39FF14]">
+                      WHAT WE DO{" "}
+                    </p>
+                    <h4 className="font-bold text-4xl pl-96">07</h4>
+                    <h1 className="font-bold pt-5 text-4xl">Pay Per Click</h1>
+                    <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
+                      In the fast-paced world of digital marketing,
+                      Pay-Per-Click (PPC) advertising offers a quick and
+                      effective way to drive targeted traffic to your website.
+                      At Triple R Consulting, we create data-driven PPC
+                      campaigns that deliver measurable results, helping you
+                      maximize your ROI.
                     </p>
                   </div>
                   <div>
@@ -377,10 +398,9 @@ function Service(props) {
                 We don’t work for you, but with you.
               </h1>
               <p className="text-sm pt-5 pr-20 font-serif">
-                You are not merely our client but our true partner. Every
-                talented individual on our team works closely together on an
-                equal footing. Fortunately, we’ve formed more than excellent
-                partnerships; we have formed long-lasting, true friendships.
+                We partner with ambitious clients to build an unforgettable
+                brand that resonates with their audience and leaves a lasting
+                impact.
               </p>
             </div>
           </div>
@@ -398,7 +418,14 @@ function Service(props) {
             <img src={image4} alt="" />
           </motion.div>
 
-          <motion.div
+          <div className="logo flex gap-32 pl-80 pt-4 text-white">
+            <h1 className="pl-14">Interior design</h1>
+            <h1>Driving Awareness</h1>
+            <h1>Earnify</h1>
+            <h1>Exeligo Innovations</h1>
+          </div>
+
+          {/* <motion.div
             initial={{ x: 400, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 3 }}
@@ -409,7 +436,7 @@ function Service(props) {
             <img src={image6} alt="" />
             <img src={image7} alt="" />
             <img src={image8} alt="" />
-          </motion.div>
+          </motion.div> */}
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#4D869C] items-center justify-center">
@@ -420,7 +447,7 @@ function Service(props) {
             viewport={{ once: false, amount: 0.7 }}
             className="head text-black text-center "
           >
-            <p className="text-lg pt-24">Reveal your thoughts</p>
+            <p className="text-lg font-semibold  pt-24">Reveal your thoughts</p>
             <motion.h1
               variants={fadeIn("right", 0.2)}
               initial="hidden"
@@ -453,10 +480,10 @@ function Service(props) {
                   fill="transparent"
                 />
                 <text className="text-[4.9px] fill-current text-black">
-                <textPath href="#circlePath" startOffset="0%">
-                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
-                </textPath>
-              </text>
+                  <textPath href="#circlePath" startOffset="0%">
+                    | TripleRConsulting | TripleRConsulting | TripleRConsulting
+                  </textPath>
+                </text>
               </svg>
               <button className="absolute onClick={()=>{navigate('/contact')}} text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
                 Let's
@@ -535,18 +562,18 @@ function Service(props) {
                   Get in touch
                 </h6>
                 <h1 className="text-md text-right">
-                  Email:
+                  Email  
                   <a
                     href="mailto:jyot2999@gmail.com"
                     className="hover:text-gray-400"
                   >
-                    rishabhbahree@gmail.com
+                    : rishabhbahree@gmail.com 
                   </a>
                 </h1>
                 <h1 className="text-md text-right">
                   Phone:
                   <a href="tel:+1234567890" className="hover:text-gray-400">
-                    123-456-7890
+                  +91 7018324802
                   </a>
                 </h1>
               </div>

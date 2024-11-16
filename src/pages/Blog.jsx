@@ -145,7 +145,7 @@ function Blog(props) {
           viewport={{ once: false, amount: 0.7 }}
           className="head text-black text-center"
         >
-          <p className="text-lg pt-24">Reveal your thoughts</p>
+          <p className="text-lg  font-semibold pt-24">Reveal your thoughts</p>
           <motion.h1
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -259,18 +259,18 @@ function Blog(props) {
                 Get in touch
               </h6>
               <h1 className="text-md text-right">
-                Email:
+                Email
                 <a
                   href="mailto:jyot2999@gmail.com"
                   className="hover:text-gray-400"
                 >
-                  rishabhbahree@gmail.com
+                 : rishabhbahree@gmail.com
                 </a>
               </h1>
               <h1 className="text-md text-right">
                 Phone:
                 <a href="tel:+1234567890" className="hover:text-gray-400">
-                  123-456-7890
+                +91 7018324802
                 </a>
               </h1>
             </div>

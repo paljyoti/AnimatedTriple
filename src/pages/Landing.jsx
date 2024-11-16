@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import imageSection from "../../src/assets/window-4478126_1280 (1).jpg";
+import imageSection from "../../src/assets/social-media-marketing.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../src/Varients";
 import "../../src/css/landing.css";
@@ -10,6 +10,19 @@ import imageClient from "../../src/assets/greenery.gif";
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import { ImHome } from "react-icons/im";
+
+
+import image1 from "../../src/assets/icons8-logo-50 (1).png";
+import image2 from "../../src/assets/icons8-logo-50 (2).png";
+import image3 from "../../src/assets/icons8-logo-50.png";
+import image4 from "../../src/assets/icons8-logo-50 (7).png";
+import image8 from "../../src/assets/icons8-logo-50 (5).png";
+import image6 from "../../src/assets/icons8-logo-50 (6).png";
+import image7 from "../../src/assets/icons8-logo-50 (4).png";
+import image5 from "../../src/assets/icons8-logo-50 (8).png";
+
+
+
 
 function Landing(props) {
   const navigate = useNavigate();
@@ -30,57 +43,60 @@ function Landing(props) {
     setIsMenuOpen(false);
   };
 
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
 
-  const items = [
-    { id: 1, title: `Exeligo - Innovation - triple` },
-    { id: 2, title: " Amazone - Flipkart " },
-    { id: 3, title: "TripleR - mayabytes - Triple" },
-  ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const carouselRef = useRef(null);
-  const isDragging = useRef(false);
-  const startX = useRef(0);
-  const scrollLeft = useRef(0);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-  };
+  // var settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  // };
 
-  const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + items.length) % items.length
-    );
-  };
+  // const items = [
+  //   { id: 1, title: `Exeligo  Innovation  triple` },
+  //   { id: 2, title: " Amazone  Flipkart " },
+  //   { id: 3, title: "TripleRConsulting    Triple" },
+  // ];
 
-  const handleMouseDown = (e) => {
-    isDragging.current = true;
-    startX.current = e.pageX - carouselRef.current.offsetLeft;
-    scrollLeft.current = carouselRef.current.scrollLeft;
-  };
+  // const [currentIndex, setCurrentIndex] = useState(0);
+  // const carouselRef = useRef(null);
+  // const isDragging = useRef(false);
+  // const startX = useRef(0);
+  // const scrollLeft = useRef(0);
 
-  const handleMouseLeave = () => {
-    isDragging.current = false;
-  };
+  // const nextSlide = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+  // };
 
-  const handleMouseUp = () => {
-    isDragging.current = false;
-  };
+  // const prevSlide = () => {
+  //   setCurrentIndex(
+  //     (prevIndex) => (prevIndex - 1 + items.length) % items.length
+  //   );
+  // };
 
-  const handleMouseMove = (e) => {
-    if (!isDragging.current) return;
-    e.preventDefault();
-    const x = e.pageX - carouselRef.current.offsetLeft;
-    const walk = (x - startX.current) * 2; // Adjust scroll speed
-    carouselRef.current.scrollLeft = scrollLeft.current - walk;
-  };
+  // const handleMouseDown = (e) => {
+  //   isDragging.current = true;
+  //   startX.current = e.pageX - carouselRef.current.offsetLeft;
+  //   scrollLeft.current = carouselRef.current.scrollLeft;
+  // };
+
+  // const handleMouseLeave = () => {
+  //   isDragging.current = false;
+  // };
+
+  // const handleMouseUp = () => {
+  //   isDragging.current = false;
+  // };
+
+  // const handleMouseMove = (e) => {
+  //   if (!isDragging.current) return;
+  //   e.preventDefault();
+  //   const x = e.pageX - carouselRef.current.offsetLeft;
+  //   const walk = (x - startX.current) * 2; // Adjust scroll speed
+  //   carouselRef.current.scrollLeft = scrollLeft.current - walk;
+  // };
 
   return (
     <div className="snap-y snap-mandatory overflow-y-auto h-screen scroll-smooth overflow-hidden">
@@ -148,7 +164,7 @@ function Landing(props) {
               <h1 className="text-white text-sm">
                 Email : rishabhbharee@gmail.com
               </h1>
-              <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
+              <h1 className="text-white text-sm">Ph : +91 7018324802</h1>
             </div>
           </div>
         </div>
@@ -197,7 +213,7 @@ function Landing(props) {
               className="text-black text-xs w-96 pt-16"
             >
               Crafted with passion and dedication, our creative agency in
-              Gurugram, Haryana, delivers innovative solutions to bring your
+              Gurugram, Haryana, India, delivers innovative solutions to bring your
               brand's vision to life.
             </motion.p>
           </div>
@@ -241,7 +257,7 @@ function Landing(props) {
               viewport={{ once: false, amount: 0.7 }}
               className="text-black w-96 text-xs pt-16 "
             >
-              Blending creativity with practical solutions, we connect people to
+              Blending creativity with practical solutions, we connect people and brands
               cutting-edge technology in inspiring new ways.
             </motion.p>
           </div>
@@ -250,10 +266,92 @@ function Landing(props) {
 
       <div className="flex-shrink-0 snap-start w-full h-screen  bg-[#CDE8E5] flex items-center justify-center">
         <div className="">
-          <div className="top flex pl-20 gap-20">
-            <div className="flex ">
-              <img src={imageSection} alt="" className="w-96 h-96   " />
+          <div className="top flex pl-20  gap-52">
+            
+            <div className=" pt-16 ">
+              <div className="web">
+              <a className="" href=""><button
+                onClick={() => navigate("/service")}
+                className="bg-black  mt-10  ml-60 text-lg font-bold text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+              >
+                WebDesigning
+              </button> </a>
+
+        
+              </div>
+               <div className="sec gap-44 text-lg font-bold  flex">
+               <a className=" flex pl-20 pt-14 " href="">
+                
+               <button
+                onClick={() => navigate("/service")}
+                className="bg-black  ml-20 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+              >
+                DigitalMarketing
+              </button>
+               </a>
+               <a className="flex pt-14" href=""> 
+                
+               <button
+                onClick={() => navigate("/service")}
+                className="bg-black  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+              >
+               SocialMedia
+              </button>
+                
+                </a>
+               </div>
+               <div className="sec text-lg font-bold pt-10 flex">
+               <a className=" flex pt-24 pr-10 " href="">
+                
+                
+                EmailMarketing</a>
+               <img src={imageSection} alt="" className="w-52 h-52   " />  
+               <a className="flex pt-24 pl-10" href="">ContentMarketing</a>
+               </div>
+               <div className="sec text-lg font-bold gap-44 pt-10 pl-44 flex">
+               <a className=" flex " href="">SEO</a>
+               <a className="flex" href=""> PPC</a>
+               </div>
+              
+              {/* <a className="" href="">PPC</a>
+              <a className="pt-72" href="">SEO</a>
+               
+            <a className="" href="">EmailMarketing</a>
+            <a className="pt-36" href=""> ContentMarketing</a> */}
+           
             </div>
+              
+
+              {/* <div className="relative w-80 h-80 mx-auto">
+  
+  <a href="" className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">webDesigning</a>
+  
+  
+  <a href="" className="absolute top-1/4 left-0 transform -translate-x-1/2 -translate-y-1/2">DigitalMarketing</a>
+  
+  
+  <a href="" className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2">SocialMedia</a>
+  
+ 
+  <a href="" className="absolute top-3/4 left-0 transform -translate-x-1/2 -translate-y-1/2">PPC</a>
+  
+ 
+  <a href="" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">SEO</a>
+  
+ 
+  <img src={imageSection} alt="" className="absolute top-1/2 left-1/2 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-full" />
+  
+  
+  <a href="" className="absolute top-3/4 right-0 transform -translate-x-1/2 -translate-y-1/2">EmailMarketing</a>
+  
+ 
+  <a href="" className="absolute top-1/2 right-0  transform -translate-x-1/2 -translate-y-1/2">ContentMarketing</a>
+</div> */}
+
+
+
+
+
             <div>
               <motion.h1
                 variants={fadeIn("down", 0.2)}
@@ -301,7 +399,7 @@ function Landing(props) {
               </button>
             </div>
 
-            <nav className="heading pt-16 text-black text-sm">
+             {/* <nav className="heading pt-16 text-black text-sm">
               <ul className="pl-10 justify-items-end ">
                 <li className="hover:text-[#39FF14]">
                   <a href="/#/webDesign" className="text-sm text-right">
@@ -339,7 +437,7 @@ function Landing(props) {
                   </a>
                 </li>
               </ul>
-            </nav>
+            </nav>  */}
           </div>
         </div>
       </div>
@@ -370,20 +468,48 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="  pl-44 ml-16 text-sm pt-4 font-serif"
+              className="  pl-44 mr-24 text-sm pt-4 font-serif"
             >
-              We help our valuable clients build a remarkable brand that becomes
-              the talk of the town.
+              We partner with ambitious clients to build an unforgettable brand that resonates with their audience and leaves a lasting impact.
             </motion.p>
                  
 
-        
-
-             <div className="slider flex pl-28  ">
-              <Slider {...settings}></Slider>
+             <div className=" ">
+              {/* <Slider {...settings}></Slider> */}
             
+                     
+              <motion.div
+            // initial={{ x: -400, opacity: 0 }}
+            // whileInView={{ x: 0, opacity: 1 }}
+            // transition={{ duration: 3 }}
+            // viewport={{ once: true }}
+             
+            variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
 
-            <div className="relative ml-20 mt-10 w-[35vw]">
+
+            className="icons flex gap-24 pt-14 pl-16"
+          >
+            <img src={image1} alt="" />
+            
+            <img src={image2} alt="" />
+            
+            <img src={image3} alt="" />
+           
+            <img src={image4} alt="" />
+            
+          </motion.div>
+
+          <div className="logo flex gap-10 pl-12 pt-4">
+          <h1>Interior design</h1>
+          <h1>Driving Awareness</h1>
+          <h1>Earnify</h1>
+          <h1>Exeligo Innovations</h1>
+          </div>
+         
+            {/* <div className="relative ml-20 mt-10  w-[35vw]">
               <div
                 ref={carouselRef}
                 className="flex overflow-x-hidden"
@@ -405,14 +531,22 @@ function Landing(props) {
                   </div>
                 ))}
               </div>
-              </div>
+              </div> */}
 
               
             </div> 
+
+
+
           </div>
           <img src={imageClient} alt="" className="h-auto mr-32 w-96" />
         </div>
+
+ 
+
       </div>
+
+
       <div className="flex-shrink-0 snap-start w-full h-screen bg-[#4D869C] items-center justify-center">
         <motion.div
           variants={fadeIn("up", 0.2)}
@@ -421,7 +555,7 @@ function Landing(props) {
           viewport={{ once: false, amount: 0.7 }}
           className="head text-black text-center "
         >
-          <p className="text-lg text-black pt-24">Reveal your thoughts</p>
+          <p className="text-lg text-black font-semibold pt-24">Reveal your thoughts</p>
           <motion.h1
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -547,18 +681,18 @@ function Landing(props) {
                 Get in touch
               </h6>
               <h1 className="text-md text-right">
-                Email:
+                Email
                 <a
                   href="mailto:jyot2999@gmail.com"
                   className="hover:text-gray-400"
                 >
-                  rishabhbahree@gmail.com
+                 :  rishabhbahree@gmail.com
                 </a>
               </h1>
               <h1 className="text-md text-right">
                 Phone:
                 <a href="tel:+1234567890" className="hover:text-gray-400">
-                  123-456-7890
+                +91 7018324802
                 </a>
               </h1>
             </div>
