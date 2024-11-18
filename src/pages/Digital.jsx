@@ -94,7 +94,7 @@ function Digital(props) {
                 <h1 className="text-white text-sm">
                   Email : rishabhbharee@gmail.com
                 </h1>
-                <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
+                <h1 className="text-white text-sm">Ph : +91 7018324802</h1>
               </div>
             </div>
           </div>

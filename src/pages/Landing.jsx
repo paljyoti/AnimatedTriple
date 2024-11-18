@@ -11,7 +11,6 @@ import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import { ImHome } from "react-icons/im";
 
-
 import image1 from "../../src/assets/icons8-logo-50 (1).png";
 import image2 from "../../src/assets/icons8-logo-50 (2).png";
 import image3 from "../../src/assets/icons8-logo-50.png";
@@ -20,9 +19,6 @@ import image8 from "../../src/assets/icons8-logo-50 (5).png";
 import image6 from "../../src/assets/icons8-logo-50 (6).png";
 import image7 from "../../src/assets/icons8-logo-50 (4).png";
 import image5 from "../../src/assets/icons8-logo-50 (8).png";
-
-
-
 
 function Landing(props) {
   const navigate = useNavigate();
@@ -42,9 +38,6 @@ function Landing(props) {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-
-
-
 
   // var settings = {
   //   dots: true,
@@ -157,7 +150,6 @@ function Landing(props) {
             >
               CONTACT US
             </a>
-            
 
             <div className="details">
               <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
@@ -169,7 +161,7 @@ function Landing(props) {
           </div>
         </div>
 
-       <div className="top flex pl-48 gap-20">
+        <div className="top flex pl-48 gap-20">
           <div className=" bg-[#EEF7FF] text-black text-left">
             <motion.h1
               variants={fadeIn("right", 0.2)}
@@ -202,7 +194,7 @@ function Landing(props) {
             </motion.p>
           </div>
           <img src={imageClient} alt="" className="w-[24vw] h-auto ml-24" />
-        </div> 
+        </div>
         <div className="container flex mx-auto pt-2 space-x-24 ">
           <div className="text-left pl-16">
             <motion.p
@@ -213,8 +205,8 @@ function Landing(props) {
               className="text-black text-xs w-96 pt-16"
             >
               Crafted with passion and dedication, our creative agency in
-              Gurugram, Haryana, India, delivers innovative solutions to bring your
-              brand's vision to life.
+              Gurugram, Haryana, India, delivers innovative solutions to bring
+              your brand's vision to life.
             </motion.p>
           </div>
 
@@ -257,108 +249,91 @@ function Landing(props) {
               viewport={{ once: false, amount: 0.7 }}
               className="text-black w-96 text-xs pt-16 "
             >
-              Blending creativity with practical solutions, we connect people and brands
-              cutting-edge technology in inspiring new ways.
+              Blending creativity with practical solutions, we connect people
+              and brands cutting-edge technology in inspiring new ways.
             </motion.p>
           </div>
-        </div> 
+        </div>
       </div>
 
       <div className="flex-shrink-0 snap-start w-full h-screen  bg-[#CDE8E5] flex items-center justify-center">
         <div className="">
           <div className="top flex pl-20  gap-52">
-            
-            <div className=" pt-16 ">
+            <div className=" pt-44 ">
               <div className="web">
-              <a className="" href=""><button
-                onClick={() => navigate("/service")}
-                className="bg-black  mt-10  ml-60 text-lg font-bold text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-              >
-                WebDesigning
-              </button> </a>
-
-        
-              </div>
-               <div className="sec gap-44 text-lg font-bold  flex">
-               <a className=" flex pl-20 pt-14 " href="">
-                
-               <button
-                onClick={() => navigate("/service")}
-                className="bg-black  ml-20 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-              >
-                DigitalMarketing
-              </button>
-               </a>
-               <a className="flex pt-14" href=""> 
-                
-               <button
-                onClick={() => navigate("/service")}
-                className="bg-black  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-              >
-               SocialMedia
-              </button>
-                
+                <a className="pl-60" href="/service">
+                  <button
+                    onClick={() => navigate("/service")}
+                    className="bg-black  mt-10  text-lg font-bold text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                  >
+                    WebDesigning
+                  </button>
                 </a>
-               </div>
-               <div className="sec text-lg font-bold pt-10 flex">
-               <a className=" flex pt-24 pr-10 " href="">
-                
-                
-                EmailMarketing</a>
-               <img src={imageSection} alt="" className="w-52 h-52   " />  
-               <a className="flex pt-24 pl-10" href="">ContentMarketing</a>
-               </div>
-               <div className="sec text-lg font-bold gap-44 pt-10 pl-44 flex">
-               <a className=" flex " href="">SEO</a>
-               <a className="flex" href=""> PPC</a>
-               </div>
-              
-              {/* <a className="" href="">PPC</a>
-              <a className="pt-72" href="">SEO</a>
-               
-            <a className="" href="">EmailMarketing</a>
-            <a className="pt-36" href=""> ContentMarketing</a> */}
-           
+              </div>
+              <div className="sec gap-44 text-lg font-bold  flex">
+                <a className=" flex pt-14 pl-16 " href="">
+                  <button
+                    onClick={() => navigate("/service")}
+                    className="bg-black text-white  py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                  >
+                    DigitalMarketing
+                  </button>
+                </a>
+                <a className="flex pt-14" href="">
+                  <button
+                    onClick={() => navigate("/service")}
+                    className="bg-black   text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                  >
+                    SocialMedia
+                  </button>
+                </a>
+              </div>
+              <div className="sec text-lg font-bold  flex">
+                <a className=" flex  pr-10  " href="">
+                  <button
+                    onClick={() => navigate("/service")}
+                    className="bg-black mt-24 mb-24  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                  >
+                    EmailMarketing
+                  </button>
+                </a>
+                <img src={imageSection} alt="" className="w-52 h-52   " />
+                <a className="flex pl-10" href="">
+                  <button
+                    onClick={() => navigate("/service")}
+                    className="bg-black mt-24 mb-24 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                  >
+                    ContentMarketing
+                  </button>
+                </a>
+              </div>
+              <div className="sec text-lg font-bold gap-44 pl-32 flex">
+                <a className=" flex " href="">
+                  <button
+                    onClick={() => navigate("/service")}
+                    className="bg-black mb-48 pr-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                  >
+                    SEO
+                  </button>
+                </a>
+                <a className="flex" href="">
+                  <button
+                    onClick={() => navigate("/service")}
+                    className="bg-black mb-48 pr-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                  >
+                    PPC
+                  </button>
+                </a>
+              </div>
             </div>
-              
 
-              {/* <div className="relative w-80 h-80 mx-auto">
-  
-  <a href="" className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">webDesigning</a>
-  
-  
-  <a href="" className="absolute top-1/4 left-0 transform -translate-x-1/2 -translate-y-1/2">DigitalMarketing</a>
-  
-  
-  <a href="" className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2">SocialMedia</a>
-  
- 
-  <a href="" className="absolute top-3/4 left-0 transform -translate-x-1/2 -translate-y-1/2">PPC</a>
-  
- 
-  <a href="" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">SEO</a>
-  
- 
-  <img src={imageSection} alt="" className="absolute top-1/2 left-1/2 w-20 h-20 transform -translate-x-1/2 -translate-y-1/2 rounded-full" />
-  
-  
-  <a href="" className="absolute top-3/4 right-0 transform -translate-x-1/2 -translate-y-1/2">EmailMarketing</a>
-  
- 
-  <a href="" className="absolute top-1/2 right-0  transform -translate-x-1/2 -translate-y-1/2">ContentMarketing</a>
-</div> */}
-
-
-
-
-
-            <div>
+            <div className="pt-48">
               <motion.h1
                 variants={fadeIn("down", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-6xl pt-28 font-bold text-black"
+                className="text-6xl font-bold text-black"
               >
                 Strategic
               </motion.h1>
@@ -385,7 +360,7 @@ function Landing(props) {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="pt-4 w-96 pl-20 text-sm text-black font-serif"
+                className="pt-4 w-96 pl-20 pr-10 text-sm text-black font-serif"
               >
                 You take on the business burden. In the meantime, we will help
                 your business grow with eye-catching website designs, which are
@@ -399,7 +374,7 @@ function Landing(props) {
               </button>
             </div>
 
-             {/* <nav className="heading pt-16 text-black text-sm">
+            {/* <nav className="heading pt-16 text-black text-sm">
               <ul className="pl-10 justify-items-end ">
                 <li className="hover:text-[#39FF14]">
                   <a href="/#/webDesign" className="text-sm text-right">
@@ -468,48 +443,44 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="  pl-44 mr-24 text-sm pt-4 font-serif"
+              className="pl-16 mr-24 text-sm pt-4 font-serif"
             >
-              We partner with ambitious clients to build an unforgettable brand that resonates with their audience and leaves a lasting impact.
+              We partner with ambitious clients to build an unforgettable brand
+              that resonates with their audience and leaves a lasting impact.
             </motion.p>
-                 
 
-             <div className=" ">
+            <div className=" ">
               {/* <Slider {...settings}></Slider> */}
-            
-                     
+
               <motion.div
-            // initial={{ x: -400, opacity: 0 }}
-            // whileInView={{ x: 0, opacity: 1 }}
-            // transition={{ duration: 3 }}
-            // viewport={{ once: true }}
-             
-            variants={fadeIn("right", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+                // initial={{ x: -400, opacity: 0 }}
+                // whileInView={{ x: 0, opacity: 1 }}
+                // transition={{ duration: 3 }}
+                // viewport={{ once: true }}
 
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="icons flex gap-24 pt-14 pl-16"
+              >
+                <img src={image1} alt="" />
 
-            className="icons flex gap-24 pt-14 pl-16"
-          >
-            <img src={image1} alt="" />
-            
-            <img src={image2} alt="" />
-            
-            <img src={image3} alt="" />
-           
-            <img src={image4} alt="" />
-            
-          </motion.div>
+                <img src={image2} alt="" />
 
-          <div className="logo flex gap-10 pl-12 pt-4">
-          <h1>Interior design</h1>
-          <h1>Driving Awareness</h1>
-          <h1>Earnify</h1>
-          <h1>Exeligo Innovations</h1>
-          </div>
-         
-            {/* <div className="relative ml-20 mt-10  w-[35vw]">
+                <img src={image3} alt="" />
+
+                <img src={image4} alt="" />
+              </motion.div>
+
+              <div className="logo flex gap-10 pl-12 pt-4">
+                <h1>Interior design</h1>
+                <h1>Driving Awareness</h1>
+                <h1>Earnify</h1>
+                <h1>Exeligo Innovations</h1>
+              </div>
+
+              {/* <div className="relative ml-20 mt-10  w-[35vw]">
               <div
                 ref={carouselRef}
                 className="flex overflow-x-hidden"
@@ -532,20 +503,11 @@ function Landing(props) {
                 ))}
               </div>
               </div> */}
-
-              
-            </div> 
-
-
-
+            </div>
           </div>
           <img src={imageClient} alt="" className="h-auto mr-32 w-96" />
         </div>
-
- 
-
       </div>
-
 
       <div className="flex-shrink-0 snap-start w-full h-screen bg-[#4D869C] items-center justify-center">
         <motion.div
@@ -555,7 +517,9 @@ function Landing(props) {
           viewport={{ once: false, amount: 0.7 }}
           className="head text-black text-center "
         >
-          <p className="text-lg text-black font-semibold pt-24">Reveal your thoughts</p>
+          <p className="text-lg text-black font-semibold pt-24">
+            Reveal your thoughts
+          </p>
           <motion.h1
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -575,9 +539,6 @@ function Landing(props) {
             project?
           </motion.h1>
 
-
-
-
           <div className="flex justify-center items-center relative">
             <svg
               viewBox="0 0 100 100"
@@ -592,7 +553,7 @@ function Landing(props) {
                 fill="transparent"
               />
 
-               <text className="text-[4.9px] fill-current text-black">
+              <text className="text-[4.9px] fill-current text-black">
                 <textPath href="#circlePath" startOffset="0%">
                   | TripleRConsulting | TripleRConsulting | TripleRConsulting
                 </textPath>
@@ -686,13 +647,13 @@ function Landing(props) {
                   href="mailto:jyot2999@gmail.com"
                   className="hover:text-gray-400"
                 >
-                 :  rishabhbahree@gmail.com
+                  : rishabhbahree@gmail.com
                 </a>
               </h1>
               <h1 className="text-md text-right">
                 Phone:
                 <a href="tel:+1234567890" className="hover:text-gray-400">
-                +91 7018324802
+                  +91 7018324802
                 </a>
               </h1>
             </div>

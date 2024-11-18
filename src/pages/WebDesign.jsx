@@ -97,13 +97,13 @@ function WebDesign(props) {
             <h1 className="text-white text-sm">
               Email : rishabhbharee@gmail.com
             </h1>
-            <h1 className="text-white text-sm">Ph : +91 1234567890</h1>
+            <h1 className="text-white text-sm">Ph : +91 7018324802</h1>
           </div>
         </div>
       </div>
 
       <div className="px-5 md:px-28">
-        {" "}
+        
         {/* Added responsive padding */}
         <div className="top pt-16">
           <h6 className="font-semibold text-[#39FF14]">Web Design Services</h6>
