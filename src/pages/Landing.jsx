@@ -261,9 +261,8 @@ function Landing(props) {
           <div className="top flex pl-20  gap-52">
             <div className=" pt-44 ">
               <div className="web">
-                <a className="pl-60" href="/service">
+                <a className="pl-60" href="/#/webDesign">
                   <button
-                    onClick={() => navigate("/service")}
                     className="bg-black  mt-10  text-lg font-bold text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
                   >
                     WebDesigning
@@ -271,17 +270,15 @@ function Landing(props) {
                 </a>
               </div>
               <div className="sec gap-44 text-lg font-bold  flex">
-                <a className=" flex pt-14 pl-16 " href="">
+                <a className=" flex pt-14 pl-16 " href="/#/digitalMarketing">
                   <button
-                    onClick={() => navigate("/service")}
                     className="bg-black text-white  py-2 px-4 rounded hover:bg-[#39FF14] transition"
                   >
                     DigitalMarketing
                   </button>
                 </a>
-                <a className="flex pt-14" href="">
+                <a className="flex pt-14" href="/#/socialMedia">
                   <button
-                    onClick={() => navigate("/service")}
                     className="bg-black   text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
                   >
                     SocialMedia
@@ -289,18 +286,16 @@ function Landing(props) {
                 </a>
               </div>
               <div className="sec text-lg font-bold  flex">
-                <a className=" flex  pr-10  " href="">
+                <a className=" flex  pr-10  " href="/#/emailMarketing">
                   <button
-                    onClick={() => navigate("/service")}
                     className="bg-black mt-24 mb-24  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
                   >
                     EmailMarketing
                   </button>
                 </a>
                 <img src={imageSection} alt="" className="w-52 h-52   " />
-                <a className="flex pl-10" href="">
+                <a className="flex pl-10" href="/#/contentMarketing">
                   <button
-                    onClick={() => navigate("/service")}
                     className="bg-black mt-24 mb-24 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
                   >
                     ContentMarketing
@@ -308,17 +303,15 @@ function Landing(props) {
                 </a>
               </div>
               <div className="sec text-lg font-bold gap-44 pl-32 flex">
-                <a className=" flex " href="">
+                <a className=" flex " href="/#/seo">
                   <button
-                    onClick={() => navigate("/service")}
                     className="bg-black mb-48 pr-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
                   >
                     SEO
                   </button>
                 </a>
-                <a className="flex" href="">
+                <a className="flex" href="/#/ppc">
                   <button
-                    onClick={() => navigate("/service")}
                     className="bg-black mb-48 pr-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
                   >
                     PPC
