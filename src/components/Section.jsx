@@ -54,6 +54,45 @@ function Section() {
               </li>
             </ul>
           </div>
+           {/* <nav className="heading pt-16 text-black text-sm">
+              <ul className="pl-10 justify-items-end ">
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/webDesign" className="text-sm text-right">
+                    WebDesign <span className="text-5xl">.</span>
+                  </a>
+                </li>
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/digitalMarketing" className="text-sm text-right">
+                    DigitalMarketing <span className="text-5xl">.</span>
+                  </a>
+                </li>
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/socialMedia" classname="text-sm text-right">
+                    SocialMedia <span className="text-5xl">.</span>
+                  </a>
+                </li>
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/emailMarketing" className="text-sm  text-right">
+                    EmailMarketing <span className="text-5xl">.</span>
+                  </a>
+                </li>
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/contentMarketing" className="text-sm text-right">
+                    ContentMarketing <span className="text-5xl">.</span>
+                  </a>
+                </li>
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/seo" className="text-sm text-right">
+                    SEO <span className="text-5xl">.</span>
+                  </a>
+                </li>
+                <li className="hover:text-[#39FF14]">
+                  <a href="/#/ppc" classname="text-sm text-right">
+                    PPC <span className="text-5xl">.</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>  */}
         </div>
       </div>
     </div>

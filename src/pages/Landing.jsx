@@ -161,7 +161,7 @@ function Landing(props) {
           </div>
         </div>
 
-        <div className="top flex pl-48 gap-20">
+        {/* <div className="top flex pl-48 gap-20">
           <div className=" bg-[#EEF7FF] text-black text-left">
             <motion.h1
               variants={fadeIn("right", 0.2)}
@@ -253,6 +253,108 @@ function Landing(props) {
               and brands cutting-edge technology in inspiring new ways.
             </motion.p>
           </div>
+        </div> */}
+
+        <div className="top flex flex-col lg:flex-row pl-4 lg:pl-48 gap-10 lg:gap-20">
+          <div className="bg-[#EEF7FF] text-black text-left px-4 lg:px-0">
+            <motion.h1
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold"
+            >
+              Triple{" "}
+              <span className="text-5xl sm:text-6xl lg:text-8xl pt-2 text-[#39FF14]">
+                R
+              </span>
+            </motion.h1>
+            <motion.h1
+              variants={fadeIn("left", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold"
+            >
+              Consulting
+            </motion.h1>
+            <motion.p
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="pt-4 sm:pt-6 w-full sm:w-[90%] lg:w-96 text-xs sm:text-sm font-serif"
+            >
+              Soar to New Heights with Our Sparkling Ideas, Holistic Branding
+              Concepts, and Exquisite Handcrafted Designs. We Partner with
+              Brands to Craft Unforgettable Digital Experiences!
+            </motion.p>
+          </div>
+          <img
+            src={imageClient}
+            alt=""
+            className="w-full sm:w-[50vw] lg:w-[23vw] h-auto mt-4 lg:ml-24"
+          />
+        </div>
+
+        <div className="container flex flex-col lg:flex-row mx-auto space-y-8 lg:space-y-0 lg:space-x-24 ">
+          <div className="text-left px-4 lg:px-16">
+            <motion.p
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-black text-xs w-full sm:w-[90%] lg:w-96  pt-8 sm:pt-16"
+            >
+              Crafted with passion and dedication, our creative agency in
+              Gurugram, Haryana, India, delivers innovative solutions to bring
+              your brand's vision to life.
+            </motion.p>
+          </div>
+
+          <div className="flex justify-center  items-center relative px-4  lg:px-6">
+            <svg
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+              className="animate-rotate-svg w-36 sm:w-40 lg:w-44 h-36 sm:h-40  lg:h-44"
+            >
+              <path
+                id="circlePvath"
+                d="M 50, 50 m -20, 0
+        a 20,20 0 1,1 40, 0
+        a 20,20 0 1,1 -40, 0"
+                fill="transparent"
+              />
+              <text className="text-[3px] sm:text-[4.9px] fill-current text-black  hidden  sm:block">
+                <textPath href="#circlePath" startOffset="0%">
+                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
+                </textPath>
+              </text>
+            </svg>
+            <button
+              onClick={() => {
+                navigate("/contact");
+              }}
+              className="absolute text-xs sm:text-sm bg-black text-white w-10  hidden  sm:block sm:w-12 h-10 sm:h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center"
+            >
+              Let's
+              <br />
+              Talk
+            </button>
+          </div>
+
+          <div className="px-4   lg:px-7 text-xs pr-10">
+            <motion.p
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-black w-full sm:w-[90%] lg:w-96 hidden  sm:block pr-24 text-xs xs:text-xs pt-8 sm:pt-16"
+            >
+              Blending creativity with practical solutions, we connect people
+              and brands cutting-edge technology in inspiring new ways.
+            </motion.p>
+          </div>
         </div>
       </div>
 
@@ -262,58 +364,44 @@ function Landing(props) {
             <div className=" pt-44 ">
               <div className="web">
                 <a className="pl-60" href="/#/webDesign">
-                  <button
-                    className="bg-black  mt-10  text-lg font-bold text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-                  >
+                  <button className="bg-black  mt-10  text-lg font-bold text-white py-2 px-4 rounded hover:bg-[#39FF14] transition">
                     WebDesigning
                   </button>
                 </a>
               </div>
               <div className="sec gap-44 text-lg font-bold  flex">
                 <a className=" flex pt-14 pl-16 " href="/#/digitalMarketing">
-                  <button
-                    className="bg-black text-white  py-2 px-4 rounded hover:bg-[#39FF14] transition"
-                  >
+                  <button className="bg-black text-white  py-2 px-4 rounded hover:bg-[#39FF14] transition">
                     DigitalMarketing
                   </button>
                 </a>
                 <a className="flex pt-14" href="/#/socialMedia">
-                  <button
-                    className="bg-black   text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-                  >
+                  <button className="bg-black   text-white py-2 px-4 rounded hover:bg-[#39FF14] transition">
                     SocialMedia
                   </button>
                 </a>
               </div>
               <div className="sec text-lg font-bold  flex">
                 <a className=" flex  pr-10  " href="/#/emailMarketing">
-                  <button
-                    className="bg-black mt-24 mb-24  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-                  >
+                  <button className="bg-black mt-24 mb-24  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition">
                     EmailMarketing
                   </button>
                 </a>
                 <img src={imageSection} alt="" className="w-52 h-52   " />
                 <a className="flex pl-10" href="/#/contentMarketing">
-                  <button
-                    className="bg-black mt-24 mb-24 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-                  >
+                  <button className="bg-black mt-24 mb-24 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition">
                     ContentMarketing
                   </button>
                 </a>
               </div>
               <div className="sec text-lg font-bold gap-44 pl-32 flex">
                 <a className=" flex " href="/#/seo">
-                  <button
-                    className="bg-black mb-48 pr-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-                  >
+                  <button className="bg-black mb-48 pr-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition">
                     SEO
                   </button>
                 </a>
                 <a className="flex" href="/#/ppc">
-                  <button
-                    className="bg-black mb-48 pr-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-                  >
+                  <button className="bg-black mb-48 pr-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition">
                     PPC
                   </button>
                 </a>
@@ -366,52 +454,16 @@ function Landing(props) {
                 view case
               </button>
             </div>
-
-            {/* <nav className="heading pt-16 text-black text-sm">
-              <ul className="pl-10 justify-items-end ">
-                <li className="hover:text-[#39FF14]">
-                  <a href="/#/webDesign" className="text-sm text-right">
-                    WebDesign <span className="text-5xl">.</span>
-                  </a>
-                </li>
-                <li className="hover:text-[#39FF14]">
-                  <a href="/#/digitalMarketing" className="text-sm text-right">
-                    DigitalMarketing <span className="text-5xl">.</span>
-                  </a>
-                </li>
-                <li className="hover:text-[#39FF14]">
-                  <a href="/#/socialMedia" classname="text-sm text-right">
-                    SocialMedia <span className="text-5xl">.</span>
-                  </a>
-                </li>
-                <li className="hover:text-[#39FF14]">
-                  <a href="/#/emailMarketing" className="text-sm  text-right">
-                    EmailMarketing <span className="text-5xl">.</span>
-                  </a>
-                </li>
-                <li className="hover:text-[#39FF14]">
-                  <a href="/#/contentMarketing" className="text-sm text-right">
-                    ContentMarketing <span className="text-5xl">.</span>
-                  </a>
-                </li>
-                <li className="hover:text-[#39FF14]">
-                  <a href="/#/seo" className="text-sm text-right">
-                    SEO <span className="text-5xl">.</span>
-                  </a>
-                </li>
-                <li className="hover:text-[#39FF14]">
-                  <a href="/#/ppc" classname="text-sm text-right">
-                    PPC <span className="text-5xl">.</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>  */}
           </div>
         </div>
+
+
+
+        
       </div>
 
       <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] flex items-center justify-center">
-        <div className="top flex ml-5 gap-20">
+        {/* <div className="top flex ml-5 gap-20">
           <div className="text-white pl-20 text-left">
             <motion.h1
               variants={fadeIn("right", 0.2)}
@@ -443,14 +495,8 @@ function Landing(props) {
             </motion.p>
 
             <div className=" ">
-              {/* <Slider {...settings}></Slider> */}
 
               <motion.div
-                // initial={{ x: -400, opacity: 0 }}
-                // whileInView={{ x: 0, opacity: 1 }}
-                // transition={{ duration: 3 }}
-                // viewport={{ once: true }}
-
                 variants={fadeIn("right", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
@@ -472,33 +518,69 @@ function Landing(props) {
                 <h1>Earnify</h1>
                 <h1>Exeligo Innovations</h1>
               </div>
-
-              {/* <div className="relative ml-20 mt-10  w-[35vw]">
-              <div
-                ref={carouselRef}
-                className="flex overflow-x-hidden"
-                onMouseDown={handleMouseDown}
-                onMouseLeave={handleMouseLeave}
-                onMouseUp={handleMouseUp}
-                onMouseMove={handleMouseMove}
-              >
-                {items.map((item, index) => (
-                  <div
-                    key={item.id}
-                    className={`flex-shrink-0 w-full max-w-md transition-transform duration-300 ease-in-out ${
-                      index === currentIndex ? "scale-100" : "scale-90"
-                    }`}
-                  >
-                    <h1 className="text-center mt-2 text-4xl  font-semibold">
-                      {item.title}
-                    </h1>
-                  </div>
-                ))}
-              </div>
-              </div> */}
             </div>
           </div>
           <img src={imageClient} alt="" className="h-auto mr-32 w-96" />
+        </div> */}
+
+        <div className="top flex flex-col lg:flex-row ml-5 gap-10 lg:gap-20">
+          <div className="text-white pl-4 lg:pl-20 text-left">
+            <motion.h1
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-4xl sm:text-5xl lg:text-6xl pl-4 lg:pl-16 pt-20 font-bold"
+            >
+              Our Happy
+            </motion.h1>
+            <motion.h1
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-4xl sm:text-5xl lg:text-6xl pl-4 lg:pl-16 font-bold"
+            >
+              Clients
+            </motion.h1>
+            <motion.p
+              variants={fadeIn("left", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="pl-4 lg:pl-16 mr-8 lg:mr-24 text-sm pt-4 font-serif"
+            >
+              We partner with ambitious clients to build an unforgettable brand
+              that resonates with their audience and leaves a lasting impact.
+            </motion.p>
+
+            <div className="">
+              <motion.div
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="icons flex  gap-12 lg:gap-24 pt-14 pl-4 lg:pl-16"
+              >
+                <img src={image1} alt="" className="w-20 sm:w-24 lg:w-28" />
+                <img src={image2} alt="" className="w-20 sm:w-24 lg:w-28" />
+                <img src={image3} alt="" className="w-20 sm:w-24 lg:w-28" />
+                <img src={image4} alt="" className="w-20 sm:w-24 lg:w-28" />
+              </motion.div>
+
+              <div className="logo flex flex-wrap gap-10 pl-4 lg:pl-12 pt-4 text-sm sm:text-base">
+                <h1>Interior design</h1>
+                <h1>Driving Awareness</h1>
+                <h1>Earnify</h1>
+                <h1>Exeligo Innovations</h1>
+              </div>
+            </div>
+          </div>
+          <img
+            src={imageClient}
+            alt=""
+            className="h-auto w-64 sm:w-80 lg:w-96 mx-auto lg:mr-32 mt-8 lg:mt-0"
+          />
         </div>
       </div>
 
@@ -566,8 +648,8 @@ function Landing(props) {
         </motion.div>
 
         <div className="footer text-black">
-          <div className="container mx-auto flex flex-wrap justify-between">
-            <div className=" w-full sm:w-1/3 ">
+          <div className="container mx-auto sm:flex flex  justify-between">
+            <div className=" w-full sm:w-1/3  hidden  sm:block ">
               <h6 className="text-lg pt-28  pl-6 font-semibold text-left">
                 Explore more
               </h6>
@@ -600,10 +682,10 @@ function Landing(props) {
               </ul>
               <h1 className="text-left pl-6">
                 © Triple R Consulting 2024, All rights reserved.
-                {/* <span className="">devloped by jyoti pal.</span> */}
               </h1>
             </div>
 
+         <div className="hidden sm:block">
             <svg
               id="Capa_1"
               xmlns="http://www.w3.org/2000/svg"
@@ -629,8 +711,8 @@ function Landing(props) {
                 </g>
               </g>
             </svg>
-
-            <div className="contact w-full sm:w-1/3  pr-6">
+            </div>
+            <div className="contact w-full sm:w-1/3 sm:text-center  pr-6">
               <h6 className="text-lg pt-28 font-semibold  text-right">
                 Get in touch
               </h6>
