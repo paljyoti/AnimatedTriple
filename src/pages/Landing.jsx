@@ -274,7 +274,7 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold"
             >
               Consulting
             </motion.h1>
@@ -283,7 +283,7 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="pt-4 sm:pt-6 w-full sm:w-[90%] lg:w-96 text-xs sm:text-sm font-serif"
+              className="pt-4 sm:pt-6 w-full sm:w-[90%] md:w-[93%] lg:w-96 text-xs sm:text-sm font-serif"
             >
               Soar to New Heights with Our Sparkling Ideas, Holistic Branding
               Concepts, and Exquisite Handcrafted Designs. We Partner with
@@ -304,7 +304,7 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-black text-xs w-full sm:w-[90%] lg:w-96  pt-8 sm:pt-16"
+              className="text-black text-xs w-full hidden sm:block sm:w-[90%] lg:w-96  pt-8 sm:pt-16"
             >
               Crafted with passion and dedication, our creative agency in
               Gurugram, Haryana, India, delivers innovative solutions to bring
@@ -316,7 +316,7 @@ function Landing(props) {
             <svg
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
-              className="animate-rotate-svg w-36 sm:w-40 lg:w-44 h-36 sm:h-40  lg:h-44"
+              className="animate-rotate-svg w-36 sm:w-40  h-36 sm:h-40  lg:h-44"
             >
               <path
                 id="circlePvath"
@@ -336,14 +336,14 @@ function Landing(props) {
                 navigate("/contact");
               }}
               className="absolute text-xs sm:text-sm bg-black text-white w-10  hidden  sm:block sm:w-12 h-10 sm:h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center"
-            >
+            >  
               Let's
               <br />
               Talk
             </button>
           </div>
 
-          <div className="px-4   lg:px-7 text-xs pr-10">
+          <div className="px-4   lg:px-8 text-xs pr-10">
             <motion.p
               variants={fadeIn("up", 0.2)}
               initial="hidden"
@@ -361,8 +361,8 @@ function Landing(props) {
       <div className="flex-shrink-0 snap-start w-full h-screen  bg-[#CDE8E5] flex items-center justify-center">
         <div className="">
           <div className="top flex pl-20  gap-52">
-            <div className=" pt-44 ">
-              <div className="web">
+            <div className="hidden sm:block pt-44  ">
+              <div className="web ">
                 <a className="pl-60" href="/#/webDesign">
                   <button className="bg-black  mt-10  text-lg font-bold text-white py-2 px-4 rounded hover:bg-[#39FF14] transition">
                     WebDesigning
@@ -530,7 +530,7 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-4xl sm:text-5xl lg:text-6xl pl-4 lg:pl-16 pt-20 font-bold"
+              className="text-4xl sm:text-5xl   lg:text-6xl pl-4 lg:pl-16 pt-20 font-bold"
             >
               Our Happy
             </motion.h1>
@@ -548,7 +548,7 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="pl-4 lg:pl-16 mr-8 lg:mr-24 text-sm pt-4 font-serif"
+              className="pl-4 lg:pl-16 mr-8  lg:mr-24 text-xs pt-4 font-serif"
             >
               We partner with ambitious clients to build an unforgettable brand
               that resonates with their audience and leaves a lasting impact.
@@ -568,7 +568,7 @@ function Landing(props) {
                 <img src={image4} alt="" className="w-20 sm:w-24 lg:w-28" />
               </motion.div>
 
-              <div className="logo flex flex-wrap gap-10 pl-4 lg:pl-12 pt-4 text-sm sm:text-base">
+              <div className="logo flex  gap-10 pl-4 lg:pl-12 pt-4 text-sm sm:text-base ">
                 <h1>Interior design</h1>
                 <h1>Driving Awareness</h1>
                 <h1>Earnify</h1>
@@ -712,7 +712,7 @@ function Landing(props) {
               </g>
             </svg>
             </div>
-            <div className="contact w-full sm:w-1/3 sm:text-center  pr-6">
+            <div className="contact w-full sm:w-1/3  sm:text-center  pr-6">
               <h6 className="text-lg pt-28 font-semibold  text-right">
                 Get in touch
               </h6>
