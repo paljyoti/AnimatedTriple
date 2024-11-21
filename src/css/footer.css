@@ -7,7 +7,7 @@
   }
   
   .svg-container.move-up {
-    transform: translateY(-10px); 
+    transform: translateY(-8px); 
   }
   
   .svg-container:hover {

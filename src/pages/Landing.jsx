@@ -256,7 +256,7 @@ function Landing(props) {
         </div> */}
 
         <div className="top flex flex-col lg:flex-row pl-4 lg:pl-48 gap-10 lg:gap-20">
-          <div className="bg-[#EEF7FF] text-black text-left px-4 lg:px-0">
+          <div className="bg-[#EEF7FF] text-black text-left  px-4 lg:px-0">
             <motion.h1
               variants={fadeIn("right", 0.2)}
               initial="hidden"
@@ -264,7 +264,7 @@ function Landing(props) {
               viewport={{ once: false, amount: 0.7 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold"
             >
-              Triple{" "}
+              Triple
               <span className="text-5xl sm:text-6xl lg:text-8xl pt-2 text-[#39FF14]">
                 R
               </span>
@@ -548,7 +548,7 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="pl-4 lg:pl-16 mr-8  lg:mr-24 text-xs pt-4 font-serif"
+              className="pl-4 lg:pl-16 mr-8   lg:mr-24 text-xs  pt-4 font-serif"
             >
               We partner with ambitious clients to build an unforgettable brand
               that resonates with their audience and leaves a lasting impact.
@@ -646,7 +646,7 @@ function Landing(props) {
             </button>
           </div>
         </motion.div>
-
+ 
         <div className="footer text-black">
           <div className="container mx-auto sm:flex flex  justify-between">
             <div className=" w-full sm:w-1/3  hidden  sm:block ">

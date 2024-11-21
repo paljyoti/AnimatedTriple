@@ -29,7 +29,7 @@ function Content(props) {
   };
 
   return (
-    <div>
+    <div className='bg-[#EEF7FF]'>
        <Loader videoSrc={videoSrc}/>
        <div className="header">
             <div className="flex justify-between items-center pl-14 pr-16 px-5 py-5">

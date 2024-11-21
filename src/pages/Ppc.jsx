@@ -28,7 +28,7 @@ function Ppc(props) {
   };
 
   return (
-    <div>
+    <div className='bg-[#EEF7FF]'>
       <Loader videoSrc={videoSrc}/>
       <div
       onClick={()=>{navigate('/')}}
