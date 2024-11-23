@@ -362,7 +362,7 @@ function Landing(props) {
         <div className="">
           <div className="top flex pl-20  gap-52">
             <div className="hidden sm:block pt-44  ">
-              <div className="web ">
+              <div className="web">
                 <a className="pl-60" href="/#/webDesign">
                   <button className="bg-black  mt-10  text-lg font-bold text-white py-2 px-4 rounded hover:bg-[#39FF14] transition">
                     WebDesigning
@@ -451,15 +451,11 @@ function Landing(props) {
                 onClick={() => navigate("/service")}
                 className="bg-black  mt-10 ml-20 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
               >
-                view case
+                  view case
               </button>
             </div>
           </div>
         </div>
-
-
-
-        
       </div>
 
       <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] flex items-center justify-center">

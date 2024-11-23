@@ -530,6 +530,7 @@ function Contacts(props) {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

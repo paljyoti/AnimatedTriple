@@ -147,7 +147,7 @@ function WebDesign(props) {
                 <p className="text-gray-600 mt-2">
                   Your website's success depends on how well it serves its
                   visitors. We focus on creating an intuitive and user-friendly
-                  experience that makes navigation seamless and enjoyable. Our
+                  experience that makes navi- gation seamless and enjoyable. Our
                   designs are responsive, meaning they look and function
                   flawlessly on any device, ensuring your users have a
                   consistent experience. 
@@ -163,7 +163,7 @@ function WebDesign(props) {
                   Edge Technology:
                 </h3>
                 <p className="text-gray-600 mt-2">
-                  We utilize the latest advancements in web technologies to
+                  We utilize the latest advancements in web techn- ologies to
                   deliver websites that are not only visually appealing but also
                   fast, secure, and future-proof. By incorporating modern design
                   practices and tools, we ensure your site is optimized for

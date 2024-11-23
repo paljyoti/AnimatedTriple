@@ -18,10 +18,10 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/swiper-bundle.css";
-import slideImage from "../../src/assets/network-4025614_1280-removebg-preview.png";
-import slideImage1 from "../../src/assets/layoutdesigner_online_1-removebg-preview.png";
-import slideImage2 from "../../src/assets/internet-6896_256-ezgif.com-gif-maker.gif";
-import slideImage3 from "../../src/assets/letter-1174_256.gif";
+import slideImage from "../../src/assets/19199219-removebg-preview.png";
+import slideImage1 from "../../src/assets/19362653-removebg-preview.png";
+import slideImage2 from "../../src/assets/icons-12913_256.gif";
+import slideImage3 from "../../src/assets/e-mail-5046_256.gif";
 import slideImage5 from "../../src/assets/seo-12288_256-ezgif.com-gif-maker.gif";
 import { useNavigate } from "react-router-dom";
 import { ImHome } from "react-icons/im";
@@ -232,7 +232,7 @@ function Service(props) {
                 <div className="slider flex pt-32  gap-10">
                   <div className="pl-20 pt-16 text-black">
                     <p className="text-sm font-bold text-[#39FF14]">
-                      WHAT WE DO{" "}
+                      WHAT WE DO
                     </p>
                     <h4 className="font-bold text-4xl pl-96">01</h4>
                     <h1 className="font-bold text-4xl pt-5">
@@ -268,7 +268,7 @@ function Service(props) {
                     </p>
                   </div>
                   <div>
-                    <img src={slideImage1} alt="" className="h-96 pr-10" />
+                    <img src={slideImage1} alt="" className="h-80 pt-4  pr-10" />
                   </div>
                 </div>
               </SwiperSlide>
@@ -280,7 +280,7 @@ function Service(props) {
                     </p>
                     <h4 className="font-bold text-4xl pl-96">03</h4>
                     <h1 className="font-bold pt-5 text-4xl">
-                      SOCIAL MARKETING
+                      SOCIAL MEDIA
                     </h1>
                     <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
                       Social media is where conversations happen, trends are
@@ -291,7 +291,7 @@ function Service(props) {
                     </p>
                   </div>
                   <div>
-                    <img src={slideImage2} alt="" className="h-96 pr-10" />
+                    <img src={slideImage2} alt="" className="w-96 h-96 pr-10" />
                   </div>
                 </div>
               </SwiperSlide>
