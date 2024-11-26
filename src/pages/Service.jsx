@@ -548,7 +548,7 @@ function Service(props) {
               <SwiperSlide>
                 <div className="slider flex flex-col sm:flex-row pt-32 gap-6 sm:gap-10">
                   <div className="pl-8 sm:pl-20 pt-16 text-black">
-                    <p className="text-sm font-bold text-[#39FF14]">
+                    <p className="text-xl font-bold text-[#39FF14]">
                       WHAT WE DO
                     </p>
                     <h4 className="font-bold text-3xl sm:text-4xl pl-96">04</h4>
