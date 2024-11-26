@@ -43,6 +43,7 @@ function Blog(props) {
              onClick={() => navigate('/')}
             className="text-3xl">
               <ImHome className=" fixed hover:text-[#39FF14]" />
+              <h1 className=" fixed font-bold text-xs pl-8">Triple <span className="text-2xl font-bold text-[#39FF14]">R</span> Consulting</h1>
             </h2>
 
             <main>

@@ -12,10 +12,10 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/swiper-bundle.css";
 import { ImHome } from "react-icons/im";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function AboutUs(props) {
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [isMoved, setIsMoved] = useState(false);
 
@@ -41,14 +41,16 @@ const navigate = useNavigate();
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#EEF7FF]  items-center justify-center ">
           <div className="header">
             <div className="flex justify-between items-center pl-14 pr-20 px-9 py-9">
-              <h2 
-              onClick={() => navigate('/')}
-              className="text-3xl">
+              <h2 onClick={() => navigate("/")} className="text-3xl">
                 <ImHome className="fixed hover:text-[#39FF14]" />
+                <h1 className=" fixed font-bold text-xs pl-8">Triple <span className="text-2xl font-bold text-[#39FF14]">R</span> Consulting</h1>
               </h2>
 
               <main>
-                <span className="cursor-pointer text-2xl fixed font-bold" onClick={openMenu}>
+                <span
+                  className="cursor-pointer text-2xl fixed font-bold"
+                  onClick={openMenu}
+                >
                   &#9776;
                 </span>
               </main>
@@ -117,28 +119,34 @@ const navigate = useNavigate();
                 viewport={{ once: false, amount: 0.7 }}
                 className="text-6xl font-bold "
               >
-                Your go-to Graphic
+                About Us
               </motion.h1>
-              <motion.h1
-                variants={fadeIn("left", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="text-6xl font-bold"
-              >
-                Design Partner
-              </motion.h1>
+             
               <motion.p
                 variants={fadeIn("up", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="pt-6 w-96 text-sm font-serif"
+                className="pt-2 w-96 font-semibold text-lg font-serif"
               >
-                We are a graphic design studio, who is here to make an
-                extraordinary difference by transforming brands, around the
-                globe.
+                Step inside the world of young, energetic and innovative
+                marketing agency
               </motion.p>
+              <motion.p
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="pt-2 text-justify w-96 text-sm font-serif "
+              >
+                We are Triple R Consulting. The innovative marketing agency. We believe in the power of innovation to enhance brands.
+              </motion.p>
+              <motion.p 
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className=" pt-2 w-96 text-justify text-sm font-serif" >Founded in 2024, Triple R Consulting is a young and innovative marketing agency committed to deliver tailored solutions for businesses of all sizes. We aim to enhance our clients’ online presence, drive growth, and build lasting relationships. At Triple R Consulting, we believe in turning ideas into impactful campaigns that resonate with audiences and deliver measurable results.</motion.p>
             </div>
 
             <svg
@@ -588,13 +596,13 @@ const navigate = useNavigate();
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-black text-xs w-96 pt-28 "
+                className="text-black text-xs w-96 pt-16 "
               >
                 © Triple R Consulting 2024, All rights reserved.
               </motion.p>
             </div>
 
-            <div className="flex justify-center items-center relative pt-12">
+            <div className="flex justify-center items-center relative ">
               <svg
                 viewBox="0 0 100 100"
                 xmlns="http://www.w3.org/2000/svg"
@@ -607,11 +615,11 @@ const navigate = useNavigate();
               a 20,20 0 1,1 -40, 0"
                   fill="transparent"
                 />
-                 <text className="text-[4.9px] fill-current text-black">
-                <textPath href="#circlePath" startOffset="0%">
-                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
-                </textPath>
-              </text>
+                <text className="text-[4.9px] fill-current text-black">
+                  <textPath href="#circlePath" startOffset="0%">
+                    | TripleRConsulting | TripleRConsulting | TripleRConsulting
+                  </textPath>
+                </text>
               </svg>
               <button className="absolute  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
                 Let's
@@ -626,13 +634,12 @@ const navigate = useNavigate();
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-black w-96 text-xs pt-28"
+                className="text-black w-96 text-xs pt-16"
               >
                 Privacy Policy · Terms and conditions
               </motion.p>
             </div>
           </div>
-
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center  justify-center">
@@ -645,7 +652,7 @@ const navigate = useNavigate();
                 viewport={{ once: false, amount: 0.7 }}
                 className="text-6xl font-bold  w-[50vw]"
               >
-                Driven By Four
+                Our
               </motion.h1>
               <motion.h1
                 variants={fadeIn("left", 0.2)}
@@ -678,15 +685,10 @@ const navigate = useNavigate();
                     viewport={{ once: false, amount: 0.7 }}
                     className="text-2xl font-bold text-[#39FF14]"
                   >
-                    01 Driven By Four
+                    01 Innovation
                   </motion.h1>
                   <p className="w-96 text-justify font-serif">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Officiis quod voluptatem quis. Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Quibusdam nesciunt ut
-                    provident. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Dolores vitae harum quam?
+                  We stay ahead of the curve by embracing the latest trends, tools, and techniques in digital marketing, ensuring our clients always have a competitive edge.
                   </p>
                 </div>
               </SwiperSlide>
@@ -700,15 +702,10 @@ const navigate = useNavigate();
                     viewport={{ once: false, amount: 0.7 }}
                     className="text-2xl font-bold text-[#39FF14]"
                   >
-                    02 Driven
+                    02 Integrity
                   </motion.h1>
                   <p className="w-96 text-justify font-serif">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Officiis quod voluptatem quis. Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Quibusdam nesciunt ut
-                    provident. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Dolores vitae harum quam?
+                  Transparency and honesty form the foundation of everything we do. We believe in building trust through ethical practices and clear communication.
                   </p>
                 </div>
               </SwiperSlide>
@@ -722,15 +719,10 @@ const navigate = useNavigate();
                     viewport={{ once: false, amount: 0.7 }}
                     className="text-2xl font-bold text-[#39FF14]"
                   >
-                    03 Driven By Four
+                    03 Collaboration
                   </motion.h1>
                   <p className=" w-96 text-justify font-serif">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Officiis quod voluptatem quis. Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Quibusdam nesciunt ut
-                    provident. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Dolores vitae harum quam?
+                  Our success lies in working closely with clients to understand their unique needs and creating strategies that align with their goals.
                   </p>
                 </div>
               </SwiperSlide>
@@ -739,6 +731,8 @@ const navigate = useNavigate();
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] item-center justify-center">
+
+          <div className="teams flex">
           <div className=" text-white text-left pt-52 pl-40">
             <motion.h1
               variants={fadeIn("right", 0.2)}
@@ -747,27 +741,22 @@ const navigate = useNavigate();
               viewport={{ once: false, amount: 0.7 }}
               className="text-6xl font-bold "
             >
-              Visionary
+              Our Team
             </motion.h1>
-            <motion.h1
-              variants={fadeIn("left", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="text-6xl font-bold"
-            >
-              Group of
-            </motion.h1>
-            <motion.h1
-              variants={fadeIn("left", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="text-6xl font-bold"
-            >
-              Artists
-            </motion.h1>
+          
           </div>
+           <div className="team text-white text-justify pl-40 pt-28 pr-20 font-serif">
+            <h1 className="font-bold text-2xl">Rishabh Bahree – Founder</h1>
+            <p className="pt-5">Rishabh brings a wealth of multi domain expertise and energy to Triple R Consulting. With a deep understanding of the brands, industries, consumer behaviour, digital marketing and a vision to help businesses thrive in the online world, he leads the company with determination and creativity. Rishabh’s innovative mindset and dedication to excellence set the tone for everything we do.</p>
+            <h1 className="font-bold text-2xl pt-5">The R Team</h1>
+            <p>At Triple R Consulting, our diverse team is our backbone. With experts from various domains such as FMCG industry, Packaging industry, Consulting, Academics, Website development, Social media marketing, Content development and Digital strategy, we bring a unique blend of industry knowledge and marketing expertise. Each team member is dedicated to delivering exceptional results, ensuring our clients receive solutions tailored to their specific needs.</p>
+            <p className="pt-5">By combining creativity, strategy, and technical expertise, we’re here to help businesses unlock their true potential. Let’s grow together.</p>
+            <p className="pt-5 text-xs pl-[70%] text-left font-bold">Email: rishabhbahree@gmail.com</p>
+           </div>
+           </div>
+
+
+
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#4D869C] items-center justify-center">
@@ -810,11 +799,11 @@ const navigate = useNavigate();
               a 20,20 0 1,1 -40, 0"
                   fill="transparent"
                 />
-                  <text className="text-[4.9px] fill-current text-black">
-                <textPath href="#circlePath" startOffset="0%">
-                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
-                </textPath>
-              </text>
+                <text className="text-[4.9px] fill-current text-black">
+                  <textPath href="#circlePath" startOffset="0%">
+                    | TripleRConsulting | TripleRConsulting | TripleRConsulting
+                  </textPath>
+                </text>
               </svg>
               <button className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
                 Let's
@@ -898,13 +887,13 @@ const navigate = useNavigate();
                     href="mailto:jyot2999@gmail.com"
                     className="hover:text-gray-400"
                   >
-                   : rishabhbahree@gmail.com
+                    : rishabhbahree@gmail.com
                   </a>
                 </h1>
                 <h1 className="text-md text-right">
                   Phone:
                   <a href="tel:+1234567890" className="hover:text-gray-400">
-                  +91 7018324802
+                    +91 7018324802
                   </a>
                 </h1>
               </div>

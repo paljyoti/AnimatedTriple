@@ -61,6 +61,11 @@ function Service(props) {
             <div className="flex justify-between items-center pl-14 pr-20 px-9 py-9">
               <h2 onClick={() => navigate("/")} className="text-3xl">
                 <ImHome className="fixed hover:text-[#39FF14]" />
+                <h1 className=" fixed font-bold text-xs pl-8">
+                  Triple{" "}
+                  <span className="text-2xl font-bold text-[#39FF14]">R</span>{" "}
+                  Consulting
+                </h1>
               </h2>
 
               <main>
@@ -134,7 +139,7 @@ function Service(props) {
             viewport={{ once: false, amount: 0.7 }}
             className="head text-black text-center "
           >
-            <p className="text-md font-bold pt-24 ">WHAT WE DO</p>
+            <p className="text-md font-bold pt-20 ">WHAT WE DO</p>
             <motion.h1
               variants={fadeIn("right", 0.2)}
               initial="hidden"
@@ -161,6 +166,13 @@ function Service(props) {
             <p className="text-sm font-serif">
               telling their stories clearly with effective branding.
             </p>
+            <p className="text-sm font-serif pt-2">
+              Our services include Web Designing, Digital Marketing, Content
+              Marketing, Email Marketing, Social Media, SEO, PPC.
+            </p>
+            <p className="text-sm font-serif pt-20">
+              Scroll down to know more...
+            </p>
           </motion.div>
 
           <div className="container flex mx-auto   space-x-24  ">
@@ -170,13 +182,13 @@ function Service(props) {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-black text-xs w-96 pt-44 "
+                className="text-black text-xs w-96 pt-16 "
               >
                 © Triple R Consulting 2024, All rights reserved.
               </motion.p>
             </div>
 
-            <div className="flex justify-center items-center relative pt-28">
+            <div className="flex justify-center items-center relative ">
               <svg
                 viewBox="0 0 100 100"
                 xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +220,7 @@ function Service(props) {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-black w-96 text-xs pt-44"
+                className="text-black w-96 text-xs pt-16"
               >
                 Privacy Policy · Terms and conditions
               </motion.p>
@@ -216,22 +228,21 @@ function Service(props) {
           </div>
         </div>
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center justify-center">
-          <div className="ml-36 mr-36">
+          {/* <div className="ml-36 mr-36">
             <Swiper
               modules={[Pagination, Navigation, Scrollbar]}
-              // scrollbar={{ draggable: true }}
+             
               spaceBetween={50}
               slidesPerView={1}
               onSlideChange={() => console.log("slide change")}
               onSwiper={(swiper) => console.log(swiper)}
               pagination={{ clickable: true }}
-              // direction="vertical"
               navigation
             >
               <SwiperSlide>
                 <div className="slider flex pt-32  gap-10">
                   <div className="pl-20 pt-16 text-black">
-                    <p className="text-sm font-bold text-[#39FF14]">
+                    <p className="text-xl font-bold text-[#39FF14]">
                       WHAT WE DO
                     </p>
                     <h4 className="font-bold text-4xl pl-96">01</h4>
@@ -245,6 +256,12 @@ function Service(props) {
                       we specialize in crafting data-driven, result-oriented
                       digital marketing strategies that help businesses thrive.
                     </p>
+                    <button
+                onClick={() => navigate("/digitalMarketing")}
+                className="bg-[#FF0000]  mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+              >
+                Read More
+              </button>
                   </div>
                   <div>
                     <img src={slideImage} alt="" className="h-96 pr-10" />
@@ -254,8 +271,8 @@ function Service(props) {
               <SwiperSlide>
                 <div className="slider flex pt-32  gap-10">
                   <div className="pl-20 pt-16 text-black">
-                    <p className="text-sm font-bold text-[#39FF14]">
-                      WHAT WE DO{" "}
+                    <p className="text-xl font-bold text-[#39FF14]">
+                      WHAT WE DO
                     </p>
                     <h4 className="font-bold text-4xl pl-96">02</h4>
                     <h1 className="font-bold pt-5 text-4xl">WEB DESIGNING</h1>
@@ -266,6 +283,12 @@ function Service(props) {
                       your brand, engage your audience, and drive business
                       growth.
                     </p>
+                    <button
+                onClick={() => navigate("/webDesign")}
+                className="bg-[#8A2BE2]  mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+              >
+                Read More
+              </button>
                   </div>
                   <div>
                     <img src={slideImage1} alt="" className="h-80 pt-4  pr-10" />
@@ -275,8 +298,8 @@ function Service(props) {
               <SwiperSlide>
                 <div className="slider flex pt-32  gap-10">
                   <div className="pl-20 pt-16 text-black">
-                    <p className="text-sm font-bold text-[#39FF14]">
-                      WHAT WE DO{" "}
+                    <p className="text-xl font-bold text-[#39FF14]">
+                      WHAT WE DO
                     </p>
                     <h4 className="font-bold text-4xl pl-96">03</h4>
                     <h1 className="font-bold pt-5 text-4xl">
@@ -289,6 +312,12 @@ function Service(props) {
                       business connect with its audience, build trust, and drive
                       meaningful engagement.
                     </p>
+                    <button
+                onClick={() => navigate("/socialMedia")}
+                className="bg-[#0000FF]   mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+              >
+                Read More
+              </button>
                   </div>
                   <div>
                     <img src={slideImage2} alt="" className="w-96 h-96 pr-10" />
@@ -297,7 +326,7 @@ function Service(props) {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="slider flex pt-32  gap-10">
-                  <div className="pl-20 pt-16 text-black">
+                  <div className="pl-xl pt-16 text-black">
                     <p className="text-sm font-bold text-[#39FF14]">
                       WHAT WE DO{" "}
                     </p>
@@ -310,6 +339,12 @@ function Service(props) {
                       campaigns that help you nurture relationships, boost
                       engagement, and grow your business.
                     </p>
+                    <button
+                onClick={() => navigate("/emailMarketing")}
+                className="bg-[#4B0082]  mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+              >
+                Read More
+              </button>
                   </div>
                   <div>
                     <img src={slideImage3} alt="" className="pr-10 w-96" />
@@ -319,7 +354,7 @@ function Service(props) {
               <SwiperSlide>
                 <div className="slider flex pt-32  gap-10">
                   <div className="pl-20 pt-16 text-black">
-                    <p className="text-sm font-bold text-[#39FF14]">
+                    <p className="text-xl font-bold text-[#39FF14]">
                       WHAT WE DO{" "}
                     </p>
                     <h4 className="font-bold text-4xl pl-96">05</h4>
@@ -333,16 +368,22 @@ function Service(props) {
                       content that attracts, engages, and converts your audience
                       into loyal customers.
                     </p>
+                    <button
+                onClick={() => navigate("/contentMarketing")}
+                className="bg-[#FFA500]  mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+              >
+                Read More
+              </button>
                   </div>
                   <div>
-                    {/* <img src={slideImage1} alt="" className="h-96 pr-10" /> */}
+                 
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="slider flex pt-32  gap-10">
                   <div className="pl-20 pt-16 text-black">
-                    <p className="text-sm font-bold text-[#39FF14]">
+                    <p className="text-xl font-bold text-[#39FF14]">
                       WHAT WE DO{" "}
                     </p>
                     <h4 className="font-bold text-4xl pl-96">06</h4>
@@ -356,6 +397,12 @@ function Service(props) {
                       higher, attract organic traffic, and drive real business
                       results.
                     </p>
+                    <button
+                onClick={() => navigate("/seo")}
+                className="bg-[#FFD700] mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+              >
+                Read More
+              </button>
                   </div>
                   <div>
                     <img src={slideImage5} alt="" className="pr-10 w-96" />
@@ -365,7 +412,7 @@ function Service(props) {
               <SwiperSlide>
                 <div className="slider flex pt-32  gap-10">
                   <div className="pl-20 pt-16 text-black">
-                    <p className="text-sm font-bold text-[#39FF14]">
+                    <p className="text-xl font-bold text-[#39FF14]">
                       WHAT WE DO{" "}
                     </p>
                     <h4 className="font-bold text-4xl pl-96">07</h4>
@@ -378,9 +425,242 @@ function Service(props) {
                       campaigns that deliver measurable results, helping you
                       maximize your ROI.
                     </p>
+                    <button
+                onClick={() => navigate("/ppc")}
+                className="bg-[#008000]  mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+              >
+                Read More
+              </button>
                   </div>
                   <div>
                     <img src={slideImage5} alt="" className="pr-10 w-96" />
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div> */}
+
+          <div className="ml-8 mr-8 sm:ml-16 sm:mr-16 lg:ml-36 lg:mr-36">
+            <Swiper
+              modules={[Pagination, Navigation, Scrollbar]}
+              spaceBetween={20} // Reduce space between slides for smaller screens
+              slidesPerView={1} // 1 slide per view on small screens, adjust for larger screens below
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+              pagination={{ clickable: true }}
+              navigation
+            >
+              <SwiperSlide>
+                <div className="slider flex flex-col sm:flex-row pt-32 gap-6 sm:gap-10">
+                  <div className="pl-8 sm:pl-20 pt-16 text-black">
+                    <p className="text-xl font-bold text-[#39FF14]">
+                      WHAT WE DO
+                    </p>
+                    <h4 className="font-bold text-3xl sm:text-4xl pl-96">01</h4>
+                    <h1 className="font-bold text-2xl sm:text-4xl pt-5">
+                      DIGITAL-MARKETING
+                    </h1>
+                    <p className="w-full sm:w-[35vw] text-justify pt-3 text-sm sm:text-base font-serif">
+                      In today’s fast-paced digital landscape, standing out
+                      requires more than just an online presence—it demands a
+                      strategic approach to marketing.
+                    </p>
+                    <button
+                      onClick={() => navigate("/digitalMarketing")}
+                      className="bg-[#FF0000] mt-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                  <div>
+                    <img
+                      src={slideImage}
+                      alt=""
+                      className="w-full sm:h-96 pr-10"
+                    />
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="slider flex flex-col sm:flex-row pt-32 gap-6 sm:gap-10">
+                  <div className="pl-8 sm:pl-20 pt-16 text-black">
+                    <p className="text-xl font-bold text-[#39FF14]">
+                      WHAT WE DO
+                    </p>
+                    <h4 className="font-bold text-3xl sm:text-4xl pl-96">02</h4>
+                    <h1 className="font-bold text-2xl sm:text-4xl pt-5">
+                      WEB DESIGNING
+                    </h1>
+                    <p className="w-full sm:w-[35vw] text-justify pt-3 text-sm sm:text-base font-serif">
+                      At Triple R Consulting, we believe that your website is
+                      more than just an online presence—it’s the cornerstone of
+                      your digital identity.
+                    </p>
+                    <button
+                      onClick={() => navigate("/webDesign")}
+                      className="bg-[#8A2BE2] mt-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                  <div>
+                    <img
+                      src={slideImage1}
+                      alt=""
+                      className="w-full sm:h-80 pt-4 pr-10"
+                    />
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="slider flex flex-col sm:flex-row pt-32 gap-6 sm:gap-10">
+                  <div className="pl-8 sm:pl-20 pt-16 text-black">
+                    <p className="text-xl font-bold text-[#39FF14]">
+                      WHAT WE DO
+                    </p>
+                    <h4 className="font-bold text-3xl sm:text-4xl pl-96">03</h4>
+                    <h1 className="font-bold text-2xl sm:text-4xl pt-5">
+                      SOCIAL MEDIA
+                    </h1>
+                    <p className="w-full sm:w-[35vw] text-justify pt-3 text-sm sm:text-base font-serif">
+                      Social media is where conversations happen, trends are
+                      born, and brands make their mark.
+                    </p>
+                    <button
+                      onClick={() => navigate("/socialMedia")}
+                      className="bg-[#0000FF] mt-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                  <div>
+                    <img
+                      src={slideImage2}
+                      alt=""
+                      className="w-full sm:h-96 pr-10"
+                    />
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="slider flex flex-col sm:flex-row pt-32 gap-6 sm:gap-10">
+                  <div className="pl-8 sm:pl-20 pt-16 text-black">
+                    <p className="text-sm font-bold text-[#39FF14]">
+                      WHAT WE DO
+                    </p>
+                    <h4 className="font-bold text-3xl sm:text-4xl pl-96">04</h4>
+                    <h1 className="font-bold text-2xl sm:text-4xl pt-5">
+                      EMAIL MARKETING
+                    </h1>
+                    <p className="w-full sm:w-[35vw] text-justify pt-3 text-sm sm:text-base font-serif">
+                      Email marketing remains one of the most effective ways to
+                      connect with your audience and drive results.
+                    </p>
+                    <button
+                      onClick={() => navigate("/emailMarketing")}
+                      className="bg-[#4B0082] mt-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                  <div>
+                    <img
+                      src={slideImage3}
+                      alt=""
+                      className="w-full sm:h-96 pr-10"
+                    />
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="slider flex flex-col sm:flex-row pt-32 gap-6 sm:gap-10">
+                  <div className="pl-8 sm:pl-20 pt-16 text-black">
+                    <p className="text-xl font-bold text-[#39FF14]">
+                      WHAT WE DO
+                    </p>
+                    <h4 className="font-bold text-3xl sm:text-4xl pl-96">05</h4>
+                    <h1 className="font-bold text-2xl sm:text-4xl pt-5">
+                      CONTENT MARKETING
+                    </h1>
+                    <p className="w-full sm:w-[35vw] text-justify pt-3 text-sm sm:text-base font-serif">
+                      In a world where content is king, delivering the right
+                      message at the right time can set your brand apart.
+                    </p>
+                    <button
+                      onClick={() => navigate("/contentMarketing")}
+                      className="bg-[#FFA500] mt-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                  <div></div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="slider flex flex-col sm:flex-row pt-32 gap-6 sm:gap-10">
+                  <div className="pl-8 sm:pl-20 pt-16 text-black">
+                    <p className="text-xl font-bold text-[#39FF14]">
+                      WHAT WE DO
+                    </p>
+                    <h4 className="font-bold text-3xl sm:text-4xl pl-96">06</h4>
+                    <h1 className="font-bold text-2xl sm:text-4xl pt-5">
+                      SEARCH ENGINE OPTIMIZATION
+                    </h1>
+                    <p className="w-full sm:w-[35vw] text-justify pt-3 text-sm sm:text-base font-serif">
+                      If your business isn’t visible online, it’s missing out.
+                      We specialize in SEO strategies to help your website rank
+                      higher.
+                    </p>
+                    <button
+                      onClick={() => navigate("/seo")}
+                      className="bg-[#FFD700] mt-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                  <div>
+                    <img
+                      src={slideImage5}
+                      alt=""
+                      className="w-full sm:h-96 pr-10"
+                    />
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="slider flex flex-col sm:flex-row pt-32 gap-6 sm:gap-10">
+                  <div className="pl-8 sm:pl-20 pt-16 text-black">
+                    <p className="text-xl font-bold text-[#39FF14]">
+                      WHAT WE DO
+                    </p>
+                    <h4 className="font-bold text-3xl sm:text-4xl pl-96">07</h4>
+                    <h1 className="font-bold text-2xl sm:text-4xl pt-5">
+                      Pay Per Click
+                    </h1>
+                    <p className="w-full sm:w-[35vw] text-justify pt-3 text-sm sm:text-base font-serif">
+                      PPC offers a quick way to drive targeted traffic to your
+                      website. We create data-driven campaigns for measurable
+                      results.
+                    </p>
+                    <button
+                      onClick={() => navigate("/ppc")}
+                      className="bg-[#008000] mt-10 text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                  <div>
+                    <img
+                      src={slideImage5}
+                      alt=""
+                      className="w-full sm:h-96 pr-10"
+                    />
                   </div>
                 </div>
               </SwiperSlide>
@@ -391,7 +671,9 @@ function Service(props) {
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] items-center justify-center">
           <div className="flex gap-20 text-white">
             <div className="head">
-              <p className="pt-36 pl-52 text-sm font-bold  ">OUR_CLIENTS</p>
+              <p className="pt-36 pl-52 text-sm font-bold  sm:text-center ">
+                OUR_CLIENTS
+              </p>
             </div>
             <div className="headings">
               <h1 className="pt-36 font-bold text-6xl">
@@ -404,7 +686,6 @@ function Service(props) {
               </p>
             </div>
           </div>
-
           <motion.div
             initial={{ x: -400, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -424,19 +705,13 @@ function Service(props) {
             <h1>Earnify</h1>
             <h1>Exeligo Innovations</h1>
           </div>
+        
 
-          {/* <motion.div
-            initial={{ x: 400, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 3 }}
-            viewport={{ once: true }}
-            className="icons flex gap-48 pt-14 pl-96"
-          >
-            <img src={image5} alt="" />
-            <img src={image6} alt="" />
-            <img src={image7} alt="" />
-            <img src={image8} alt="" />
-          </motion.div> */}
+
+
+
+
+
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#4D869C] items-center justify-center">
@@ -447,7 +722,9 @@ function Service(props) {
             viewport={{ once: false, amount: 0.7 }}
             className="head text-black text-center "
           >
-            <p className="text-lg font-semibold  pt-24">Reveal your thoughts</p>
+            <p className="text-lg text-black font-semibold pt-24">
+              Reveal your thoughts
+            </p>
             <motion.h1
               variants={fadeIn("right", 0.2)}
               initial="hidden"
@@ -466,6 +743,7 @@ function Service(props) {
             >
               project?
             </motion.h1>
+
             <div className="flex justify-center items-center relative">
               <svg
                 viewBox="0 0 100 100"
@@ -479,13 +757,19 @@ function Service(props) {
               a 20,20 0 1,1 -40, 0"
                   fill="transparent"
                 />
+
                 <text className="text-[4.9px] fill-current text-black">
                   <textPath href="#circlePath" startOffset="0%">
                     | TripleRConsulting | TripleRConsulting | TripleRConsulting
                   </textPath>
                 </text>
               </svg>
-              <button className="absolute onClick={()=>{navigate('/contact')}} text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
+              <button
+                onClick={() => {
+                  navigate("/contact");
+                }}
+                className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center"
+              >
                 Let's
                 <br />
                 Talk
@@ -494,14 +778,14 @@ function Service(props) {
           </motion.div>
 
           <div className="footer text-black">
-            <div className="container mx-auto flex flex-wrap justify-between">
-              <div className=" w-full sm:w-1/3 ">
+            <div className="container mx-auto sm:flex flex  justify-between">
+              <div className=" w-full sm:w-1/3  hidden  sm:block ">
                 <h6 className="text-lg pt-28  pl-6 font-semibold text-left">
                   Explore more
                 </h6>
                 <ul className="list-none  text-sm pl-6 flex gap-2">
                   <li>
-                    <a href="#/service" className="hover:text-gray-400">
+                    <a href="/#/service" className="hover:text-gray-400">
                       Service
                     </a>
                   </li>
@@ -531,49 +815,50 @@ function Service(props) {
                 </h1>
               </div>
 
-              <svg
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                width="300.151px"
-                height="200.15px"
-                viewBox="0 0 388.151 388.15"
-                style={{
-                  enableBackground: "new 0 0 388.151 388.15",
-                  marginLeft: "60px",
-                  marginTop: "5px",
-                }}
-                xmlSpace="preserve"
-                className={`svg-container ${isMoved ? "move-up" : ""}`} // Toggle class based on state
-                onClick={handleTouch} // Handle click event
-                {...props}
-              >
-                <g>
+              <div className="hidden sm:block">
+                <svg
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="300.151px"
+                  height="200.15px"
+                  viewBox="0 0 388.151 388.15"
+                  style={{
+                    enableBackground: "new 0 0 388.151 388.15",
+                    marginLeft: "60px",
+                    marginTop: "5px",
+                  }}
+                  xmlSpace="preserve"
+                  className={`svg-container ${isMoved ? "move-up" : ""}`} // Toggle class based on state
+                  onClick={handleTouch} // Handle click event
+                  {...props}
+                >
                   <g>
-                    <path d="M294.442,388.15c1.393-4.576,2.918-9.344,3.938-11.8c24.241-58.511,21.491-120.33,20.417-140.134 c-0.745-13.367-2.054-24.655-9.518-33.615c-11.025-13.153-27.935-17.248-35.158-18.452c-4.588-11.529-11.602-19.11-20.867-22.584 c-3.621-1.36-7.572-2.048-11.715-2.048c-6.966,0-13.229,1.91-17.438,3.615c-5.566-10.104-12.994-16.369-22.098-18.651 c-2.498-0.633-5.143-0.952-7.854-0.952c-8.67,0-16.603,3.27-21.995,6.197c-1.402-9.334-6.29-84.8-9.185-126.176 C162.045,10.302,151.026,0,137.74,0h-0.018c-14.192,0-25.709,11.47-25.767,25.656c-0.435,89.7-2.765,178.297-3.312,191.718 c-8.713,3.963-23.89,9.253-30.643,18.41c-15.444,20.945-8.725,37.362-1.068,50.177c17.285,28.967,47.384,80.74,60.204,102.189 H294.442L294.442,388.15z" />
+                    <g>
+                      <path d="M294.442,388.15c1.393-4.576,2.918-9.344,3.938-11.8c24.241-58.511,21.491-120.33,20.417-140.134 c-0.745-13.367-2.054-24.655-9.518-33.615c-11.025-13.153-27.935-17.248-35.158-18.452c-4.588-11.529-11.602-19.11-20.867-22.584 c-3.621-1.36-7.572-2.048-11.715-2.048c-6.966,0-13.229,1.91-17.438,3.615c-5.566-10.104-12.994-16.369-22.098-18.651 c-2.498-0.633-5.143-0.952-7.854-0.952c-8.67,0-16.603,3.27-21.995,6.197c-1.402-9.334-6.29-84.8-9.185-126.176 C162.045,10.302,151.026,0,137.74,0h-0.018c-14.192,0-25.709,11.47-25.767,25.656c-0.435,89.7-2.765,178.297-3.312,191.718 c-8.713,3.963-23.89,9.253-30.643,18.41c-15.444,20.945-8.725,37.362-1.068,50.177c17.285,28.967,47.384,80.74,60.204,102.189 H294.442L294.442,388.15z" />
+                    </g>
                   </g>
-                </g>
-              </svg>
-
-              <div className="contact w-full sm:w-1/3  pr-6">
+                </svg>
+              </div>
+              <div className="contact w-full sm:w-1/3  sm:text-center  pr-6">
                 <h6 className="text-lg pt-28 font-semibold  text-right">
                   Get in touch
                 </h6>
                 <h1 className="text-md text-right">
-                  Email  
+                  Email
                   <a
                     href="mailto:jyot2999@gmail.com"
                     className="hover:text-gray-400"
                   >
-                    : rishabhbahree@gmail.com 
+                    : rishabhbahree@gmail.com
                   </a>
                 </h1>
                 <h1 className="text-md text-right">
                   Phone:
                   <a href="tel:+1234567890" className="hover:text-gray-400">
-                  +91 7018324802
+                    +91 7018324802
                   </a>
                 </h1>
               </div>

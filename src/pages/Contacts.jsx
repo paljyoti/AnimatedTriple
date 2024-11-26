@@ -7,8 +7,6 @@ import { useState } from "react";
 import { ImHome } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
 
-
-
 function Contacts(props) {
   const navigate = useNavigate();
   const [isMoved, setIsMoved] = useState(false);
@@ -65,14 +63,20 @@ function Contacts(props) {
       <div className="contact bg-[#EEF7FF]">
         <div className="header">
           <div className="flex justify-between items-center pl-14 pr-20 px-9 py-9">
-            <h2
-             onClick={() => navigate('/')}
-            className="text-3xl">
+            <h2 onClick={() => navigate("/")} className="text-3xl">
               <ImHome className="fixed hover:text-[#39FF14]" />
+              <h1 className=" fixed font-bold text-xs pl-8">
+                Triple{" "}
+                <span className="text-2xl font-bold text-[#39FF14]">R</span>{" "}
+                Consulting
+              </h1>
             </h2>
 
             <main>
-              <span className="cursor-pointer text-2xl fixed font-bold" onClick={openMenu}>
+              <span
+                className="cursor-pointer text-2xl fixed font-bold"
+                onClick={openMenu}
+              >
                 &#9776;
               </span>
             </main>
@@ -131,15 +135,15 @@ function Contacts(props) {
 
         <div className="top flex pl-52 gap-20 ">
           <div className=" text-black text-left pt-16">
-            <p className="text-sm font-bold text-[#39FF14]">CONTACT US</p>
-            <h1 className="text-6xl font-bold">Why not hit us</h1>
-            <h1 className="text-6xl font-bold">up for</h1>
-            <h1 className="text-6xl font-bold">assistance?</h1>
+            <p className=" font-bold text-4xl text-[#39FF14]">CONTACT US</p>
+            <h1 className="text-4xl font-bold"> Hit us up for</h1>
+            {/* <h1 className="text-6xl font-bold">up for</h1> */}
+            <h1 className="text-4xl font-bold">assistance?</h1>
             <p className="mt-4 w-96 text-sm font-serif">
-              Design is more than how something appears. Design is how it works.
-              Want your brand to be on the upswing? Let us create a website that
-              would take it there. Maximize engagement and make your business
-              future-proof.
+              Ready to elevate your brand's online presence and propel your
+              business towards unprecedented growth? Our team of experts will
+              reflect your brand's unique identity and provide platform for an
+              engaging user experience.
             </p>
           </div>
 
@@ -245,8 +249,8 @@ function Contacts(props) {
               viewport={{ once: false, amount: 0.7 }}
               className="text-black text-xs w-96 pt-20 "
             >
-              Creative agency in Houston made with loads of love and dedication
-              in Houston, TX.
+              Creative agency in Gurugram made with loads of love and dedication
+              in India.
             </motion.p>
           </div>
 
@@ -282,14 +286,26 @@ function Contacts(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-black w-96 text-xs pt-20"
+              className="text-black w-96 text-xs pt-20 pl-20"
             >
-              Weaving together creativity and practical ways to link people to
-              cutting-edge technology.
+              Connecting people with techology.
+            </motion.p>
+            <motion.p
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="text-xs pl-20"
+            >
+              {" "}
+              Email : rishabhbahree@gmail.com{" "}
+              <span className="text-xs pl-4">Ph : +91 7018324802</span>{" "}
             </motion.p>
           </div>
         </div>
       </div>
+
+
 
       <div className="about bg-[#CDE8E5] h-full w-full">
         <h1 className="text-black pl-40 pt-12 font-bold text-4xl ">
@@ -362,7 +378,10 @@ function Contacts(props) {
                 </div>
               </div>
               <div className="mb-4 pl-28 font-serif ">
-                <label className="block mb-2 text-black" htmlFor="projectDescription">
+                <label
+                  className="block mb-2 text-black"
+                  htmlFor="projectDescription"
+                >
                   Tell us about your project :)
                 </label>
                 <textarea
@@ -383,16 +402,20 @@ function Contacts(props) {
             </form>
           </div>
         </div>
+      </div>
 
-        <div className="footer bg-[#4D869C]">
+
+ <div className="footer bg-[#4D869C]">
           <motion.div
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="head text-black text-center"
+            className="head text-black text-center "
           >
-            <p className="text-lg font-semibold  pt-24">Reveal your thoughts</p>
+            <p className="text-lg text-black font-semibold pt-24">
+              Reveal your thoughts
+            </p>
             <motion.h1
               variants={fadeIn("right", 0.2)}
               initial="hidden"
@@ -411,6 +434,7 @@ function Contacts(props) {
             >
               project?
             </motion.h1>
+
             <div className="flex justify-center items-center relative">
               <svg
                 viewBox="0 0 100 100"
@@ -424,43 +448,45 @@ function Contacts(props) {
               a 20,20 0 1,1 -40, 0"
                   fill="transparent"
                 />
+
                 <text className="text-[4.9px] fill-current text-black">
-                <textPath href="#circlePath" startOffset="0%">
-                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
-                </textPath>
-              </text>
+                  <textPath href="#circlePath" startOffset="0%">
+                    | TripleRConsulting | TripleRConsulting | TripleRConsulting
+                  </textPath>
+                </text>
               </svg>
-              <button className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
+              <button
+                onClick={() => {
+                  navigate("/contact");
+                }}
+                className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center"
+              >
                 Let's
                 <br />
                 Talk
               </button>
             </div>
           </motion.div>
-          <div className="footer1 text-black">
-            <div className="container mx-auto flex flex-wrap justify-between">
-              <div className="w-full sm:w-1/3 ">
-                <h6 className="text-lg pt-28 pl-6 font-semibold text-left">
+
+          <div className="footer text-black">
+            <div className="container mx-auto sm:flex flex  justify-between">
+              <div className=" w-full sm:w-1/3  hidden  sm:block ">
+                <h6 className="text-lg pt-28  pl-6 font-semibold text-left">
                   Explore more
                 </h6>
-                <ul className="list-none text-sm pl-6 flex gap-2">
+                <ul className="list-none  text-sm pl-6 flex gap-2">
                   <li>
-                    <a href="#" className="hover:text-gray-400">
-                      Work
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-gray-400">
+                    <a href="/#/service" className="hover:text-gray-400">
                       Service
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-gray-400">
+                    <a href="/#/aboutus" className="hover:text-gray-400">
                       About Us
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-gray-400">
+                    <a href="/#/contact" className="hover:text-gray-400">
                       Contact
                     </a>
                   </li>
@@ -480,33 +506,34 @@ function Contacts(props) {
                 </h1>
               </div>
 
-              <svg
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                width="300.151px"
-                height="200.15px"
-                viewBox="0 0 388.151 388.15"
-                style={{
-                  enableBackground: "new 0 0 388.151 388.15",
-                  marginLeft: "60px",
-                  marginTop: "5px",
-                }}
-                xmlSpace="preserve"
-                className={`svg-container ${isMoved ? "move-up" : ""}`} // Toggle class based on state
-                onClick={handleTouch} // Handle click event
-                {...props}
-              >
-                <g>
+              <div className="hidden sm:block">
+                <svg
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="300.151px"
+                  height="200.15px"
+                  viewBox="0 0 388.151 388.15"
+                  style={{
+                    enableBackground: "new 0 0 388.151 388.15",
+                    marginLeft: "60px",
+                    marginTop: "5px",
+                  }}
+                  xmlSpace="preserve"
+                  className={`svg-container ${isMoved ? "move-up" : ""}`} // Toggle class based on state
+                  onClick={handleTouch} // Handle click event
+                  {...props}
+                >
                   <g>
-                    <path d="M294.442,388.15c1.393-4.576,2.918-9.344,3.938-11.8c24.241-58.511,21.491-120.33,20.417-140.134 c-0.745-13.367-2.054-24.655-9.518-33.615c-11.025-13.153-27.935-17.248-35.158-18.452c-4.588-11.529-11.602-19.11-20.867-22.584 c-3.621-1.36-7.572-2.048-11.715-2.048c-6.966,0-13.229,1.91-17.438,3.615c-5.566-10.104-12.994-16.369-22.098-18.651 c-2.498-0.633-5.143-0.952-7.854-0.952c-8.67,0-16.603,3.27-21.995,6.197c-1.402-9.334-6.29-84.8-9.185-126.176 C162.045,10.302,151.026,0,137.74,0h-0.018c-14.192,0-25.709,11.47-25.767,25.656c-0.435,89.7-2.765,178.297-3.312,191.718 c-8.713,3.963-23.89,9.253-30.643,18.41c-15.444,20.945-8.725,37.362-1.068,50.177c17.285,28.967,47.384,80.74,60.204,102.189 H294.442L294.442,388.15z" />
+                    <g>
+                      <path d="M294.442,388.15c1.393-4.576,2.918-9.344,3.938-11.8c24.241-58.511,21.491-120.33,20.417-140.134 c-0.745-13.367-2.054-24.655-9.518-33.615c-11.025-13.153-27.935-17.248-35.158-18.452c-4.588-11.529-11.602-19.11-20.867-22.584 c-3.621-1.36-7.572-2.048-11.715-2.048c-6.966,0-13.229,1.91-17.438,3.615c-5.566-10.104-12.994-16.369-22.098-18.651 c-2.498-0.633-5.143-0.952-7.854-0.952c-8.67,0-16.603,3.27-21.995,6.197c-1.402-9.334-6.29-84.8-9.185-126.176 C162.045,10.302,151.026,0,137.74,0h-0.018c-14.192,0-25.709,11.47-25.767,25.656c-0.435,89.7-2.765,178.297-3.312,191.718 c-8.713,3.963-23.89,9.253-30.643,18.41c-15.444,20.945-8.725,37.362-1.068,50.177c17.285,28.967,47.384,80.74,60.204,102.189 H294.442L294.442,388.15z" />
+                    </g>
                   </g>
-                </g>
-              </svg>
-
-              <div className="contact w-full sm:w-1/3  pr-6">
+                </svg>
+              </div>
+              <div className="contact w-full sm:w-1/3  sm:text-center  pr-6">
                 <h6 className="text-lg pt-28 font-semibold  text-right">
                   Get in touch
                 </h6>
@@ -516,21 +543,19 @@ function Contacts(props) {
                     href="mailto:jyot2999@gmail.com"
                     className="hover:text-gray-400"
                   >
-                   :  rishabhbahree@gmail.com
+                    : rishabhbahree@gmail.com
                   </a>
                 </h1>
                 <h1 className="text-md text-right">
                   Phone:
                   <a href="tel:+1234567890" className="hover:text-gray-400">
-                  +91 7018324802
+                    +91 7018324802
                   </a>
                 </h1>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
     </div>
   );
 }
