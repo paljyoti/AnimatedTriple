@@ -20,9 +20,11 @@ import "swiper/css/scrollbar";
 import "swiper/swiper-bundle.css";
 import slideImage from "../../src/assets/19199219-removebg-preview.png";
 import slideImage1 from "../../src/assets/19362653-removebg-preview.png";
-import slideImage2 from "../../src/assets/icons-12913_256.gif";
-import slideImage3 from "../../src/assets/e-mail-5046_256.gif";
-import slideImage5 from "../../src/assets/seo-12288_256-ezgif.com-gif-maker.gif";
+import slideImage2 from "../../src/assets/social-media-936543_1280-removebg-preview.png";
+import slideImage3 from "../../src/assets/email-3249062_1280-removebg-preview.png";
+import slideImage5 from "../../src/assets/sk12p-removebg-preview.png";
+import slideImage4 from "../../src/assets/content-3679757_1280-removebg-preview.png";
+import slidePay from "../../src/assets/Jyoti_12-removebg-preview.png"
 import { useNavigate } from "react-router-dom";
 import { ImHome } from "react-icons/im";
 
@@ -207,7 +209,11 @@ function Service(props) {
                   </textPath>
                 </text>
               </svg>
-              <button className="absolute  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
+              <button 
+               onClick={() => {
+                navigate("/contact");
+              }}
+              className="absolute  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
                 Let's
                 <br />
                 Talk
@@ -228,218 +234,7 @@ function Service(props) {
           </div>
         </div>
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center justify-center">
-          {/* <div className="ml-36 mr-36">
-            <Swiper
-              modules={[Pagination, Navigation, Scrollbar]}
-             
-              spaceBetween={50}
-              slidesPerView={1}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
-              pagination={{ clickable: true }}
-              navigation
-            >
-              <SwiperSlide>
-                <div className="slider flex pt-32  gap-10">
-                  <div className="pl-20 pt-16 text-black">
-                    <p className="text-xl font-bold text-[#39FF14]">
-                      WHAT WE DO
-                    </p>
-                    <h4 className="font-bold text-4xl pl-96">01</h4>
-                    <h1 className="font-bold text-4xl pt-5">
-                      DIGITAL-MARKETING
-                    </h1>
-                    <p className=" w-[35vw] text-justify pt-3 text-sm font-serif">
-                      In today’s fast-paced digital landscape, standing out
-                      requires more than just an online presence—it demands a
-                      strategic approach to marketing. At Triple R Consulting,
-                      we specialize in crafting data-driven, result-oriented
-                      digital marketing strategies that help businesses thrive.
-                    </p>
-                    <button
-                onClick={() => navigate("/digitalMarketing")}
-                className="bg-[#FF0000]  mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-              >
-                Read More
-              </button>
-                  </div>
-                  <div>
-                    <img src={slideImage} alt="" className="h-96 pr-10" />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider flex pt-32  gap-10">
-                  <div className="pl-20 pt-16 text-black">
-                    <p className="text-xl font-bold text-[#39FF14]">
-                      WHAT WE DO
-                    </p>
-                    <h4 className="font-bold text-4xl pl-96">02</h4>
-                    <h1 className="font-bold pt-5 text-4xl">WEB DESIGNING</h1>
-                    <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
-                      At Triple R Consulting, we believe that your website is
-                      more than just an online presence—it’s the cornerstone of
-                      your digital identity. A well-designed website can elevate
-                      your brand, engage your audience, and drive business
-                      growth.
-                    </p>
-                    <button
-                onClick={() => navigate("/webDesign")}
-                className="bg-[#8A2BE2]  mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-              >
-                Read More
-              </button>
-                  </div>
-                  <div>
-                    <img src={slideImage1} alt="" className="h-80 pt-4  pr-10" />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider flex pt-32  gap-10">
-                  <div className="pl-20 pt-16 text-black">
-                    <p className="text-xl font-bold text-[#39FF14]">
-                      WHAT WE DO
-                    </p>
-                    <h4 className="font-bold text-4xl pl-96">03</h4>
-                    <h1 className="font-bold pt-5 text-4xl">
-                      SOCIAL MEDIA
-                    </h1>
-                    <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
-                      Social media is where conversations happen, trends are
-                      born, and brands make their mark. At Triple R Consulting,
-                      we harness the power of social platforms to help your
-                      business connect with its audience, build trust, and drive
-                      meaningful engagement.
-                    </p>
-                    <button
-                onClick={() => navigate("/socialMedia")}
-                className="bg-[#0000FF]   mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-              >
-                Read More
-              </button>
-                  </div>
-                  <div>
-                    <img src={slideImage2} alt="" className="w-96 h-96 pr-10" />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider flex pt-32  gap-10">
-                  <div className="pl-xl pt-16 text-black">
-                    <p className="text-sm font-bold text-[#39FF14]">
-                      WHAT WE DO{" "}
-                    </p>
-                    <h4 className="font-bold text-4xl pl-96">04</h4>
-                    <h1 className="font-bold pt-5 text-4xl">EMAIL MARKETING</h1>
-                    <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
-                      Email marketing remains one of the most effective ways to
-                      connect with your audience and drive results. At Triple R
-                      Consulting, we create personalized, impactful email
-                      campaigns that help you nurture relationships, boost
-                      engagement, and grow your business.
-                    </p>
-                    <button
-                onClick={() => navigate("/emailMarketing")}
-                className="bg-[#4B0082]  mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-              >
-                Read More
-              </button>
-                  </div>
-                  <div>
-                    <img src={slideImage3} alt="" className="pr-10 w-96" />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider flex pt-32  gap-10">
-                  <div className="pl-20 pt-16 text-black">
-                    <p className="text-xl font-bold text-[#39FF14]">
-                      WHAT WE DO{" "}
-                    </p>
-                    <h4 className="font-bold text-4xl pl-96">05</h4>
-                    <h1 className="font-bold pt-5 text-4xl">
-                      CONTENT MARKETING
-                    </h1>
-                    <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
-                      In a world where content is king, delivering the right
-                      message at the right time can set your brand apart. At
-                      Triple R Consulting, we craft compelling, value-driven
-                      content that attracts, engages, and converts your audience
-                      into loyal customers.
-                    </p>
-                    <button
-                onClick={() => navigate("/contentMarketing")}
-                className="bg-[#FFA500]  mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-              >
-                Read More
-              </button>
-                  </div>
-                  <div>
-                 
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider flex pt-32  gap-10">
-                  <div className="pl-20 pt-16 text-black">
-                    <p className="text-xl font-bold text-[#39FF14]">
-                      WHAT WE DO{" "}
-                    </p>
-                    <h4 className="font-bold text-4xl pl-96">06</h4>
-                    <h1 className="font-bold pt-5 text-4xl">
-                      SEARCH ENGINE OPTIMIZATION
-                    </h1>
-                    <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
-                      If your business isn’t visible online, it’s missing out.
-                      At Triple R Consulting, we specialize in Search Engine
-                      Optimization (SEO) strategies that help your website rank
-                      higher, attract organic traffic, and drive real business
-                      results.
-                    </p>
-                    <button
-                onClick={() => navigate("/seo")}
-                className="bg-[#FFD700] mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-              >
-                Read More
-              </button>
-                  </div>
-                  <div>
-                    <img src={slideImage5} alt="" className="pr-10 w-96" />
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider flex pt-32  gap-10">
-                  <div className="pl-20 pt-16 text-black">
-                    <p className="text-xl font-bold text-[#39FF14]">
-                      WHAT WE DO{" "}
-                    </p>
-                    <h4 className="font-bold text-4xl pl-96">07</h4>
-                    <h1 className="font-bold pt-5 text-4xl">Pay Per Click</h1>
-                    <p className=" w-[35vw] pt-3 text-justify text-sm font-serif">
-                      In the fast-paced world of digital marketing,
-                      Pay-Per-Click (PPC) advertising offers a quick and
-                      effective way to drive targeted traffic to your website.
-                      At Triple R Consulting, we create data-driven PPC
-                      campaigns that deliver measurable results, helping you
-                      maximize your ROI.
-                    </p>
-                    <button
-                onClick={() => navigate("/ppc")}
-                className="bg-[#008000]  mt-10  text-white py-2 px-4 rounded hover:bg-[#39FF14] transition"
-              >
-                Read More
-              </button>
-                  </div>
-                  <div>
-                    <img src={slideImage5} alt="" className="pr-10 w-96" />
-                  </div>
-                </div>
-              </SwiperSlide>
-            </Swiper>
-          </div> */}
-
+         
           <div className="ml-8 mr-8 sm:ml-16 sm:mr-16 lg:ml-36 lg:mr-36">
             <Swiper
               modules={[Pagination, Navigation, Scrollbar]}
@@ -597,7 +392,13 @@ function Service(props) {
                       Read More
                     </button>
                   </div>
-                  <div></div>
+                  <div>
+                  <img
+                      src={slideImage4}
+                      alt=""
+                      className="w-full sm:h-96 pr-10"
+                    />
+                  </div>
                 </div>
               </SwiperSlide>
 
@@ -657,7 +458,7 @@ function Service(props) {
                   </div>
                   <div>
                     <img
-                      src={slideImage5}
+                     src={slidePay}
                       alt=""
                       className="w-full sm:h-96 pr-10"
                     />
@@ -669,13 +470,15 @@ function Service(props) {
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] items-center justify-center">
-          <div className="flex gap-20 text-white">
+
+
+          {/* <div className="flex gap-20 text-white">
             <div className="head">
-              <p className="pt-36 pl-52 text-sm font-bold  sm:text-center ">
-                OUR_CLIENTS
+              <p className="pt-36  pl-48 text-sm font-bold  ">
+                OUR CLIENTS 
               </p>
             </div>
-            <div className="headings">
+            <div className="headings pl-28 pr-20">
               <h1 className="pt-36 font-bold text-6xl">
                 We don’t work for you, but with you.
               </h1>
@@ -691,22 +494,59 @@ function Service(props) {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 3 }}
             viewport={{ once: true }}
-            className="icons flex gap-48 pt-14 pl-96"
+            className="icons flex gap-36 pt-14 pl-96"
           >
-            <img src={image1} alt="" />
+            <img src={image1} alt="" className="pl-11"/>
             <img src={image2} alt="" />
             <img src={image3} alt="" />
             <img src={image4} alt="" />
           </motion.div>
 
-          <div className="logo flex gap-32 pl-80 pt-4 text-white">
-            <h1 className="pl-14">Interior design</h1>
+          <div className="logo flex gap-16 pl-96 pt-4 text-white">
+            <h1 className="pl-12">Interior design</h1>
             <h1>Driving Awareness</h1>
-            <h1>Earnify</h1>
-            <h1>Exeligo Innovations</h1>
-          </div>
+            <h1 className="pl-7">Earnify</h1>
+            <h1 className="pl-7">Exeligo Innovations</h1>
+          </div> */}
         
 
+        <div className="flex flex-col md:flex-row gap-8 md:gap-20 text-white">
+  <div className="head">
+    <p className="pt-36 pl-8 md:pl-48 text-sm font-bold">
+      OUR CLIENTS
+    </p>
+  </div>
+  <div className="headings pl-8 md:pl-28 pr-8 md:pr-20">
+    <h1 className="pt-36 font-bold text-4xl md:text-6xl">
+      We don’t work for you, but with you.
+    </h1>
+    <p className="text-sm pt-5 md:pt-5 pr-8 md:pr-20 font-serif">
+      We partner with ambitious clients to build an unforgettable
+      brand that resonates with their audience and leaves a lasting
+      impact.
+    </p>
+  </div>
+</div>
+
+<motion.div
+  initial={{ x: -400, opacity: 0 }}
+  whileInView={{ x: 0, opacity: 1 }}
+  transition={{ duration: 3 }}
+  viewport={{ once: true }}
+  className="icons flex  justify-center md:justify-start gap-16 md:gap-36 pt-14 pl-8 md:pl-96"
+>
+  <img src={image1} alt="" className="pl-11 mb-4 md:mb-0 " />
+  <img src={image2} alt="" className="mb-4 md:mb-0" />
+  <img src={image3} alt="" className="mb-4 md:mb-0" />
+  <img src={image4} alt="" className="mb-4 md:mb-0" />
+</motion.div>
+
+<div className="logo flex  justify-center md:justify-start gap-8 md:gap-16 pl-8 md:pl-96 pt-4 text-white">
+  <h1 className="pl-0 md:pl-12">Interior design</h1>
+  <h1>Driving Awareness</h1>
+  <h1 className="pl-0 md:pl-7">Earnify</h1>
+  <h1 className="pl-0 md:pl-7">Exeligo Innovations</h1>
+</div>
 
 
 

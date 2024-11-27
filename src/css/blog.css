@@ -1,0 +1,67 @@
+/* Base styles (for large screens like laptops and desktops) */
+.img {
+    padding-left: 2.5rem;
+  }
+  
+  .text-black {
+    color: #000;
+  }
+  
+  /* Responsive styling for mobile */
+  @media (max-width: 768px) {
+    .flex {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      gap: 5px; /* Reduce gaps between elements */
+      padding-right: 0; /* Remove padding on smaller screens */
+    }
+  
+    .img {
+      padding-left: 0; /* Remove left padding on smaller screens */
+      width: 100%; /* Make images take full width */
+    }
+  
+    .text-2xl {
+      font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+  
+    .text-3xl {
+      font-size: 1.875rem; /* Adjust font size for mobile */
+    }
+  
+    .text-6xl {
+      font-size: 2.5rem; /* Adjust font size for mobile */
+    }
+  
+    /* Reduce padding top for smaller screens */
+    .pt-72 {
+      padding-top: 3rem;
+    }
+  
+    .pt-60 {
+      padding-top: 2.5rem;
+    }
+  
+    .pt-32 {
+      padding-top: 1.5rem;
+    }
+  
+    .pt-28 {
+      padding-top: 1rem;
+    }
+  }
+  
+  /* Responsive for medium screens (tablet & laptop) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .flex {
+      flex-direction: row; /* Keep elements in row format */
+    }
+  
+    .img {
+      width: 33.333%; /* Set to one-third width on medium screens */
+    }
+  
+    .text-6xl {
+      font-size: 4rem; /* Adjust font size for medium screens */
+    }
+  }
+  

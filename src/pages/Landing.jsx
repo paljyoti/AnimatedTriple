@@ -253,7 +253,7 @@ function Landing(props) {
               </div>
               <div className="sec text-lg font-bold gap-44 pl-32 flex">
                 <a className=" flex " href="/#/seo">
-                  <button className="bg-[#FFD700] mb-48 pr-10 text-white py-2 px-4 rounded-full hover:bg-[#39FF14] transition">
+                  <button className="bg-[#FFD700] mb-48 pr-10  text-white py-2 px-4 rounded-full hover:bg-[#39FF14] transition">
                     SEO
                   </button>
                 </a>

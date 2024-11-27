@@ -251,7 +251,11 @@ function AboutUs(props) {
                   </textPath>
                 </text>
               </svg>
-              <button className="absolute  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
+              <button 
+             onClick={() => {
+              navigate("/contact");
+            }}
+              className="absolute  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
                 Let's
                 <br />
                 Talk
