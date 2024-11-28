@@ -530,10 +530,6 @@ function Landing(props) {
           </div>
         </div>
 
-
-
-
-
       </div>
     </div>
   );

@@ -24,9 +24,11 @@ import slideImage2 from "../../src/assets/social-media-936543_1280-removebg-prev
 import slideImage3 from "../../src/assets/email-3249062_1280-removebg-preview.png";
 import slideImage5 from "../../src/assets/sk12p-removebg-preview.png";
 import slideImage4 from "../../src/assets/content-3679757_1280-removebg-preview.png";
-import slidePay from "../../src/assets/Jyoti_12-removebg-preview.png"
+import slidePay from "../../src/assets/Jyoti_12-removebg-preview.png";
 import { useNavigate } from "react-router-dom";
 import { ImHome } from "react-icons/im";
+
+
 
 function Service(props) {
   const navigate = useNavigate();
@@ -64,7 +66,7 @@ function Service(props) {
               <h2 onClick={() => navigate("/")} className="text-3xl">
                 <ImHome className="fixed hover:text-[#39FF14]" />
                 <h1 className=" fixed font-bold text-xs pl-8">
-                  Triple{" "}
+                  Triple
                   <span className="text-2xl font-bold text-[#39FF14]">R</span>{" "}
                   Consulting
                 </h1>
@@ -177,7 +179,7 @@ function Service(props) {
             </p>
           </motion.div>
 
-           <div className="container flex mx-auto   space-x-24  ">
+          <div className="container flex mx-auto   space-x-24  ">
             <div className="text-left pl-20 ">
               <motion.p
                 variants={fadeIn("up", 0.2)}
@@ -209,11 +211,12 @@ function Service(props) {
                   </textPath>
                 </text>
               </svg>
-              <button 
-               onClick={() => {
-                navigate("/contact");
-              }}
-              className="absolute  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
+              <button
+                onClick={() => {
+                  navigate("/contact");
+                }}
+                className="absolute  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center"
+              >
                 Let's
                 <br />
                 Talk
@@ -231,13 +234,9 @@ function Service(props) {
                 Privacy Policy · Terms and conditions
               </motion.p>
             </div>
-          </div> 
-
-
-
+          </div>
         </div>
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center justify-center">
-         
           <div className="ml-8 mr-8 sm:ml-16 sm:mr-16 lg:ml-36 lg:mr-36">
             <Swiper
               modules={[Pagination, Navigation, Scrollbar]}
@@ -396,7 +395,7 @@ function Service(props) {
                     </button>
                   </div>
                   <div>
-                  <img
+                    <img
                       src={slideImage4}
                       alt=""
                       className="w-full sm:h-96 pr-10"
@@ -461,7 +460,7 @@ function Service(props) {
                   </div>
                   <div>
                     <img
-                     src={slidePay}
+                      src={slidePay}
                       alt=""
                       className="w-full sm:h-96 pr-10"
                     />
@@ -473,50 +472,59 @@ function Service(props) {
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] items-center justify-center">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-20 text-white">
+            <div className="head">
+              <p className="pt-36 pl-8 md:pl-48 text-sm font-bold">
+                OUR CLIENTS
+              </p>
+            </div>
+            <div className="headings pl-8 md:pl-28 pr-8 md:pr-20">
+              <h1 className="pt-36 font-bold text-4xl md:text-6xl">
+                We don’t work for you, but with you.
+              </h1>
+              <p className="text-sm pt-5 md:pt-5 pr-8 md:pr-20 font-serif">
+                We partner with ambitious clients to build an unforgettable
+                brand that resonates with their audience and leaves a lasting
+                impact.
+              </p>
+            </div>
+          </div>
 
+          <motion.div
+            initial={{ x: -400, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 3 }}
+            viewport={{ once: true }}
+            className="icons flex flex-wrap  justify-center sm:justify-start gap-8 sm:gap-16 md:gap-36 pt-14 pl-8 sm:pl-8 md:pl-24 lg:pl-96"
+          >
+            <img
+              src={image1}
+              alt=""
+              className="ml-12 mb-4 sm:mb-0 sm:pl-6 md:pl-11 lg:pl-0"
+            />
+            <img
+              src={image2}
+              alt=""
+              className="mb-4 sm:mb-0 sm:pl-6 md:pl-11 lg:pl-0"
+            />
+            <img
+              src={image3}
+              alt=""
+              className="mb-4 sm:mb-0 sm:pl-6 md:pl-11 lg:pl-0"
+            />
+            <img
+              src={image4}
+              alt=""
+              className="mb-4 sm:mb-0 sm:pl-6 md:pl-11 lg:pl-0"
+            />
+          </motion.div>
 
-        <div className="flex flex-col md:flex-row gap-8 md:gap-20 text-white">
-  <div className="head">
-    <p className="pt-36 pl-8 md:pl-48 text-sm font-bold">
-      OUR CLIENTS
-    </p>
-  </div>
-  <div className="headings pl-8 md:pl-28 pr-8 md:pr-20">
-    <h1 className="pt-36 font-bold text-4xl md:text-6xl">
-      We don’t work for you, but with you.
-    </h1>
-    <p className="text-sm pt-5 md:pt-5 pr-8 md:pr-20 font-serif">
-      We partner with ambitious clients to build an unforgettable
-      brand that resonates with their audience and leaves a lasting
-      impact.
-    </p>
-  </div>
-</div>
-
-<motion.div
-  initial={{ x: -400, opacity: 0 }}
-  whileInView={{ x: 0, opacity: 1 }}
-  transition={{ duration: 3 }}
-  viewport={{ once: true }}
-  className="icons flex  justify-center md:justify-start gap-16 md:gap-36 pt-14 pl-8 md:pl-96"
->
-  <img src={image1} alt="" className="pl-11 mb-4 md:mb-0 " />
-  <img src={image2} alt="" className="mb-4 md:mb-0" />
-  <img src={image3} alt="" className="mb-4 md:mb-0" />
-  <img src={image4} alt="" className="mb-4 md:mb-0" />
-</motion.div>
-
-<div className="logo flex  justify-center md:justify-start gap-8 md:gap-16 pl-8 md:pl-96 pt-4 text-white">
-  <h1 className="pl-0 md:pl-12">Interior design</h1>
-  <h1>Driving Awareness</h1>
-  <h1 className="pl-0 md:pl-7">Earnify</h1>
-  <h1 className="pl-0 md:pl-7">Exeligo Innovations</h1>
-</div>
-
-
-
-
-
+          <div className="logo flex  justify-center md:justify-start gap-8 md:gap-16 pl-8 md:pl-96 pt-4 text-white">
+            <h1 className="pl-0 md:pl-12">Interior design</h1>
+            <h1 className="pl-0 md:pl-12">Driving Awareness</h1>
+            <h1 className="pl-0 md:pl-12">Earnify</h1>
+            <h1 className="pl-0 md:pl-12">Exeligo Innovations</h1>
+          </div>
         </div>
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#4D869C] items-center justify-center">
@@ -584,7 +592,7 @@ function Service(props) {
 
           <div className="footer text-black">
             <div className="container mx-auto sm:flex flex  justify-between">
-              <div className=" w-full sm:w-1/3  hidden  sm:block ">
+              <div className=" w-full sm:w-1/3 md:w-1/3  hidden  sm:block ">
                 <h6 className="text-lg pt-28  pl-6 font-semibold text-left">
                   Explore more
                 </h6>
@@ -596,7 +604,7 @@ function Service(props) {
                   </li>
                   <li>
                     <a href="/#/aboutus" className="hover:text-gray-400">
-                      About Us
+                      AboutUs
                     </a>
                   </li>
                   <li>
