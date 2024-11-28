@@ -169,7 +169,7 @@ function Contacts(props) {
     <h1 className="text-3xl font-bold sm:text-2xl md:text-3xl lg:text-4xl">
       assistance?
     </h1>
-    <p className="mt-4 text-sm font-serif sm:w-full md:w-4/5 lg:w-4/5">
+    <p className="mt-4 text-sm text-justify  font-serif sm:w-full md:w-4/5 lg:w-4/5">
       Ready to elevate your brand's online presence and propel your
       business towards unprecedented growth? Our team of experts will
       reflect your brand's unique identity and provide a platform for an
@@ -278,7 +278,7 @@ style={{
 
 
 
-        <div className="container flex flex-col sm:flex-col md:flex-row mx-auto space-x-24 gap-6 md:gap-8 sm:gap-4">
+        {/* <div className="container flex flex-col sm:flex-col md:flex-row mx-auto space-x-24 gap-6 md:gap-8 sm:gap-4">
           <div className="text-left mb-6 pl-20 hidden sm:block md:pl-12 lg:pl-20">
             <motion.p
               variants={fadeIn("up", 0.2)}
@@ -339,7 +339,77 @@ style={{
               <span className="text-xs pl-2">Ph : +91 7018324802</span>
             </motion.p>
           </div>
-        </div>
+        </div> */}
+
+
+<div className="container flex flex-col sm:flex-col md:flex-row mx-auto space-y-6 sm:space-y-6 md:space-y-0 gap-6 md:gap-8 sm:gap-4">
+  <div className="text-left mb-6 pl-6 sm:pl-6 md:pl-12 lg:pl-20 sm:w-full md:w-96 lg:w-96">
+    <motion.p
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.7 }}
+      className="text-black text-xs sm:text-sm w-full pt-10 sm:pt-16 md:pt-20 lg:pt-20"
+    >
+      Creative agency in Gurugram made with loads of love and dedication in India.
+    </motion.p>
+  </div>
+
+  <div className="flex justify-center items-center relative pl-36 sm:w-full md:w-auto">
+    <svg
+      viewBox="0 0 100 100"
+      xmlns="http://www.w3.org/2000/svg"
+      className="animate-rotate-svg w-32 h-32  sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-40 lg:h-40"
+    >
+      <path
+        id="circlePath"
+        d="M 50, 50 m -20, 0
+        a 20,20 0 1,1 40, 0
+        a 20,20 0 1,1 -40, 0"
+        fill="transparent"
+      />
+      <text className="text-[4.9px] fill-current text-black">
+        <textPath href="#circlePath" startOffset="0%">
+          | TripleRConsulting | TripleRConsulting | TripleRConsulting
+        </textPath>
+      </text>
+    </svg>
+    <button className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-12 lg:h-12">
+      Let's
+      <br />
+      Talk
+    </button>
+  </div>
+
+  <div className="sm:w-full md:w-auto pl-28">
+    <motion.p
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.7 }}
+      className="text-black w-full text-xs sm:text-sm pt-10 sm:pt-16 md:pt-20"
+    >
+      Connecting people with technology.
+    </motion.p>
+    <motion.p
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.7 }}
+      className="text-xs sm:text-sm"
+    >
+      Email: rishabhbahree@gmail.com
+      <span className="text-xs sm:text-sm pl-2">Ph: +91 7018324802</span>
+    </motion.p>
+  </div>
+</div>
+
+
+
+
+
+
+
       </div>
 
     
@@ -522,12 +592,12 @@ style={{
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <a href="/#/privacy" className="hover:text-gray-400">
                     Privacy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <a href="/#/terms" className="hover:text-gray-400">
                     Terms
                   </a>
                 </li>

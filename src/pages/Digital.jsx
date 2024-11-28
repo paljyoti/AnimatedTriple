@@ -231,12 +231,12 @@ function Digital(props) {
           </a>
         </li>
         <li>
-          <a href="#" className="hover:text-gray-400">
+          <a href="/#/privacy" className="hover:text-gray-400">
             Privacy
           </a>
         </li>
         <li>
-          <a href="#" className="hover:text-gray-400">
+          <a href="/#/terms" className="hover:text-gray-400">
             Terms
           </a>
         </li>

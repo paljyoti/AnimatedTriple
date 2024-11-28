@@ -115,57 +115,7 @@ function AboutUs(props) {
             </div>
           </div>
 
-          {/* <div className="top flex pl-48 gap-20">
-            <div className=" text-black text-left pt-16">
-              <motion.h1
-                variants={fadeIn("right", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="text-6xl font-bold "
-              >
-                About Us
-              </motion.h1>
-
-              <motion.p
-                variants={fadeIn("up", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="pt-2 w-96 font-semibold text-lg font-serif"
-              >
-                Step inside the world of young, energetic and innovative
-                marketing agency
-              </motion.p>
-              <motion.p
-                variants={fadeIn("up", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="pt-2 text-justify w-96 text-sm font-serif "
-              >
-                We are Triple R Consulting. The innovative marketing agency. We
-                believe in the power of innovation to enhance brands.
-              </motion.p>
-              <motion.p
-                variants={fadeIn("up", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className=" pt-2 w-96 text-justify text-sm font-serif"
-              >
-                Founded in 2024, Triple R Consulting is a young and innovative
-                marketing agency committed to deliver tailored solutions for
-                businesses of all sizes. We aim to enhance our clients’ online
-                presence, drive growth, and build lasting relationships. At
-                Triple R Consulting, we believe in turning ideas into impactful
-                campaigns that resonate with audiences and deliver measurable
-                results.
-              </motion.p>
-            </div>
-
-            <img src={aboutImage} alt="" className="h-96 w-96 ml-20 mt-1 " />
-          </div> */}
+       
 
 <div className="top flex flex-col sm:flex-row sm:pl-8 md:pl-16 lg:pl-48 gap-6 sm:gap-8 md:gap-12 lg:gap-20">
   <div className="text-black text-left pt-8 sm:pt-12 md:pt-16 lg:pt-16">
@@ -216,6 +166,8 @@ function AboutUs(props) {
     className="h-64 sm:h-80 md:h-96 lg:h-96 w-full sm:w-80 md:w-96 lg:w-96 ml-0 sm:ml-4 md:ml-8 lg:ml-20 mt-4 sm:mt-6 md:mt-8 lg:mt-1" 
   />
 </div>  
+
+
 
 
 
@@ -603,12 +555,12 @@ function AboutUs(props) {
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-gray-400">
+                    <a href="/#/privacy" className="hover:text-gray-400">
                       Privacy
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-gray-400">
+                    <a href="/#/terms" className="hover:text-gray-400">
                       Terms
                     </a>
                   </li>

@@ -177,7 +177,7 @@ function Service(props) {
             </p>
           </motion.div>
 
-          <div className="container flex mx-auto   space-x-24  ">
+           <div className="container flex mx-auto   space-x-24  ">
             <div className="text-left pl-20 ">
               <motion.p
                 variants={fadeIn("up", 0.2)}
@@ -231,7 +231,10 @@ function Service(props) {
                 Privacy Policy · Terms and conditions
               </motion.p>
             </div>
-          </div>
+          </div> 
+
+
+
         </div>
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center justify-center">
          
@@ -472,44 +475,6 @@ function Service(props) {
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] items-center justify-center">
 
 
-          {/* <div className="flex gap-20 text-white">
-            <div className="head">
-              <p className="pt-36  pl-48 text-sm font-bold  ">
-                OUR CLIENTS 
-              </p>
-            </div>
-            <div className="headings pl-28 pr-20">
-              <h1 className="pt-36 font-bold text-6xl">
-                We don’t work for you, but with you.
-              </h1>
-              <p className="text-sm pt-5 pr-20 font-serif">
-                We partner with ambitious clients to build an unforgettable
-                brand that resonates with their audience and leaves a lasting
-                impact.
-              </p>
-            </div>
-          </div>
-          <motion.div
-            initial={{ x: -400, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 3 }}
-            viewport={{ once: true }}
-            className="icons flex gap-36 pt-14 pl-96"
-          >
-            <img src={image1} alt="" className="pl-11"/>
-            <img src={image2} alt="" />
-            <img src={image3} alt="" />
-            <img src={image4} alt="" />
-          </motion.div>
-
-          <div className="logo flex gap-16 pl-96 pt-4 text-white">
-            <h1 className="pl-12">Interior design</h1>
-            <h1>Driving Awareness</h1>
-            <h1 className="pl-7">Earnify</h1>
-            <h1 className="pl-7">Exeligo Innovations</h1>
-          </div> */}
-        
-
         <div className="flex flex-col md:flex-row gap-8 md:gap-20 text-white">
   <div className="head">
     <p className="pt-36 pl-8 md:pl-48 text-sm font-bold">
@@ -640,12 +605,12 @@ function Service(props) {
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-gray-400">
+                    <a href="/#/privacy" className="hover:text-gray-400">
                       Privacy
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-gray-400">
+                    <a href="/#/terms" className="hover:text-gray-400">
                       Terms
                     </a>
                   </li>

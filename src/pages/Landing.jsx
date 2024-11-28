@@ -140,7 +140,7 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="pt-4 sm:pt-6 w-full sm:w-[90%] md:w-[93%] lg:w-96 text-xs sm:text-sm font-serif"
+              className="pt-4 sm:pt-6 w-full text-justify sm:w-[90%] md:w-[93%] lg:w-96 text-xs sm:text-sm font-serif"
             >
               Soar to New Heights with Our Sparkling Ideas, Holistic Branding
               Concepts, and Exquisite Handcrafted Designs. We Partner with
@@ -465,12 +465,12 @@ function Landing(props) {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <a href="/#/privacy" className="hover:text-gray-400">
                     Privacy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-gray-400">
+                  <a href="/#/terms" className="hover:text-gray-400">
                     Terms
                   </a>
                 </li>

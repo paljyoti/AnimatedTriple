@@ -14,6 +14,8 @@ import Email from './pages/Email.jsx'
 import Social from './pages/Social.jsx'
 import Digital from './pages/Digital.jsx'
 import WebDesign from './pages/WebDesign.jsx'
+import Privacy from './pages/Privacy.jsx'
+import Terms from './pages/Terms.jsx'
 
 
 
@@ -67,6 +69,14 @@ const router = createHashRouter([
  {
    path:"/webDesign",
    element:<WebDesign/>
+ },
+ {
+  path:"/privacy",
+  element:<Privacy/>
+ },
+ {
+  path:"/terms",
+  element:<Terms/>
  }
 ])
 
