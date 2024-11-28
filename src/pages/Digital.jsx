@@ -145,6 +145,8 @@ function Digital(props) {
           transform your business.
         </p>
       </div>
+
+      
       <div className="footer bg-[#4D869C]">
 <motion.div
   variants={fadeIn("up", 0.2)}
