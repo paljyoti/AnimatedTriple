@@ -105,10 +105,10 @@ function AboutUs(props) {
                 CONTACT US
               </a>
 
-              <div className="details">
+              <div className="details text-xs">
                 <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
-                <h1 className="text-white text-sm">
-                  Email : rishabhbahree@gmail.com
+                <h1 className="text-white ">
+                  Email : info@tripleRconsulting.net
                 </h1>
                 <h1 className="text-white text-sm">Ph : +91 7018324802</h1>
               </div>
@@ -228,22 +228,12 @@ function AboutUs(props) {
               </motion.p>
             </div>
           </div>
-
-
-
-
-          
         </div>
-
-
-
-
-
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center justify-center">
           <div className="flex flex-col lg:flex-row lg:space-x-12">
             {/* Left Section */}
-            <div className="text-black text-left pt-36 pl-10 sm:pl-20 md:pl-24 lg:pl-40">
+            <div className="text-black text-left pt-60 pl-10 sm:pl-20 md:pl-24 lg:pl-40">
               <motion.h1
                 variants={fadeIn("right", 0.2)}
                 initial="hidden"
@@ -251,16 +241,7 @@ function AboutUs(props) {
                 viewport={{ once: false, amount: 0.7 }}
                 className="text-4xl sm:text-5xl md:text-6xl font-bold w-full lg:w-[50vw]"
               >
-                Our
-              </motion.h1>
-              <motion.h1
-                variants={fadeIn("left", 0.2)}
-                initial="hidden"
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-                className="text-4xl sm:text-5xl md:text-6xl font-bold"
-              >
-                Core Values.
+                Our Core Values
               </motion.h1>
             </div>
 
@@ -349,13 +330,13 @@ function AboutUs(props) {
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] item-center justify-center">
           <div className="teams flex flex-col sm:flex-row">
-            <div className="text-white text-left pt-12 sm:pt-52 pl-6 sm:pl-40">
+            <div className="text-white text-left pt-52 sm:pt-52 pl-6 sm:pl-40">
               <motion.h1
                 variants={fadeIn("right", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-4xl sm:text-6xl font-bold"
+                className="text-4xl pt-20  w-[22vw] sm:text-6xl font-bold"
               >
                 Our Team
               </motion.h1>
@@ -395,7 +376,7 @@ function AboutUs(props) {
               </p>
 
               <p className="pt-5 text-xs sm:text-md  pl-[60%] sm:pl-0 text-left font-bold">
-                Email: rishabhbahree@gmail.com
+                Email: info@tripleRconsulting.net
               </p>
             </div>
           </div>
@@ -538,7 +519,7 @@ function AboutUs(props) {
                     href="mailto:jyot2999@gmail.com"
                     className="hover:text-gray-400"
                   >
-                    : rishabhbahree@gmail.com
+                    : info@tripleRconsulting.net
                   </a>
                 </h1>
                 <h1 className="text-md text-right">

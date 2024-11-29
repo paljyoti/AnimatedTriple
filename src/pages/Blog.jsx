@@ -99,10 +99,10 @@ function Blog(props) {
               CONTACT US
             </a>
 
-            <div className="details">
+            <div className="details text-xs">
               <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
-              <h1 className="text-white text-sm">
-                Email : rishabhbahree@gmail.com
+              <h1 className="text-white ">
+                Email : info@tripleRconsulting.net
               </h1>
               <h1 className="text-white text-sm">Ph : +91 7018324802</h1>
             </div>
@@ -151,7 +151,7 @@ function Blog(props) {
             <img src={image3} alt="" className="mt-3 md:mt-5" />
 
             <p className="pt-10 md:pt-28 text-xl md:text-3xl font-bold text-black">
-            SEO (Search Engine Optimization)
+              SEO (Search Engine Optimization)
             </p>
             <img src={image5} alt="" className="mt-3 md:mt-5" />
           </div>
@@ -296,7 +296,7 @@ function Blog(props) {
                   href="mailto:jyot2999@gmail.com"
                   className="hover:text-gray-400"
                 >
-                  : rishabhbahree@gmail.com
+                  : info@tripleRconsulting.net
                 </a>
               </h1>
               <h1 className="text-md text-right">

@@ -89,11 +89,9 @@ function Terms(props) {
             CONTACT US
           </a>
 
-          <div className="details">
+          <div className="details text-xs">
             <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
-            <h1 className="text-white text-sm">
-              Email : rishabhbahree@gmail.com
-            </h1>
+            <h1 className="text-white ">Email : info@tripleRconsulting.net</h1>
             <h1 className="text-white text-sm">Ph : +91 7018324802</h1>
           </div>
         </div>
@@ -201,7 +199,9 @@ function Terms(props) {
         <p className="pb-10 text-sm sm:text-base">
           If you have any questions about these Terms and Conditions or the
           Services we provide, please contact us at:
-          <h6 className="text-sm font-bold text-right sm:text-base">Email : rishabhbahree@gmail.com</h6>
+          <h6 className="text-sm font-bold text-right sm:text-base">
+            Email : info@tripleRconsulting.net
+          </h6>
         </p>
       </div>
 
@@ -343,7 +343,7 @@ function Terms(props) {
                   href="mailto:jyot2999@gmail.com"
                   className="hover:text-gray-400"
                 >
-                  : rishabhbahree@gmail.com
+                  : info@tripleRconsulting.net
                 </a>
               </h1>
               <h1 className="text-md text-right">

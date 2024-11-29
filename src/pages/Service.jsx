@@ -126,10 +126,10 @@ function Service(props) {
                 CONTACT US
               </a>
 
-              <div className="details">
+              <div className="details text-xs">
                 <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
-                <h1 className="text-white text-sm">
-                  Email : rishabhbahree@gmail.com
+                <h1 className="text-white ">
+                  Email : info@tripleRconsulting.net
                 </h1>
                 <h1 className="text-white text-sm">Ph : +91 7018324802</h1>
               </div>
@@ -143,7 +143,9 @@ function Service(props) {
             viewport={{ once: false, amount: 0.7 }}
             className="head text-black text-center "
           >
-            <p className="text-md font-bold pt-20 text-[#39FF14] ">WHAT WE DO</p>
+            <p className="text-md font-bold pt-20 text-[#39FF14] ">
+              WHAT WE DO
+            </p>
             <motion.h1
               variants={fadeIn("right", 0.2)}
               initial="hidden"
@@ -664,7 +666,7 @@ function Service(props) {
                     href="mailto:jyot2999@gmail.com"
                     className="hover:text-gray-400"
                   >
-                    : rishabhbahree@gmail.com
+                    : info@tripleRconsulting.net
                   </a>
                 </h1>
                 <h1 className="text-md text-right">

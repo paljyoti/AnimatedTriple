@@ -106,10 +106,10 @@ function Landing(props) {
               CONTACT US
             </a>
 
-            <div className="details">
+            <div className="details text-xs">
               <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
-              <h1 className="text-white text-sm">
-                Email : rishabhbahree@gmail.com
+              <h1 className="text-white ">
+                Email : info@tripleRconsulting.net
               </h1>
               <h1 className="text-white text-sm">Ph : +91 7018324802</h1>
             </div>
@@ -255,14 +255,14 @@ function Landing(props) {
                   </button>
                 </a>
               </div>
-              <div className="sec text-lg font-bold gap-44 pl-32 flex">
+              <div className="sec text-lg font-bold gap-44 pl-32  flex">
                 <a className=" flex " href="/#/seo">
-                  <button className="bg-[#FFD700] mb-48 pr-10  text-white py-2 px-4 rounded-full hover:bg-[#39FF14] transition">
+                  <button className="bg-[#FFD700] mb-48  text-white py-2 px-4 rounded-full hover:bg-[#39FF14] transition">
                     SEO
                   </button>
                 </a>
                 <a className="flex" href="/#/ppc">
-                  <button className="bg-[#008000] mb-48 pr-10 text-white py-2 px-4 rounded-full hover:bg-[#39FF14] transition">
+                  <button className="bg-[#008000] mb-48  text-white py-2 px-4 rounded-full hover:bg-[#39FF14] transition">
                     PPC
                   </button>
                 </a>
@@ -521,7 +521,7 @@ function Landing(props) {
                   href="mailto:jyot2999@gmail.com"
                   className="hover:text-gray-400"
                 >
-                  : rishabhbahree@gmail.com
+                  : info@tripleRconsulting.net
                 </a>
               </h1>
               <h1 className="text-md text-right">

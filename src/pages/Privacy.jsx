@@ -7,7 +7,6 @@ import { ImHome } from "react-icons/im";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Varients";
 
-
 function Privacy(props) {
   const navigate = useNavigate();
   const [isMoved, setIsMoved] = useState(false);
@@ -91,11 +90,9 @@ function Privacy(props) {
             CONTACT US
           </a>
 
-          <div className="details">
+          <div className="details text-xs">
             <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
-            <h1 className="text-white text-sm">
-              Email : rishabhbahree@gmail.com
-            </h1>
+            <h1 className="text-white ">Email : info@tripleRconsulting.net</h1>
             <h1 className="text-white text-sm">Ph : +91 7018324802</h1>
           </div>
         </div>
@@ -197,12 +194,11 @@ function Privacy(props) {
           If you have any questions, concerns, or requests regarding this
           Privacy Policy or the handling of your personal information, please
           contact us:
-          <h6 className="text-sm font-bold text-right sm:text-base">Email : rishabhbahree@gmail.com</h6>
+          <h6 className="text-sm font-bold text-right sm:text-base">
+            Email : info@tripleRconsulting.net
+          </h6>
         </p>
-        
       </div>
-
-      
 
       <div className="footer bg-[#4D869C]">
         <motion.div
@@ -342,7 +338,7 @@ function Privacy(props) {
                   href="mailto:jyot2999@gmail.com"
                   className="hover:text-gray-400"
                 >
-                  : rishabhbahree@gmail.com
+                  : info@tripleRconsulting.net
                 </a>
               </h1>
               <h1 className="text-md text-right">
@@ -355,7 +351,6 @@ function Privacy(props) {
           </div>
         </div>
       </div>
-
     </div>
   );
 }
