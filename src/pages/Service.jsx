@@ -28,8 +28,6 @@ import slidePay from "../../src/assets/Jyoti_12-removebg-preview.png";
 import { useNavigate } from "react-router-dom";
 import { ImHome } from "react-icons/im";
 
-
-
 function Service(props) {
   const navigate = useNavigate();
   const [isMoved, setIsMoved] = useState(false);
@@ -67,7 +65,9 @@ function Service(props) {
                 <ImHome className="fixed hover:text-[#39FF14]" />
                 <h1 className=" fixed font-bold text-xs pl-8">
                   Triple
-                  <span className="text-2xl font-bold text-[#39FF14]">R</span>{" "}
+                  <span className="text-2xl font-bold text-[#39FF14]">
+                    R
+                  </span>{" "}
                   Consulting
                 </h1>
               </h2>
@@ -129,7 +129,7 @@ function Service(props) {
               <div className="details">
                 <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
                 <h1 className="text-white text-sm">
-                  Email : rishabhbharee@gmail.com
+                  Email : rishabhbahree@gmail.com
                 </h1>
                 <h1 className="text-white text-sm">Ph : +91 7018324802</h1>
               </div>
@@ -518,12 +518,13 @@ function Service(props) {
               className="mb-4 sm:mb-0 sm:pl-6 md:pl-11 lg:pl-0"
             />
           </motion.div>
-
-          <div className="logo flex  justify-center md:justify-start gap-8 md:gap-16 pl-8 md:pl-96 pt-4 text-white">
-            <h1 className="pl-0 md:pl-12">Interior design</h1>
-            <h1 className="pl-0 md:pl-12">Driving Awareness</h1>
-            <h1 className="pl-0 md:pl-12">Earnify</h1>
-            <h1 className="pl-0 md:pl-12">Exeligo Innovations</h1>
+          <div className="logo flex flex-col sm:flex-row justify-center sm:justify-start gap-2 sm:gap-4 lg:gap-8  sm:pl-16 md:pl-24 lg:pl-32 pt-4 text-white">
+            <h1 className="ml-60 sm:pl-4 md:pl-8 lg:pl-12">Interior design</h1>
+            <h1 className="pl-0 sm:pl-4 md:pl-8 lg:pl-12">Driving Awareness</h1>
+            <h1 className="ml-4 sm:pl-4 md:pl-8 lg:pl-12">Earnify</h1>
+            <h1 className="ml-3 sm:pl-4 md:pl-8 lg:pl-12">
+              Exeligo Innovations
+            </h1>
           </div>
         </div>
 

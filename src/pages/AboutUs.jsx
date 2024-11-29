@@ -115,62 +115,63 @@ function AboutUs(props) {
             </div>
           </div>
 
-       
+          <div className="top flex flex-col sm:flex-row sm:pl-12 md:pl-24 lg:pl-48 gap-6 sm:gap-8 md:gap-12 lg:gap-20">
+            <div className="text-black text-left pt-8  sm:pt-12 md:pt-16 lg:pt-16">
+              <motion.h1
+                variants={fadeIn("right", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold"
+              >
+                About Us
+              </motion.h1>
 
-<div className="top flex flex-col sm:flex-row sm:pl-8 md:pl-16 lg:pl-48 gap-6 sm:gap-8 md:gap-12 lg:gap-20">
-  <div className="text-black text-left pt-8 sm:pt-12 md:pt-16 lg:pt-16">
-    <motion.h1
-      variants={fadeIn("right", 0.2)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ once: false, amount: 0.7 }}
-      className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold"
-    >
-      About Us
-    </motion.h1>
+              <motion.p
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="pt-2 w-full sm:w-80 md:w-96 lg:w-96 font-semibold text-lg sm:text-md md:text-lg font-serif"
+              >
+                Step inside the world of young, energetic and innovative
+                marketing agency
+              </motion.p>
 
-    <motion.p
-      variants={fadeIn("up", 0.2)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ once: false, amount: 0.7 }}
-      className="pt-2 w-full sm:w-80 md:w-96 lg:w-96 font-semibold text-lg sm:text-md md:text-lg font-serif"
-    >
-      Step inside the world of young, energetic and innovative marketing agency
-    </motion.p>
-    
-    <motion.p
-      variants={fadeIn("up", 0.2)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ once: false, amount: 0.7 }}
-      className="pt-2 text-justify w-full sm:w-80 md:w-96 lg:w-96 text-sm font-serif"
-    >
-      We are Triple R Consulting. The innovative marketing agency. We believe in the power of innovation to enhance brands.
-    </motion.p>
+              <motion.p
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="pt-2 text-justify w-full sm:w-80 md:w-96 lg:w-96 text-sm font-serif"
+              >
+                We are Triple R Consulting. The innovative marketing agency. We
+                believe in the power of innovation to enhance brands.
+              </motion.p>
 
-    <motion.p
-      variants={fadeIn("up", 0.2)}
-      initial="hidden"
-      whileInView={"show"}
-      viewport={{ once: false, amount: 0.7 }}
-      className="pt-2 text-justify w-full sm:w-80 md:w-96 lg:w-96 text-sm font-serif"
-    >
-      Founded in 2024, Triple R Consulting is a young and innovative marketing agency committed to delivering tailored solutions for businesses of all sizes. We aim to enhance our clients’ online presence, drive growth, and build lasting relationships. At Triple R Consulting, we believe in turning ideas into impactful campaigns that resonate with audiences and deliver measurable results.
-    </motion.p>
-  </div>
+              <motion.p
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+                className="pt-2 text-justify w-full sm:w-80 md:w-96 lg:w-96 text-sm font-serif"
+              >
+                Founded in 2024, Triple R Consulting is a young and innovative
+                marketing agency committed to delivering tailored solutions for
+                businesses of all sizes. We aim to enhance our clients’ online
+                presence, drive growth, and build lasting relationships. At
+                Triple R Consulting, we believe in turning ideas into impactful
+                campaigns that resonate with audiences and deliver measurable
+                results.
+              </motion.p>
+            </div>
 
-  <img 
-    src={aboutImage} 
-    alt="" 
-    className="h-64 sm:h-80 md:h-96 lg:h-96 w-full sm:w-80 md:w-96 lg:w-96 ml-0 sm:ml-4 md:ml-8 lg:ml-20 mt-4 sm:mt-6 md:mt-8 lg:mt-1" 
-  />
-</div>  
-
-
-
-
-
+            <img
+              src={aboutImage}
+              alt=""
+              className="h-64 sm:h-80 md:h-96 lg:h-96 w-full sm:w-80 md:w-96 lg:w-96 ml-0 sm:ml-4 md:ml-8 lg:ml-20 mt-4 sm:mt-6 md:mt-8 lg:mt-1"
+            />
+          </div>
           <div className="container flex mx-auto   space-x-24  ">
             <div className="text-left pl-20 ">
               <motion.p
@@ -203,11 +204,12 @@ function AboutUs(props) {
                   </textPath>
                 </text>
               </svg>
-              <button 
-             onClick={() => {
-              navigate("/contact");
-            }}
-              className="absolute  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center">
+              <button
+                onClick={() => {
+                  navigate("/contact");
+                }}
+                className="absolute  text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center"
+              >
                 Let's
                 <br />
                 Talk
@@ -229,17 +231,25 @@ function AboutUs(props) {
 
 
 
+
+          
         </div>
 
-        {/* <div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center  justify-center">
-          <div className="flex">
-            <div className=" text-black text-left pt-36 pl-40">
+
+
+
+
+
+        <div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center justify-center">
+          <div className="flex flex-col lg:flex-row lg:space-x-12">
+            {/* Left Section */}
+            <div className="text-black text-left pt-36 pl-10 sm:pl-20 md:pl-24 lg:pl-40">
               <motion.h1
                 variants={fadeIn("right", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-6xl font-bold  w-[50vw]"
+                className="text-4xl sm:text-5xl md:text-6xl font-bold w-full lg:w-[50vw]"
               >
                 Our
               </motion.h1>
@@ -248,12 +258,13 @@ function AboutUs(props) {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="text-6xl font-bold"
+                className="text-4xl sm:text-5xl md:text-6xl font-bold"
               >
                 Core Values.
               </motion.h1>
             </div>
 
+            {/* Right Section - Swiper Slides */}
             <Swiper
               modules={[Navigation, Pagination, Scrollbar]}
               spaceBetween={50}
@@ -261,21 +272,25 @@ function AboutUs(props) {
               pagination={{ clickable: true }}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
-              Navigation
+              // navigation
             >
               <SwiperSlide>
-                <div className=" text-black  pt-28">
-                  <img src={aboutTriangle} alt="" className="h-44 w-44" />
+                <div className="text-black pt-28">
+                  <img
+                    src={aboutTriangle}
+                    alt=""
+                    className="h-32 w-32 sm:h-40 sm:w-40 md:h-44 md:w-44"
+                  />
                   <motion.h1
                     variants={fadeIn("right", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
-                    className="text-2xl font-bold text-[#39FF14]"
+                    className="text-xl sm:text-2xl   font-bold text-[#39FF14]"
                   >
                     01 Innovation
                   </motion.h1>
-                  <p className="w-96 text-justify font-serif">
+                  <p className="w-72 sm:w-80 md:w-96 text-justify font-serif">
                     We stay ahead of the curve by embracing the latest trends,
                     tools, and techniques in digital marketing, ensuring our
                     clients always have a competitive edge.
@@ -283,18 +298,22 @@ function AboutUs(props) {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className=" text-black text-left pt-32">
-                  <img src={aboutTriangle} alt="" className="h-44 w-44" />
+                <div className="text-black text-left pt-32">
+                  <img
+                    src={aboutTriangle}
+                    alt=""
+                    className="h-32 w-32 sm:h-40 sm:w-40 md:h-44 md:w-44"
+                  />
                   <motion.h1
                     variants={fadeIn("right", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
-                    className="text-2xl font-bold text-[#39FF14]"
+                    className="text-xl sm:text-2xl font-bold text-[#39FF14]"
                   >
                     02 Integrity
                   </motion.h1>
-                  <p className="w-96 text-justify font-serif">
+                  <p className="w-72 sm:w-80 md:w-96 text-justify font-serif">
                     Transparency and honesty form the foundation of everything
                     we do. We believe in building trust through ethical
                     practices and clear communication.
@@ -302,18 +321,22 @@ function AboutUs(props) {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className=" text-black text-left pt-32 ">
-                  <img src={aboutTriangle} alt="" className="h-44 w-44" />
+                <div className="text-black text-left pt-32">
+                  <img
+                    src={aboutTriangle}
+                    alt=""
+                    className="h-32 w-32 sm:h-40 sm:w-40 md:h-44 md:w-44"
+                  />
                   <motion.h1
                     variants={fadeIn("right", 0.2)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
-                    className="text-2xl font-bold text-[#39FF14]"
+                    className="text-xl sm:text-2xl font-bold text-[#39FF14]"
                   >
                     03 Collaboration
                   </motion.h1>
-                  <p className=" w-96 text-justify font-serif">
+                  <p className="w-72 sm:w-80 md:w-96 text-justify font-serif">
                     Our success lies in working closely with clients to
                     understand their unique needs and creating strategies that
                     align with their goals.
@@ -322,101 +345,7 @@ function AboutUs(props) {
               </SwiperSlide>
             </Swiper>
           </div>
-        </div> */}
-
-
-<div className="flex-shrink-0 snap-start w-full h-screen bg-[#CDE8E5] items-center justify-center">
-  <div className="flex flex-col lg:flex-row lg:space-x-12">
-    {/* Left Section */}
-    <div className="text-black text-left pt-36 pl-10 sm:pl-20 md:pl-24 lg:pl-40">
-      <motion.h1
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="text-4xl sm:text-5xl md:text-6xl font-bold w-full lg:w-[50vw]"
-      >
-        Our
-      </motion.h1>
-      <motion.h1
-        variants={fadeIn("left", 0.2)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="text-4xl sm:text-5xl md:text-6xl font-bold"
-      >
-        Core Values.
-      </motion.h1>
-    </div>
-
-    {/* Right Section - Swiper Slides */}
-    <Swiper
-      modules={[Navigation, Pagination, Scrollbar]}
-      spaceBetween={50}
-      slidesPerView={1}
-      pagination={{ clickable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-      // navigation
-
-
-    >
-      <SwiperSlide>
-        <div className="text-black pt-28">
-          <img src={aboutTriangle} alt="" className="h-32 w-32 sm:h-40 sm:w-40 md:h-44 md:w-44" />
-          <motion.h1
-            variants={fadeIn("right", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="text-xl sm:text-2xl   font-bold text-[#39FF14]"
-          >
-            01 Innovation
-          </motion.h1>
-          <p className="w-72 sm:w-80 md:w-96 text-justify font-serif">
-            We stay ahead of the curve by embracing the latest trends, tools, and techniques in digital marketing, ensuring our clients always have a competitive edge.
-          </p>
         </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="text-black text-left pt-32">
-          <img src={aboutTriangle} alt="" className="h-32 w-32 sm:h-40 sm:w-40 md:h-44 md:w-44" />
-          <motion.h1
-            variants={fadeIn("right", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="text-xl sm:text-2xl font-bold text-[#39FF14]"
-          >
-            02 Integrity
-          </motion.h1>
-          <p className="w-72 sm:w-80 md:w-96 text-justify font-serif">
-            Transparency and honesty form the foundation of everything we do. We believe in building trust through ethical practices and clear communication.
-          </p>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="text-black text-left pt-32">
-          <img src={aboutTriangle} alt="" className="h-32 w-32 sm:h-40 sm:w-40 md:h-44 md:w-44" />
-          <motion.h1
-            variants={fadeIn("right", 0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="text-xl sm:text-2xl font-bold text-[#39FF14]"
-          >
-            03 Collaboration
-          </motion.h1>
-          <p className="w-72 sm:w-80 md:w-96 text-justify font-serif">
-            Our success lies in working closely with clients to understand their unique needs and creating strategies that align with their goals.
-          </p>
-        </div>
-      </SwiperSlide>
-    </Swiper>
-  </div>
-</div>
-
-
 
         <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] item-center justify-center">
           <div className="teams flex flex-col sm:flex-row">
@@ -445,7 +374,9 @@ function AboutUs(props) {
                 and dedication to excellence set the tone for everything we do.
               </p>
 
-              <h1 className="font-bold text-xl sm:text-2xl md:text-base pt-5">The R Team</h1>
+              <h1 className="font-bold text-xl sm:text-2xl md:text-base pt-5">
+                The R Team
+              </h1>
               <p className="text-sm sm:text-base">
                 At Triple R Consulting, our diverse team is our backbone. With
                 experts from various domains such as FMCG industry, Packaging

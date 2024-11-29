@@ -197,7 +197,9 @@ function Privacy(props) {
           If you have any questions, concerns, or requests regarding this
           Privacy Policy or the handling of your personal information, please
           contact us:
+          <h6 className="text-sm font-bold text-right sm:text-base">Email : rishabhbahree@gmail.com</h6>
         </p>
+        
       </div>
 
       

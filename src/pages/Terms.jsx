@@ -201,6 +201,7 @@ function Terms(props) {
         <p className="pb-10 text-sm sm:text-base">
           If you have any questions about these Terms and Conditions or the
           Services we provide, please contact us at:
+          <h6 className="text-sm font-bold text-right sm:text-base">Email : rishabhbahree@gmail.com</h6>
         </p>
       </div>
 

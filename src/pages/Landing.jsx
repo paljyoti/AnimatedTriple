@@ -378,6 +378,10 @@ function Landing(props) {
             className="h-auto w-64 sm:w-80 lg:w-96 mx-auto lg:mr-32 mt-8 lg:mt-0"
           />
         </div>
+
+
+
+
       </div>
 
       <div className="flex-shrink-0 snap-start w-full h-screen bg-[#4D869C] items-center justify-center">

@@ -128,7 +128,7 @@ function Contacts(props) {
                 GET IN TOUCH
               </h1>
               <h1 className="text-white text-sm sm:text-xs md:text-sm lg:text-sm">
-                Email : rishabhbharee@gmail.com
+                Email : rishabhbahree@gmail.com
               </h1>
               <h1 className="text-white text-sm sm:text-xs md:text-sm lg:text-sm">
                 Ph : +91 7018324802

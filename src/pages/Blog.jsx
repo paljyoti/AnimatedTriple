@@ -102,7 +102,7 @@ function Blog(props) {
             <div className="details">
               <h1 className="pt-32 text-white font-semibold">GET IN TOUCH</h1>
               <h1 className="text-white text-sm">
-                Email : rishabhbharee@gmail.com
+                Email : rishabhbahree@gmail.com
               </h1>
               <h1 className="text-white text-sm">Ph : +91 7018324802</h1>
             </div>
