@@ -10,7 +10,7 @@ import imageClient from "../../src/assets/greenery.gif";
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import { ImHome } from "react-icons/im";
-import logo from "../../src/assets/Untitled_design__1___2_-removebg-preview.png"
+import logo from "../../src/assets/Untitled_design__1___2_-removebg-preview.png";
 
 import image1 from "../../src/assets/icons8-logo-50 (1).png";
 import image2 from "../../src/assets/icons8-logo-50 (2).png";
@@ -45,12 +45,16 @@ function Landing(props) {
       <div className="flex-shrink-0 snap-start w-full h-screen bg-[#EEF7FF]  items-center justify-center ">
         <div className="header ">
           <div className=" flex  justify-between items-center pl-14 pr-20 px-4 py-9">
-          {/* <img src={logo} alt="" className="fixed h-52 w-52 pt-9" /> */}
+            {/* <img src={logo} alt="" className="fixed h-52 w-52 pt-9" /> */}
             <h2 className="text-3xl">
               <ImHome className="fixed hover:text-[#39FF14]" />
-              <h1 className=" fixed font-bold text-xs pl-8">Triple <span className="text-2xl font-bold text-[#39FF14]">R</span> Consulting</h1>
+              <h1 className=" fixed font-bold text-xs pl-8">
+                Triple{" "}
+                <span className="text-2xl font-bold text-[#39FF14]">R</span>{" "}
+                Consulting
+              </h1>
             </h2>
-            
+
             <main>
               <span
                 className="cursor-pointer text-2xl fixed font-bold"
@@ -111,7 +115,7 @@ function Landing(props) {
             </div>
           </div>
         </div>
-       
+
         <div className="top flex flex-col lg:flex-row pl-4 lg:pl-48 gap-10 lg:gap-20">
           <div className="bg-[#EEF7FF] text-black text-left  px-4 lg:px-0">
             <motion.h1
@@ -153,7 +157,7 @@ function Landing(props) {
             className="w-full sm:w-[50vw]  lg:w-[23vw] h-auto mt-4 lg:ml-24"
           />
         </div>
-       
+
         <div className="container flex flex-col lg:flex-row mx-auto space-y-8 lg:space-y-0 lg:space-x-24 ">
           <div className="text-left px-4 lg:px-16">
             <motion.p
@@ -316,18 +320,7 @@ function Landing(props) {
             </div>
           </div>
         </div>
-
-
-
-
-        
       </div>
-
-
-
-
-
-
 
       <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] flex items-center justify-center">
         <div className="top flex flex-col lg:flex-row ml-5 gap-10 lg:gap-20">
@@ -369,10 +362,10 @@ function Landing(props) {
                 viewport={{ once: false, amount: 0.7 }}
                 className="icons flex gap-20 pt-14 pl-16 "
               >
-                <img src={image1} alt=""  />
-                <img src={image2} alt=""  />
+                <img src={image1} alt="" />
+                <img src={image2} alt="" />
                 <img src={image3} alt="" className="pl-4" />
-                <img src={image4} alt="" className="pl-4"  />
+                <img src={image4} alt="" className="pl-4" />
               </motion.div>
 
               <div className="logo flex  gap-12 pl-16 pt-4 text-sm ">
@@ -389,10 +382,6 @@ function Landing(props) {
             className="h-auto w-64 sm:w-80 lg:w-96 mx-auto lg:mr-32 mt-8 lg:mt-0"
           />
         </div>
-
-
-
-
       </div>
 
       <div className="flex-shrink-0 snap-start w-full h-screen bg-[#4D869C] items-center justify-center">
@@ -544,7 +533,6 @@ function Landing(props) {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

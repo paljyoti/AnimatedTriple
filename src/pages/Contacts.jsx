@@ -136,27 +136,6 @@ function Contacts(props) {
             </div>
           </div>
         </div>
-
-        {/* <div className="top flex flex-col md:flex-row sm:pl-6 sm:px-4 lg:pl-52 lg:px-8 gap-4 sm:gap-4 md:gap-20 mt-12">
-          <div className="text-black text-left">
-            <p className="font-bold text-4xl sm:text-3xl md:text-4xl text-[#39FF14]">
-              CONTACT US
-            </p>
-            <h1 className="text-4xl font-bold sm:text-3xl md:text-4xl"> Hit us up for</h1>
-            <h1 className="text-4xl font-bold sm:text-3xl md:text-4xl">assistance?</h1>
-            <p className="mt-4 w-96 text-sm font-serif sm:w-96 md:w-96 lg:w-96">
-              Ready to elevate your brand's online presence and propel your
-              business towards unprecedented growth? Our team of experts will
-              reflect your brand's unique identity and provide platform for an
-              engaging user experience.
-            </p>
-          </div>
-          <div className="circle bg-black w-80 h-80  ml-12 rounded-full sm:w-60 sm:h-64 md:w-80 md:h-80 lg:w-80 lg:h-80">
-            <div id="super-hand-loop"></div>
-          </div>
-        </div> */}
-
-
 <div className="top flex flex-col sm:flex-row md:flex-row lg:flex-row sm:pl-6 sm:px-4 lg:pl-52 lg:px-8 gap-4 sm:gap-4 md:gap-10 lg:gap-16 mt-12">
   {/* Text Section */}
   <div className="text-black text-left sm:w-full md:w-1/2 lg:w-1/2">
@@ -274,73 +253,6 @@ style={{
 
 
 </div>
-
-
-
-
-        {/* <div className="container flex flex-col sm:flex-col md:flex-row mx-auto space-x-24 gap-6 md:gap-8 sm:gap-4">
-          <div className="text-left mb-6 pl-20 hidden sm:block md:pl-12 lg:pl-20">
-            <motion.p
-              variants={fadeIn("up", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="text-black text-xs w-96 pt-20 sm:w-96 md:w-96 lg:w-96"
-            >
-              Creative agency in Gurugram made with loads of love and dedication
-              in India.
-            </motion.p>
-          </div>
-
-          <div className="flex justify-center items-center relative ">
-            <svg
-              viewBox="0 0 100 100"
-              xmlns="http://www.w3.org/2000/svg"
-              className="animate-rotate-svg w-40 h-40 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-40 lg:h-40"
-            >
-              <path
-                id="circlePath"
-                d="M 50, 50 m -20, 0
-              a 20,20 0 1,1 40, 0
-              a 20,20 0 1,1 -40, 0"
-                fill="transparent"
-              />
-              <text className="text-[4.9px] fill-current text-black">
-                <textPath href="#circlePath" startOffset="0%">
-                  | TripleRConsulting | TripleRConsulting | TripleRConsulting
-                </textPath>
-              </text>
-            </svg>
-            <button className="absolute text-center text-sm bg-black text-white w-12 h-12 rounded-full hover:bg-[#39FF14] hover:text-black transition flex items-center justify-center text-center sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-12 lg:h-12">
-              Let's
-              <br />
-              Talk
-            </button>
-          </div>
-
-          <div>
-            <motion.p
-              variants={fadeIn("up", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="text-black w-96 text-xs pt-20 "
-            >
-              Connecting people with technology.
-            </motion.p>
-            <motion.p
-              variants={fadeIn("up", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="text-xs  "
-            >
-              Email : rishabhbahree@gmail.com
-              <span className="text-xs pl-2">Ph : +91 7018324802</span>
-            </motion.p>
-          </div>
-        </div> */}
-
 
 <div className="container flex flex-col sm:flex-col md:flex-row mx-auto space-y-6 sm:space-y-6 md:space-y-0 gap-6 md:gap-8 sm:gap-4">
   <div className="text-left mb-6 pl-6 sm:pl-6 md:pl-12 lg:pl-20 sm:w-full md:w-96 lg:w-96">
@@ -583,7 +495,7 @@ style={{
                 </li>
                 <li>
                   <a href="/#/aboutus" className="hover:text-gray-400">
-                    About Us
+                    AboutUs
                   </a>
                 </li>
                 <li>

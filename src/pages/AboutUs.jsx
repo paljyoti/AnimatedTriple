@@ -477,7 +477,7 @@ function AboutUs(props) {
                   </li>
                   <li>
                     <a href="/#/aboutus" className="hover:text-gray-400">
-                      About Us
+                      AboutUs
                     </a>
                   </li>
                   <li>
