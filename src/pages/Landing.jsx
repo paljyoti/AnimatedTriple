@@ -150,7 +150,7 @@ function Landing(props) {
           <img
             src={imageClient}
             alt=""
-            className="w-full sm:w-[50vw] lg:w-[23vw] h-auto mt-4 lg:ml-24"
+            className="w-full sm:w-[50vw]  lg:w-[23vw] h-auto mt-4 lg:ml-24"
           />
         </div>
        
@@ -206,7 +206,7 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-black w-full sm:w-[90%] lg:w-96 hidden   sm:block pr-20 text-xs xs:text-xs pt-8 sm:pt-16"
+              className="text-black w-full sm:w-[90%] lg:w-96  hidden  sm:block pr-20 text-xs xs:text-xs pt-8 sm:pt-16"
             >
               Blending creativity with practical solutions, we connect people
               and brands with technology in inspiring ways.
@@ -316,7 +316,18 @@ function Landing(props) {
             </div>
           </div>
         </div>
+
+
+
+
+        
       </div>
+
+
+
+
+
+
 
       <div className="flex-shrink-0 snap-start w-full h-screen bg-[#7AB2B2] flex items-center justify-center">
         <div className="top flex flex-col lg:flex-row ml-5 gap-10 lg:gap-20">
@@ -326,7 +337,7 @@ function Landing(props) {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-4xl sm:text-5xl   lg:text-6xl pl-4 lg:pl-16 pt-20 font-bold"
+              className="text-4xl sm:text-5xl    lg:text-6xl pl-4 lg:pl-16 pt-20 font-bold"
             >
               Our Happy
             </motion.h1>
@@ -448,7 +459,7 @@ function Landing(props) {
 
         <div className="footer text-black">
           <div className="container mx-auto sm:flex flex  justify-between">
-            <div className=" w-full sm:w-1/3  hidden  sm:block ">
+            <div className=" w-full sm:w-1/3 md:1/3 lg:1/3  hidden  sm:block ">
               <h6 className="text-lg pt-28  pl-6 font-semibold text-left">
                 Explore more
               </h6>
@@ -460,7 +471,7 @@ function Landing(props) {
                 </li>
                 <li>
                   <a href="/#/aboutus" className="hover:text-gray-400">
-                    About Us
+                    AboutUs
                   </a>
                 </li>
                 <li>
@@ -511,7 +522,7 @@ function Landing(props) {
                 </g>
               </svg>
             </div>
-            <div className="contact w-full sm:w-1/3  sm:text-center  pr-6">
+            <div className="contact w-full sm:w-1/3 md:w-1/4 lg:w-1/3  sm:text-center  pr-6">
               <h6 className="text-lg pt-28 font-semibold  text-right">
                 Get in touch
               </h6>

@@ -143,7 +143,7 @@ function Service(props) {
             viewport={{ once: false, amount: 0.7 }}
             className="head text-black text-center "
           >
-            <p className="text-md font-bold pt-20 ">WHAT WE DO</p>
+            <p className="text-md font-bold pt-20 text-[#39FF14] ">WHAT WE DO</p>
             <motion.h1
               variants={fadeIn("right", 0.2)}
               initial="hidden"
@@ -518,13 +518,11 @@ function Service(props) {
               className="mb-4 sm:mb-0 sm:pl-6 md:pl-11 lg:pl-0"
             />
           </motion.div>
-          <div className="logo flex flex-col sm:flex-row justify-center sm:justify-start gap-2 sm:gap-4 lg:gap-8  sm:pl-16 md:pl-24 lg:pl-32 pt-4 text-white">
-            <h1 className="ml-60 sm:pl-4 md:pl-8 lg:pl-12">Interior design</h1>
-            <h1 className="pl-0 sm:pl-4 md:pl-8 lg:pl-12">Driving Awareness</h1>
-            <h1 className="ml-4 sm:pl-4 md:pl-8 lg:pl-12">Earnify</h1>
-            <h1 className="ml-3 sm:pl-4 md:pl-8 lg:pl-12">
-              Exeligo Innovations
-            </h1>
+          <div className="logo ml-64 flex flex-wrap sm:flex-row justify-center sm:justify-start gap-2 sm:gap-4 md:gap-4 lg:gap-8 sm:pl-16 md:pl-24 lg:pl-32 pt-4 text-white">
+            <h1 className="sm:pl-4 md:pl-8 lg:pl-12">Interior design</h1>
+            <h1 className="sm:pl-4 md:pl-8 lg:pl-12">Driving Awareness</h1>
+            <h1 className="sm:pl-4 md:pl-8 lg:pl-12">Earnify</h1>
+            <h1 className="sm:pl-4 md:pl-8 lg:pl-12">Exeligo Innovations</h1>
           </div>
         </div>
 
